@@ -11,7 +11,7 @@ export default function TemataPage() {
     {
       slug: 'clenstvi-a-evidence',
       title: 'Členství a evidence',
-      icon: '👥',
+      icon: '📋',
       description: 'Kdo je členem spolku? Proč nebyly předány seznamy? Jak to ovlivnilo rozhodování?',
       category: 'Klíčové téma',
       relatedCount: { events: 8, persons: 10, documents: 12 },
@@ -29,7 +29,7 @@ export default function TemataPage() {
     {
       slug: 'schuze-a-rozhodovani',
       title: 'Schůze a rozhodování',
-      icon: '🏛️',
+      icon: '🗳️',
       description: 'Legitimita schůzí, právo svolávat a rozhodovat, platnost rozhodnutí, kvórum.',
       category: 'Klíčové téma',
       relatedCount: { events: 6, persons: 12, documents: 10 },
@@ -55,7 +55,7 @@ export default function TemataPage() {
     {
       slug: 'myty-a-dezinformace',
       title: 'Mýty a dezinformace',
-      icon: '❌',
+      icon: '🚫',
       description: 'Co bylo tvrzeno vs. co bylo prokázáno. Vyvrácení běžných dezinformací.',
       category: 'Analýza',
       relatedCount: { events: 0, persons: 0, documents: 0 },
@@ -80,7 +80,7 @@ export default function TemataPage() {
     {
       slug: 'akteri-a-jejich-role',
       title: 'Aktéři a jejich role',
-      icon: '👤',
+      icon: '👥',
       description: 'Kdo je kdo v kauze? Jaké měli role a odpovědnosti? Co prokázali svým jednáním?',
       category: 'Přehled',
       relatedCount: { events: 15, persons: 12, documents: 25 },
@@ -107,20 +107,29 @@ export default function TemataPage() {
 
   return (
     <div className="container mx-auto px-8 py-12 max-w-6xl">
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">
-          Témata
+      {/* Hero Header */}
+      <div className="mb-12 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-3xl shadow-2xl p-10 text-white">
+        <h1 className="text-5xl font-black mb-4 text-center">
+          📚 Témata kauzy
         </h1>
-        <p className="text-xl text-slate-600">
-          Klíčová témata kauzy organizovaná podle oblastí
+        <p className="text-xl text-center font-medium opacity-95">
+          Klíčová témata organizovaná podle oblastí. Každé téma obsahuje faktické informace podložené důkazy.
         </p>
+        <div className="mt-6 flex justify-center space-x-4 text-sm">
+          <div className="px-4 py-2 bg-white/20 backdrop-blur rounded-full">
+            <span className="font-bold">{topics.filter(t => t.isKeyTopic).length}</span> klíčových témat
+          </div>
+          <div className="px-4 py-2 bg-white/20 backdrop-blur rounded-full">
+            <span className="font-bold">{topics.length}</span> témat celkem
+          </div>
+        </div>
       </div>
 
       {/* Klíčová témata */}
       <div className="mb-12">
-        <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
-          <span className="text-3xl mr-3">🔥</span>
-          Klíčová témata
+        <h2 className="text-3xl font-black text-slate-900 mb-8 flex items-center justify-center">
+          <span className="text-5xl mr-3 animate-bounce">🔥</span>
+          <span>Klíčová témata</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {topics.filter(t => t.isKeyTopic).map(topic => (
@@ -177,42 +186,51 @@ function TopicCard({ topic, featured }: { topic: Topic; featured?: boolean }) {
     <a
       href={`/temata/${topic.slug}`}
       className={`
-        block p-6 rounded-lg border-2 transition
+        block p-6 rounded-xl border-2 transition-all duration-200 transform hover:scale-105
         ${featured
-          ? 'bg-gradient-to-br from-blue-50 to-blue-100 border-blue-300 hover:border-blue-500 hover:shadow-lg'
-          : 'bg-white border-slate-200 hover:border-blue-400 hover:shadow-md'
+          ? 'bg-gradient-to-br from-blue-50 via-blue-100 to-purple-100 border-blue-400 hover:border-blue-600 hover:shadow-2xl'
+          : 'bg-white border-slate-300 hover:border-blue-500 hover:shadow-xl'
         }
       `}
     >
-      <div className="flex items-start justify-between mb-3">
-        <span className="text-4xl">{topic.icon}</span>
+      <div className="flex items-start justify-between mb-4">
+        <div className={`${featured ? 'text-6xl' : 'text-5xl'} transition-transform hover:rotate-12`}>
+          {topic.icon}
+        </div>
         {featured && (
-          <span className="px-2 py-1 bg-red-500 text-white text-xs font-bold rounded">
-            KLÍČOVÉ
+          <span className="px-3 py-1 bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-black rounded-full shadow-lg animate-pulse">
+            🔥 KLÍČOVÉ
           </span>
         )}
       </div>
 
-      <h3 className={`text-xl font-bold mb-2 ${featured ? 'text-blue-900' : 'text-slate-900'}`}>
+      <h3 className={`${featured ? 'text-2xl' : 'text-xl'} font-bold mb-3 ${featured ? 'text-blue-900' : 'text-slate-900'}`}>
         {topic.title}
       </h3>
 
-      <p className={`text-sm mb-4 ${featured ? 'text-blue-800' : 'text-slate-700'}`}>
+      <p className={`text-sm mb-4 leading-relaxed ${featured ? 'text-blue-800' : 'text-slate-700'}`}>
         {topic.description}
       </p>
 
-      <div className="flex items-center space-x-4 text-xs text-slate-600">
-        <div className="flex items-center space-x-1">
-          <span>📅</span>
-          <span>{topic.relatedCount.events} událostí</span>
-        </div>
-        <div className="flex items-center space-x-1">
-          <span>👤</span>
-          <span>{topic.relatedCount.persons} osob</span>
-        </div>
-        <div className="flex items-center space-x-1">
-          <span>📄</span>
-          <span>{topic.relatedCount.documents} dokumentů</span>
+      <div className="pt-4 border-t border-slate-200">
+        <div className="flex items-center justify-between text-xs">
+          <div className="flex items-center space-x-3 text-slate-600">
+            <div className="flex items-center space-x-1">
+              <span className="text-base">📅</span>
+              <span className="font-medium">{topic.relatedCount.events}</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <span className="text-base">👤</span>
+              <span className="font-medium">{topic.relatedCount.persons}</span>
+            </div>
+            <div className="flex items-center space-x-1">
+              <span className="text-base">📄</span>
+              <span className="font-medium">{topic.relatedCount.documents}</span>
+            </div>
+          </div>
+          <span className={`font-bold ${featured ? 'text-blue-600' : 'text-slate-600'}`}>
+            Detail →
+          </span>
         </div>
       </div>
     </a>

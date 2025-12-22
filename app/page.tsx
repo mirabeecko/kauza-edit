@@ -46,7 +46,7 @@ function ProgressBar({ label, value, max, color }: ProgressBarProps) {
     <div>
       <div className="flex justify-between mb-2">
         <span className="font-semibold">{label}</span>
-        <span className="font-bold">{(value / 1000).toFixed(0)}k Kč</span>
+        <span className="font-bold">{value.toLocaleString('cs-CZ')} Kč</span>
       </div>
       <div className="w-full bg-slate-200 rounded-full h-6 overflow-hidden">
         <div
@@ -153,11 +153,11 @@ function FactBox({ icon, title, facts, color }: FactBoxProps) {
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 min-h-screen">
+    <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
       {/* Hero sekce - dramatická */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
+      <div className="snap-center h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzFmMjkzNyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-        <div className="container mx-auto px-8 py-20 relative z-10">
+        <div className="container mx-auto px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-bold rounded-full mb-6 animate-pulse">
               🚨 AKTIVNÍ KAUZA
@@ -169,7 +169,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-2xl text-blue-200 mb-8">
-              2 miliony Kč škody • 3+ roky trvání • 0 trestně stíhaných
+              {(2045635).toLocaleString('cs-CZ')} Kč škody • 3+ roky trvání • 0 trestně stíhaných
             </p>
             <div className="flex justify-center gap-4">
               <Link href="/prehled" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-bold text-lg transition transform hover:scale-105 shadow-2xl">
@@ -183,16 +183,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-8 py-16 max-w-7xl">
-
       {/* MEGA STATS - vizuální dominance čísel */}
-      <div className="mb-20">
+      <div className="snap-center h-screen flex items-center justify-center py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-12 text-slate-900">
           Kauza v číslech
         </h2>
         <div className="grid md:grid-cols-4 gap-6">
           <StatCard
-            value="2 mil. Kč"
+            value={(2045635).toLocaleString('cs-CZ') + " Kč"}
             label="Celková škoda"
             icon="💸"
             color="red"
@@ -220,10 +219,13 @@ export default function Home() {
             trend="legal"
           />
         </div>
+        </div>
       </div>
 
       {/* VIZUÁLNÍ BREAKDOWN */}
-      <div className="grid md:grid-cols-2 gap-8 mb-20">
+      <div className="snap-center h-screen flex items-center justify-center py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="grid md:grid-cols-2 gap-8">
         {/* Levý - Škoda */}
         <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-red-200">
           <h3 className="text-2xl font-bold mb-6 flex items-center">
@@ -232,28 +234,28 @@ export default function Home() {
           </h3>
           <div className="space-y-4">
             <ProgressBar
-              label="Nezaplacené příspěvky"
-              value={500000}
-              max={2000000}
+              label="Zapřené oddílové příspěvky"
+              value={1214400}
+              max={2046000}
               color="red"
             />
             <ProgressBar
               label="Nezaplacené energie"
-              value={560000}
-              max={2000000}
+              value={299921}
+              max={2046000}
               color="orange"
             />
             <ProgressBar
-              label="Soudní výlohy + ostatní"
-              value={940000}
-              max={2000000}
+              label="Členské příspěvky + pokladny"
+              value={321314}
+              max={2046000}
               color="yellow"
             />
           </div>
           <div className="mt-6 pt-6 border-t-2 border-slate-200">
             <div className="flex justify-between items-center">
               <span className="text-lg font-semibold">CELKEM:</span>
-              <span className="text-3xl font-black text-red-600">2 mil. Kč</span>
+              <span className="text-3xl font-black text-red-600">{(2045635).toLocaleString('cs-CZ')} Kč</span>
             </div>
           </div>
         </div>
@@ -292,9 +294,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+        </div>
+      </div>
 
       {/* QUICK ACTIONS - vizuální CTA */}
-      <div className="grid md:grid-cols-3 gap-6 mb-16">
+      <div className="snap-center h-screen flex items-center justify-center py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <ActionCard
           href="/prehled"
           icon="⚡"
@@ -302,6 +308,14 @@ export default function Home() {
           description="Rychlý start"
           color="blue"
           time="5 minut"
+        />
+        <ActionCard
+          href="/cisla"
+          icon="💰"
+          title="Vysvětlení v číslech"
+          description="Finanční rozpis"
+          color="orange"
+          time="8 minut"
         />
         <ActionCard
           href="/otazky"
@@ -320,10 +334,267 @@ export default function Home() {
           time="15 minut"
         />
       </div>
+        </div>
+      </div>
+
+      {/* JAK TO VŠECHNO ZAČALO */}
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+        <h2 className="text-4xl font-black text-center mb-8 text-white">
+          🎬 Jak to všechno začalo?
+        </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-8 mb-6">
+            <div className="text-xl font-bold mb-4">📅 24. srpna 2021</div>
+            <p className="text-lg mb-4">
+              Na shromáždění delegátů byl <strong>jednomyslně zvolen</strong> Miroslav Brožek
+              předsedou TJ Krupka z.s. na <strong>5 let</strong>.
+            </p>
+            <div className="mt-6 p-4 bg-white/10 rounded-xl">
+              <div className="text-sm font-semibold mb-3">Kdo ho zvolil (přítomní delegáti):</div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                <div>• Marek Vaniš</div>
+                <div>• Gustav Vlach</div>
+                <div>• Antonín Rosenkranc</div>
+                <div>• Jiří Kulík</div>
+                <div>• Martin Kulík</div>
+                <div>• Zbyněk Brei</div>
+                <div>• Romana Vodvářková</div>
+                <div>• pí. Kratochvílová</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-8">
+            <div className="text-xl font-bold mb-4">🤝 První dohoda</div>
+            <p className="text-lg">
+              Všichni předsedové oddílů přislíbili, že doloží <strong>aktualizované seznamy členů</strong>.
+            </p>
+            <p className="text-lg mt-3 text-blue-100">
+              <strong>Důvod:</strong> Členská základna byla neaktuální (obsahovala osoby starší 100 let)
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      {/* PROČ TO VŠECHNO ZAČALO */}
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700 py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+        <h2 className="text-4xl font-black text-center mb-8 text-white">
+          🤔 Proč to všechno začalo?
+        </h2>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
+            <div className="text-3xl mb-3">🎯</div>
+            <h3 className="text-xl font-bold mb-3">Záměr nového předsedy</h3>
+            <ul className="space-y-2 text-sm">
+              <li>✓ Transparentnost</li>
+              <li>✓ Řádné účetnictví</li>
+              <li>✓ Aktuální členská evidence</li>
+              <li>✓ Dodržování zákonů a stanov</li>
+            </ul>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
+            <div className="text-3xl mb-3">⚠️</div>
+            <h3 className="text-xl font-bold mb-3">Co se ale ukázalo</h3>
+            <ul className="space-y-2 text-sm">
+              <li>✗ Předsedové oddílů nepředávali seznamy</li>
+              <li>✗ Vybírali příspěvky, ale neodváděli je</li>
+              <li>✗ Neplatili náklady na energie</li>
+              <li>✗ Ignorovali výzvy a předžalobní výzvy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 max-w-4xl mx-auto bg-white/20 backdrop-blur rounded-2xl p-6 text-center">
+          <p className="text-xl font-semibold">
+            💡 Kauza vznikla pokusem o <strong>nápravu chaosu</strong>, který narazil na
+            <strong> systematické porušování povinností</strong> a <strong>nečinnost</strong>.
+          </p>
+        </div>
+        </div>
+      </div>
+
+      {/* EXISTUJÍ DŮKAZY? */}
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+        <h2 className="text-4xl font-black text-center mb-8 text-white">
+          📋 Existují důkazy?
+        </h2>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="text-7xl font-black mb-4">ANO</div>
+            <p className="text-xl">Každé tvrzení je podloženo dokumenty</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
+              <div className="text-5xl mb-3">📧</div>
+              <div className="text-3xl font-black mb-2">50+</div>
+              <div className="text-sm">emailů a výzev</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
+              <div className="text-5xl mb-3">📄</div>
+              <div className="text-3xl font-black mb-2">20+</div>
+              <div className="text-sm">právních dokumentů</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
+              <div className="text-5xl mb-3">⚖️</div>
+              <div className="text-3xl font-black mb-2">100%</div>
+              <div className="text-sm">ověřitelných faktů</div>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-white/20 backdrop-blur rounded-2xl p-6">
+            <h3 className="text-xl font-bold mb-4">📎 Klíčové dokumenty:</h3>
+            <div className="grid md:grid-cols-2 gap-3 text-sm">
+              <div>✓ Zápis ze shromáždění 24.8.2021</div>
+              <div>✓ Výzvy k předání seznamů (září-prosinec 2021)</div>
+              <div>✓ Předžalobní výzvy (listopad 2023)</div>
+              <div>✓ Rozhodnutí o vyloučení (datové schránky)</div>
+              <div>✓ Policejní výslechy (přiznání)</div>
+              <div>✓ Účetní doklady a vyúčtování</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      {/* HOSPODAŘENÍ ODDÍLŮ */}
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900 py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+        <h2 className="text-4xl font-black text-center mb-8 text-white">
+          📊 Hospodaření oddílů
+        </h2>
+        <p className="text-center text-lg mb-10 text-slate-200">
+          Finanční situace jednotlivých oddílů podle dokumentu "TJ ODDÍLY 2021-2023 - výsledek hospodaření"
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* Oddíl stolního tenisu */}
+          <a
+            href="/akteri/marek-vanis"
+            className="bg-white/10 backdrop-blur rounded-2xl p-6 hover:bg-white/20 transition transform hover:scale-105"
+          >
+            <div className="text-4xl mb-3 text-center">🏓</div>
+            <h3 className="text-xl font-bold mb-3 text-center">Stolní tenis</h3>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between p-2 bg-red-500/30 rounded">
+                <span>Celková škoda:</span>
+                <span className="font-bold">{(653659).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-orange-500/30 rounded">
+                <span>Oddílové přísp.:</span>
+                <span className="font-bold">{(518400).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-yellow-500/30 rounded">
+                <span>Členské přísp.:</span>
+                <span className="font-bold">{(48000).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-yellow-500/30 rounded">
+                <span>Energie:</span>
+                <span className="font-bold">{(43466).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-blue-500/30 rounded">
+                <span>Pokladna 2020:</span>
+                <span className="font-bold">{(43793).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-white/20 text-xs text-slate-300">
+              <div>Odpovědní:</div>
+              <div className="font-semibold">→ Marek Vaniš (předseda)</div>
+              <div className="font-semibold">→ Jaromír Pivoňka (člen)</div>
+            </div>
+          </a>
+
+          {/* Lyžařský oddíl */}
+          <a
+            href="/akteri/gustav-vlach"
+            className="bg-white/10 backdrop-blur rounded-2xl p-6 hover:bg-white/20 transition transform hover:scale-105"
+          >
+            <div className="text-4xl mb-3 text-center">⛷️</div>
+            <h3 className="text-xl font-bold mb-3 text-center">Lyžařský oddíl</h3>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between p-2 bg-red-500/30 rounded">
+                <span>Celková škoda:</span>
+                <span className="font-bold">{(1041378).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-orange-500/30 rounded">
+                <span>Oddílové přísp.:</span>
+                <span className="font-bold">{(379200).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-yellow-500/30 rounded">
+                <span>Členské přísp.:</span>
+                <span className="font-bold">{(63200).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-yellow-500/30 rounded">
+                <span>Energie (TJ zaplatila):</span>
+                <span className="font-bold">{(256455).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-blue-500/30 rounded">
+                <span>Pokladna 2020:</span>
+                <span className="font-bold">{(132523).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-white/20 text-xs text-slate-300">
+              <div>Odpovědný:</div>
+              <div className="font-semibold">→ Gustav Vlach (předseda)</div>
+            </div>
+          </a>
+
+          {/* Oddíl karate */}
+          <a
+            href="/akteri/martin-kulik"
+            className="bg-white/10 backdrop-blur rounded-2xl p-6 hover:bg-white/20 transition transform hover:scale-105"
+          >
+            <div className="text-4xl mb-3 text-center">🥋</div>
+            <h3 className="text-xl font-bold mb-3 text-center">Karate</h3>
+            <div className="space-y-2 text-sm">
+              <div className="flex justify-between p-2 bg-red-500/30 rounded">
+                <span>Celková škoda:</span>
+                <span className="font-bold">{(350598).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-orange-500/30 rounded">
+                <span>Oddílové přísp.:</span>
+                <span className="font-bold">{(316800).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-yellow-500/30 rounded">
+                <span>Členské přísp.:</span>
+                <span className="font-bold">{(32000).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-green-500/30 rounded">
+                <span>Energie:</span>
+                <span className="font-bold">0 Kč</span>
+              </div>
+              <div className="flex justify-between p-2 bg-blue-500/30 rounded">
+                <span>Pokladna 2020:</span>
+                <span className="font-bold">{(1798).toLocaleString('cs-CZ')} Kč</span>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-white/20 text-xs text-slate-300">
+              <div>Poznámka:</div>
+              <div className="text-xs">Předsedou byl Jiří Kulík, ne Martin Kulík</div>
+            </div>
+          </a>
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href="/cisla"
+            className="inline-block px-8 py-3 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-100 transition transform hover:scale-105 shadow-lg"
+          >
+            💰 Zobrazit detailní finanční rozpis →
+          </a>
+        </div>
+        </div>
+      </div>
 
       {/* KAUZA NA JEDEN POHLED - Infografika */}
-      <div className="bg-gradient-to-br from-red-500 to-red-700 rounded-3xl shadow-2xl p-12 text-white mb-20">
-        <h2 className="text-4xl font-black text-center mb-12">
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700 py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+        <h2 className="text-4xl font-black text-center mb-12 text-white">
           ⚠️ Jádro problému
         </h2>
         <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -333,9 +604,9 @@ export default function Home() {
             <div className="text-red-200 text-sm">předáno za 3+ roky</div>
           </div>
           <div>
-            <div className="text-6xl font-black mb-2">500k</div>
-            <div className="text-xl font-bold mb-1">vybráno, neodvedeno</div>
-            <div className="text-red-200 text-sm">členské příspěvky (Kč)</div>
+            <div className="text-6xl font-black mb-2">{(1214400).toLocaleString('cs-CZ')}</div>
+            <div className="text-xl font-bold mb-1">zapřených příspěvků</div>
+            <div className="text-red-200 text-sm">vybírali, ale neodvedli (Kč)</div>
           </div>
           <div>
             <div className="text-6xl font-black mb-2">39</div>
@@ -348,10 +619,12 @@ export default function Home() {
             = Systematické porušování povinností + Žaloba mimo lhůtu
           </p>
         </div>
+        </div>
       </div>
 
       {/* PROSTÁ FAKTA */}
-      <div className="bg-white rounded-3xl shadow-xl p-10 border-2 border-slate-200 mb-20">
+      <div className="snap-center h-screen flex items-center justify-center bg-white py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
         <h2 className="text-3xl font-black text-center mb-10 text-slate-900">
           Prostá fakta (bez interpretací)
         </h2>
@@ -371,14 +644,14 @@ export default function Home() {
             title="Co se nestalo"
             facts={[
               "Seznamy NIKDY nebyly předány (3+ roky)",
-              "Příspěvky vybírány, ale NEODVEDENY (500k Kč)",
-              "Energie NEPLACENY (560k Kč za 4 roky)",
+              `Oddílové příspěvky vybírány, ale NEODVEDENY (${(1214400).toLocaleString('cs-CZ')} Kč)`,
+              `Energie NEPLACENY (${(299921).toLocaleString('cs-CZ')} Kč), TJ musela platit`,
             ]}
             color="red"
           />
         </div>
+        </div>
       </div>
     </div>
-  </div>
   );
 }
