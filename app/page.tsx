@@ -297,6 +297,55 @@ export default function Home() {
         </div>
       </div>
 
+      {/* KLÍČOVÍ AKTÉŘI - Syryčanský, Vaniš */}
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-16">
+        <div className="container mx-auto px-8 max-w-7xl">
+          <h2 className="text-4xl font-black text-center mb-12 text-white">
+            🎯 Klíčoví aktéři kauzy
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-6xl mb-4 text-center">🏛️</div>
+              <h3 className="text-2xl font-bold mb-3 text-center text-white">Tomáš Syryčanský</h3>
+              <div className="text-sm text-white/80 mb-4">Sportovní manažer SPORT Krupka s.r.o.</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Koordinoval pokus o převrat</div>
+                <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky na Pinčesárně</div>
+                <div className="p-2 bg-red-500/40 rounded">Měl být "zvolen" jako předseda</div>
+              </div>
+            </a>
+
+            <a href="/akteri/marek-vanis" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-6xl mb-4 text-center">🏓</div>
+              <h3 className="text-2xl font-bold mb-3 text-center text-white">Marek Vaniš</h3>
+              <div className="text-sm text-white/80 mb-4">Vyloučený člen - předseda ST</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Škoda: 653.659 Kč</div>
+                <div className="p-2 bg-red-500/40 rounded">Vybíral, ale neodváděl</div>
+                <div className="p-2 bg-red-500/40 rounded">Vyloučen 28.11.2023</div>
+              </div>
+            </a>
+
+            <a href="/akteri/miroslav-brozek" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400">
+              <div className="text-6xl mb-4 text-center">✅</div>
+              <h3 className="text-2xl font-bold mb-3 text-center text-white">Miroslav Brožek</h3>
+              <div className="text-sm text-white/80 mb-4">Legitimní předseda TJ Krupka</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-green-500/40 rounded">Zvolen 24.8.2021 na 5 let</div>
+                <div className="p-2 bg-green-500/40 rounded">Jednal v souladu se zákonem</div>
+                <div className="p-2 bg-green-500/40 rounded">Potvrzeno soudem</div>
+              </div>
+            </a>
+          </div>
+
+          <div className="mt-10 text-center">
+            <a href="/akteri" className="inline-block px-8 py-3 bg-white text-red-700 font-bold rounded-xl hover:bg-slate-100 transition transform hover:scale-105 shadow-lg">
+              👥 Zobrazit všechny aktéry →
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* QUICK ACTIONS - vizuální CTA */}
       <div className="snap-center h-screen flex items-center justify-center py-16">
         <div className="container mx-auto px-8 max-w-7xl">
