@@ -4,7 +4,7 @@ export default function MarekVanisPage() {
     name: 'Marek Vaniš',
     role: 'Údajný předseda oddílu stolního tenisu',
     category: 'Vyloučení členové',
-    status: 'negative',
+    status: 'negative' as const,
     summary: 'Nikdy nedoložil legitimnost své funkce. Nedodal seznamy členů. Vybíral příspěvky, ale neodváděl je.',
     keyActions: [
       'Nedodal seznamy členů (3+ roky)',

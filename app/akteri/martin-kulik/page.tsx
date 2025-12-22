@@ -40,19 +40,19 @@ export default function MartinKulikPage() {
         icon: '❓',
         title: 'Sporná legitimita funkce',
         description: 'Martin Kulík se označoval za předsedu oddílu karate, avšak podle oficiálního zápisu byl předsedou oddílu Jiří Kulík. Legitimita funkce Martina Kulíka nebyla prokázána.',
-        severity: 'critical',
+        severity: 'critical' as const,
       },
       {
         icon: '📋',
         title: 'Nedodané seznamy členů',
         description: 'Přes opakované výzvy nikdy nedodal aktualizované seznamy členů, což znemožnilo kontrolu hospodaření oddílu a ověření členství.',
-        severity: 'high',
+        severity: 'high' as const,
       },
       {
         icon: '💰',
         title: 'Vysoké oddílové příspěvky',
         description: 'Oddíl karate měl nejvyšší roční příspěvek na člena (3.600 Kč/rok), celkem zapřel příspěvky ve výši 316.800 Kč.',
-        severity: 'high',
+        severity: 'high' as const,
       },
     ],
     relatedLinks: [

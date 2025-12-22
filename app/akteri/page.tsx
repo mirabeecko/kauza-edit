@@ -5,7 +5,7 @@ export default function AkteriPage() {
       name: 'Miroslav Brožek',
       role: 'Předseda spolku TJ Krupka',
       category: 'Představitel spolku',
-      status: 'positive',
+      status: 'positive' as const,
       summary: 'Legitimně zvolený předseda (24.8.2021) na 5 let. Snaha o nápravu, transparentnost a dodržování zákonů.',
       keyActions: [
         'Svolal shromáždění delegátů 24.8.2021',
@@ -21,7 +21,7 @@ export default function AkteriPage() {
       name: 'Marek Vaniš',
       role: 'Údajný předseda oddílu stolního tenisu',
       category: 'Vyloučení členové',
-      status: 'negative',
+      status: 'negative' as const,
       summary: 'Celková škoda oddílu stolního tenisu: 653.659 Kč. Nedodal seznamy členů, vybíral příspěvky ale neodváděl je.',
       keyActions: [
         'Nedodal seznamy členů (3+ roky)',
@@ -40,7 +40,7 @@ export default function AkteriPage() {
       name: 'Jaromír Pivoňka',
       role: 'Člen/funkcionář oddílu stolního tenisu',
       category: 'Vyloučení členové',
-      status: 'negative',
+      status: 'negative' as const,
       summary: 'Spolupracovník Vaniše. Spolupodílel se na škodě oddílu stolního tenisu (653.659 Kč).',
       keyActions: [
         'Spolupráce s Vanišem na porušování povinností',
@@ -56,7 +56,7 @@ export default function AkteriPage() {
       name: 'Gustav Vlach',
       role: 'Předseda lyžařského oddílu',
       category: 'Zánik členství',
-      status: 'negative',
+      status: 'negative' as const,
       summary: 'Celková škoda lyžařského oddílu: 1.041.378 Kč. Přiznal hotovost 132.523 Kč v pokladně, kterou nepředal.',
       keyActions: [
         'Nedodal seznamy členů',
@@ -73,7 +73,7 @@ export default function AkteriPage() {
       name: 'Martin Kulík',
       role: 'Údajný předseda oddílu karate',
       category: 'Zánik členství',
-      status: 'negative',
+      status: 'negative' as const,
       summary: 'Celková škoda oddílu karate: 350.598 Kč. Nikdy nebyl předsedou oddílu karate (dle zápisu byl předsedou Jiří Kulík).',
       keyActions: [
         'Nedodal seznamy členů',
@@ -89,7 +89,7 @@ export default function AkteriPage() {
       name: 'Jitka Illéšová',
       role: 'Účetní spolku',
       category: 'Další aktéři',
-      status: 'negative',
+      status: 'negative' as const,
       summary: 'Obdržela 30.000 Kč za účetnictví 2021. Odmítla uzavřít rok 2021, předala dokumenty městu.',
       keyActions: [
         'Obdržela 30.000 Kč (6 × 5.000 Kč)',

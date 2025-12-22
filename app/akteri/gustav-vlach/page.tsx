@@ -47,19 +47,19 @@ export default function GustavVlachPage() {
         icon: '🚨',
         title: 'Přiznaná hotovost',
         description: 'Gustav Vlach v komunikaci se spolkem PŘIZNAL existenci hotovosti 132.523 Kč v pokladně oddílu k 31.12.2020. Tuto částku však nikdy nepředal.',
-        severity: 'critical',
+        severity: 'critical' as const,
       },
       {
         icon: '⚡',
         title: 'Nejvyšší dluh za energie',
         description: 'Lyžařský oddíl má ze všech oddílů nejvyšší dluh za energie: 256.455 Kč. Spolek musel tyto náklady pokrýt ze svého rozpočtu.',
-        severity: 'high',
+        severity: 'high' as const,
       },
       {
         icon: '📋',
         title: 'Nedodané seznamy členů',
         description: 'Přes opakované výzvy nikdy nedodal aktualizované seznamy členů, což znemožnilo kontrolu hospodaření oddílu.',
-        severity: 'high',
+        severity: 'high' as const,
       },
     ],
     relatedLinks: [
