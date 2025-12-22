@@ -159,7 +159,7 @@ export default function CislaPage() {
         'Opakované výzvy k úhradě nebo předání seznamů (září-prosinec 2021)',
         'Předžalobní výzvy (listopad 2023)',
         'Nevydání seznamů členů za 3+ roky',
-        'Judikatura NS ČR 5 Tdo 663/2015 - identický případ zpronevěry',
+        'Judikatura NS ČR 7 Tdo 102/2019, 8 Tdo 1032/2016, 11 Tdo 1492/2015',
       ],
     },
     {
@@ -403,20 +403,109 @@ export default function CislaPage() {
           </div>
         </div>
 
-        <div className="p-6 bg-amber-50 rounded-lg border border-amber-200">
-          <h3 className="text-lg font-bold text-amber-900 mb-4">
-            ⚖️ Právní kontext
+        <div className="p-6 bg-red-100 rounded-lg border-2 border-red-400 shadow-lg">
+          <h3 className="text-2xl font-bold text-red-900 mb-4 flex items-center gap-2">
+            <span>🔥</span>
+            <span>Klíčový fakt</span>
           </h3>
-          <div className="text-sm text-amber-900 space-y-2">
-            <p>
-              <strong>§ 206 TZ - Zpronevěra:</strong> Vybírání příspěvků bez odvodu
-            </p>
-            <p>
-              <strong>§ 2991 NOZ - Neoprávněné obohacení:</strong> Používání prostor bez úhrady
-            </p>
-            <p>
-              <strong>NS ČR 5 Tdo 663/2015:</strong> Judikatura k identickému případu
-            </p>
+          <p className="text-lg text-red-900 leading-relaxed font-semibold">
+            Zatímco vybrané příspěvky zůstávaly mimo kontrolu jednoty, TJ Krupka z.s. ze svého rozpočtu
+            <strong> hradila veškeré provozní náklady těchto oddílů</strong>, zejména energie (elektřinu, vodu, plyn),
+            které tyto oddíly svou činností vygenerovaly, ale neuhradily.
+          </p>
+          <div className="mt-4 p-4 bg-white/60 rounded-lg">
+            <div className="text-sm font-bold text-red-800 mb-2">Celková výše zaplacených energií:</div>
+            <div className="text-3xl font-black text-red-900">299.921 Kč</div>
+            <div className="text-sm text-red-800 mt-2">
+              TJ musela platit energie za oddíly, které jí vůbec neodváděly příspěvky
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Právní rámec a judikatura NS ČR */}
+      <div className="mb-12">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">
+          ⚖️ Právní rámec a judikatura Nejvyššího soudu ČR
+        </h2>
+        <p className="text-lg text-slate-700 mb-6">
+          Jednání spočívající v ponechání si svěřených příspěvků naplňuje znaky trestného činu <strong>zpronevěry podle § 206 trestního zákoníku</strong>.
+          Judikatura v těchto případech hovoří jasně:
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {/* Judikát 1 */}
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-300 shadow-lg">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-4xl">⚖️</span>
+              <div>
+                <div className="text-xs font-bold text-blue-600">Nejvyšší soud ČR</div>
+                <div className="text-lg font-black text-slate-900">sp. zn. 7 Tdo 102/2019</div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Majetek jednoty</h4>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                <strong>Příspěvky se stávají majetkem TJ Krupka z.s. v momentě, kdy je člen předá pověřené osobě</strong> (pokladníkovi/vedoucímu oddílu).
+              </p>
+            </div>
+            <div className="p-3 bg-white/70 rounded-lg text-xs text-slate-600">
+              Od okamžiku předání jsou příspěvky majetkem jednoty, nikoliv osoby, která je přijala.
+            </div>
+          </div>
+
+          {/* Judikát 2 */}
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 border-2 border-orange-300 shadow-lg">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-4xl">⚖️</span>
+              <div>
+                <div className="text-xs font-bold text-orange-600">Nejvyšší soud ČR</div>
+                <div className="text-lg font-black text-slate-900">sp. zn. 8 Tdo 1032/2016</div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Přisvojení věci</h4>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                <strong>K trestnému činu dochází, jakmile pachatel znemožní vlastníkovi (jednotě) s penězi disponovat</strong> (např. tím, že je neodevzdá nebo nezapíše do účetnictví).
+              </p>
+            </div>
+            <div className="p-3 bg-white/70 rounded-lg text-xs text-slate-600">
+              Nemusí dojít k úplnému "spotřebování" peněz - stačí znemožnění dispozice.
+            </div>
+          </div>
+
+          {/* Judikát 3 */}
+          <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-2 border-red-300 shadow-lg">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-4xl">⚖️</span>
+              <div>
+                <div className="text-xs font-bold text-red-600">Nejvyšší soud ČR</div>
+                <div className="text-lg font-black text-slate-900">sp. zn. 11 Tdo 1492/2015</div>
+              </div>
+            </div>
+            <div className="mb-4">
+              <h4 className="font-bold text-slate-900 mb-2">Odpovědnost funkcionářů</h4>
+              <p className="text-sm text-slate-700 leading-relaxed">
+                <strong>Funkcionáři jsou povinni svěřené prostředky vyúčtovat a odevzdat.</strong> Jakékoli svévolné zadržování je posuzováno jako trestný čin, nikoliv jako soukromý dluh.
+              </p>
+            </div>
+            <div className="p-3 bg-white/70 rounded-lg text-xs text-slate-600">
+              Nejde o dluh - jde o trestný čin. Funkcionář nemůže tvrdit, že "to vrátí později".
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 p-6 bg-slate-50 rounded-xl border-2 border-slate-300">
+          <h4 className="font-bold text-slate-900 mb-3">📋 Další relevantní právní předpisy:</h4>
+          <div className="grid md:grid-cols-2 gap-4 text-sm">
+            <div className="p-3 bg-white rounded-lg">
+              <strong className="text-slate-900">§ 206 TZ - Zpronevěra:</strong>
+              <p className="text-slate-700 mt-1">Vybírání příspěvků bez odvodu spolku</p>
+            </div>
+            <div className="p-3 bg-white rounded-lg">
+              <strong className="text-slate-900">§ 2991 NOZ - Neoprávněné obohacení:</strong>
+              <p className="text-slate-700 mt-1">Používání prostor bez úhrady nákladů</p>
+            </div>
           </div>
         </div>
       </div>

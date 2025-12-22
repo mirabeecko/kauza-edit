@@ -20,7 +20,7 @@ export default function PointyPage() {
       whatPromised: 'Oddílové příspěvky patří spolku na jeho provoz (dohoda 24.8.2021)',
       whatHappened: 'Vaniš vybíral 2.400 Kč/rok/člen (60 členů × 3 roky = 518.400 Kč), Vlach 1.200 Kč/rok/člen (79 členů × 4 roky = 379.200 Kč), Kulík 3.600 Kč/rok/člen (40 členů)',
       whatFollowed: 'Spolek nedostal peníze, které členové zaplatili. Celková škoda všech oddílů: 2.046.000 Kč (dle PDF "TJ ODDÍLY 2021-2023").',
-      keyPoint: 'Vybírání příspěvků bez předání spolku je zpronevěra (§ 206 TZ). Judikatura NS ČR 5 Tdo 663/2015 potvrzuje identický případ.',
+      keyPoint: 'Vybírání příspěvků bez předání spolku je zpronevěra (§ 206 TZ). Příspěvky se stávají majetkem jednoty okamžikem předání (NS ČR 7 Tdo 102/2019).',
       relatedNodes: 10,
       evidenceCount: 15,
     },
