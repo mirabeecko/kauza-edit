@@ -186,7 +186,7 @@ export default function MiroslavBrozekPage() {
       <div className="container mx-auto px-8 py-12 max-w-5xl">
         {/* Shrnutí */}
         <section className="mb-12">
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-green-200">
+          <div className="bg-white rounded-xl shadow-lg p-8 shadow">
             <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
               <span>📋</span>
               <span>Shrnutí</span>
@@ -206,7 +206,7 @@ export default function MiroslavBrozekPage() {
             {actor.responsibilities.map((resp, index) => (
               <div
                 key={index}
-                className="p-6 bg-white rounded-xl border-2 border-green-200 transition hover:shadow-lg"
+                className="p-6 bg-white rounded-xl shadow transition hover:shadow-lg"
               >
                 <div className="flex items-start gap-3 mb-3">
                   <span className="text-3xl">{resp.icon}</span>
@@ -225,14 +225,14 @@ export default function MiroslavBrozekPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             ✅ Klíčové kroky a aktivity
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200">
+          <div className="bg-white rounded-xl shadow-lg p-8 shadow">
             <div className="space-y-4">
               {actor.keyActions.map((action, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 p-4 rounded-lg border-2 bg-green-50 border-green-300"
+                  className="flex items-start gap-4 p-4 rounded-lg shadow-sm bg-green-50 border-green-300"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-600 border-2 border-green-700 flex items-center justify-center font-bold text-sm text-white">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-600 shadow flex items-center justify-center font-bold text-sm text-white">
                     {action.icon}
                   </div>
                   <div className="flex-1">
@@ -273,7 +273,7 @@ export default function MiroslavBrozekPage() {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-xl border-2 ${statusColors[effort.status]} transition hover:shadow-lg`}
+                  className={`p-6 rounded-xl shadow ${statusColors[effort.status]} transition hover:shadow-lg`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <h3 className="text-xl font-bold text-slate-900">{effort.title}</h3>
@@ -299,7 +299,7 @@ export default function MiroslavBrozekPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             🚧 Výzvy a překážky
           </h2>
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl border-2 border-red-300 p-8 shadow-lg">
+          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl shadow p-8 shadow-lg">
             <p className="text-sm text-slate-700 leading-relaxed mb-6">
               Přestože Miroslav Brožek byl legitimně zvolen a snažil se o nápravu situace,
               čelil mnoha překážkám:
@@ -331,7 +331,7 @@ export default function MiroslavBrozekPage() {
             ⚖️ Srovnání přístupu
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-green-50 rounded-xl border-2 border-green-400">
+            <div className="p-6 bg-green-50 rounded-xl shadow">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">✅</span>
                 <h3 className="text-xl font-bold text-green-900">Miroslav Brožek</h3>
@@ -360,7 +360,7 @@ export default function MiroslavBrozekPage() {
               </ul>
             </div>
 
-            <div className="p-6 bg-red-50 rounded-xl border-2 border-red-400">
+            <div className="p-6 bg-red-50 rounded-xl shadow">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">❌</span>
                 <h3 className="text-xl font-bold text-red-900">Vaniš, Vlach, Kulík</h3>
@@ -401,7 +401,7 @@ export default function MiroslavBrozekPage() {
               <a
                 key={index}
                 href={link.href}
-                className="block p-5 bg-white rounded-xl border-2 border-slate-200 hover:border-blue-500 hover:shadow-lg transition"
+                className="block p-5 bg-white rounded-xl shadow hover:border-blue-500 hover:shadow-lg transition"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{link.icon}</span>

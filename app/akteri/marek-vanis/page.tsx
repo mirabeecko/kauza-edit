@@ -104,9 +104,93 @@ export default function MarekVanisPage() {
       </div>
 
       <div className="container mx-auto px-8 py-12 max-w-5xl">
+        {/* Porušení povinností a podvodné jednání */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+            ⚠️ Porušení povinností a podvodné jednání
+          </h2>
+          <div className="bg-slate-50 rounded-xl p-8 shadow-md">
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-2xl flex-shrink-0">📋</span>
+                <div>
+                  <h3 className="font-bold text-slate-900 mb-2">Odmítl předat seznam členů</h3>
+                  <p className="text-sm text-slate-700">
+                    Marek Vaniš opakovaně <strong>odmítl předat seznam členů oddílu stolního tenisu</strong>.
+                    Tento seznam je klíčový pro kontrolu finančního hospodaření a ověření odvodu členských
+                    příspěvků. Bez něj nelze zjistit, kolik členů oddíl skutečně měl a kolik příspěvků mělo
+                    být odvedeno do spolkové pokladny.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-2xl flex-shrink-0">💰</span>
+                <div>
+                  <h3 className="font-bold text-slate-900 mb-2">Odmítl zaplatit prokazatelně vzniklé náklady oddílu</h3>
+                  <p className="text-sm text-slate-700">
+                    Vaniš <strong>odmítl zaplatit náklady oddílu, které prokazatelně vznikly činností jeho oddílu</strong>.
+                    Jedná se zejména o energie (elektřina a plyn) za používání sportovních prostor, které jeho
+                    oddíl využíval, ale náklady odmítl uhradit. Celková výše nezaplacených energií činí 43.466 Kč.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-2xl flex-shrink-0">🧾</span>
+                <div>
+                  <h3 className="font-bold text-slate-900 mb-2">Žádal proplácení dokladů bez skutečné platby</h3>
+                  <p className="text-sm text-slate-700">
+                    Vaniš <strong>požadoval proplacení dokladů, u kterých bylo zjištěno, že platby ve skutečnosti neproběhly</strong>.
+                    Tímto způsobem se pokoušel získat finanční prostředky ze spolkové pokladny za výdaje,
+                    které ve skutečnosti neuskutečnil. Šlo o podvodný pokus o získání peněz.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-2xl flex-shrink-0">🎯</span>
+                <div>
+                  <h3 className="font-bold text-slate-900 mb-2">V rámci dotací chtěl proplácet nesprávné náklady</h3>
+                  <p className="text-sm text-slate-700">
+                    V rámci dotačního financování <strong>požadoval proplácení nákladů, které neodpovídaly
+                    podmínkám dotace nebo byly nesprávné</strong>. Porušoval tak pravidla pro čerpání
+                    dotačních prostředků a vystavoval spolek riziku vrácení dotace včetně sankcí.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-2xl flex-shrink-0">📝</span>
+                <div>
+                  <h3 className="font-bold text-slate-900 mb-2">Sám vytvářel a proplácet požadoval falešné doklady</h3>
+                  <p className="text-sm text-slate-700">
+                    Marek Vaniš <strong>sám vytvářel doklady, které následně požadoval proplatit</strong>.
+                    Jednalo se o falšování dokumentů za účelem získání finančních prostředků ze spolkové
+                    pokladny. Toto jednání naplňuje znaky trestného činu podvodu a zneužití pravomoci.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-4 bg-white rounded-lg shadow-sm">
+                <span className="text-2xl flex-shrink-0">👩</span>
+                <div>
+                  <h3 className="font-bold text-slate-900 mb-2">Požadoval dohody pro svou manželku za více než 70.000 Kč</h3>
+                  <p className="text-sm text-slate-700">
+                    Vaniš <strong>na svou manželku Denisu Vanišovou žádal proplatit dohody o provedení práce
+                    za více než 70.000 Kč</strong>. Šlo o další pokus o neoprávněné získání finančních prostředků
+                    ze spolkové pokladny prostřednictvím fingovaných pracovních dohod pro osobu blízkou,
+                    což představuje konflikt zájmů a zneužití funkce.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Shrnutí */}
         <section className="mb-12">
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-300">
+          <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
               <span>📋</span>
               <span>Shrnutí</span>
@@ -125,20 +209,20 @@ export default function MarekVanisPage() {
           <div className="space-y-4">
             {actor.breakdown.map((item, index) => {
               const severityColors = {
-                critical: 'border-slate-400 bg-slate-50',
-                high: 'border-slate-300 bg-gray-50',
-                medium: 'border-slate-200 bg-white',
+                critical: 'border-red-300 bg-red-50',
+                high: 'border-amber-300 bg-amber-50',
+                medium: 'border-slate-300 bg-slate-50',
               };
               const severityLabels = {
-                critical: '⬤ Kritické',
-                high: '⬤ Vysoké',
-                medium: '⬤ Střední',
+                critical: '🔴 Kritické',
+                high: '🟠 Vysoké',
+                medium: '⚪ Střední',
               };
 
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-xl border-2 ${severityColors[item.severity]} transition hover:shadow-lg`}
+                  className={`p-6 rounded-xl ${severityColors[item.severity]} transition hover:shadow-lg shadow`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
@@ -160,7 +244,13 @@ export default function MarekVanisPage() {
                   </div>
                   <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-slate-600 to-slate-700 transition-all duration-500"
+                      className={`h-full transition-all duration-500 ${
+                        item.severity === 'critical'
+                          ? 'bg-gradient-to-r from-red-500 to-red-600'
+                          : item.severity === 'high'
+                          ? 'bg-gradient-to-r from-amber-500 to-amber-600'
+                          : 'bg-gradient-to-r from-slate-500 to-slate-600'
+                      }`}
                       style={{ width: `${(item.amount / actor.totalDamage) * 100}%` }}
                     />
                   </div>
@@ -185,7 +275,7 @@ export default function MarekVanisPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             ⚖️ Předžalobní výzva
           </h2>
-          <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl border border-slate-300 p-8 shadow-lg">
+          <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-8 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-4xl">📨</span>
               <div>
@@ -198,7 +288,7 @@ export default function MarekVanisPage() {
               <h3 className="text-lg font-bold text-slate-900 mb-4">Požadované plnění</h3>
               <div className="space-y-3">
                 {actor.predzalobniVyzva.items.map((item, index) => (
-                  <div key={index} className="flex items-center justify-between p-4 bg-slate-50 rounded-lg border border-slate-200">
+                  <div key={index} className="flex items-center justify-between p-4 bg-slate-50 rounded-lg shadow-sm">
                     <div>
                       <div className="font-bold text-slate-900">{item.label}</div>
                       <div className="text-sm text-slate-600">{item.detail}</div>
@@ -210,7 +300,7 @@ export default function MarekVanisPage() {
                 ))}
               </div>
 
-              <div className="mt-4 pt-4 border-t-2 border-slate-300 flex items-center justify-between">
+              <div className="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between">
                 <span className="text-lg font-bold text-slate-900">Celkem požadováno</span>
                 <span className="text-3xl font-black text-slate-900">
                   {actor.predzalobniVyzva.totalDemanded.toLocaleString('cs-CZ')} Kč
@@ -229,7 +319,7 @@ export default function MarekVanisPage() {
             </div>
 
             {actor.predzalobniVyzva.note && (
-              <div className="mt-6 p-4 bg-slate-50 border border-slate-200 rounded-lg">
+              <div className="mt-6 p-4 bg-slate-50 rounded-lg shadow-sm">
                 <div className="flex items-start gap-2">
                   <span className="text-lg">ℹ️</span>
                   <p className="text-sm text-blue-900">
@@ -241,107 +331,23 @@ export default function MarekVanisPage() {
           </div>
         </section>
 
-        {/* Další porušení povinností a podvodné jednání */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            ⚠️ Další porušení povinností a podvodné jednání
-          </h2>
-          <div className="bg-slate-50 rounded-xl border-2 border-slate-300 p-8">
-            <div className="space-y-4">
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                <span className="text-2xl flex-shrink-0">📋</span>
-                <div>
-                  <h3 className="font-bold text-slate-900 mb-2">Odmítl předat seznam členů</h3>
-                  <p className="text-sm text-slate-700">
-                    Marek Vaniš opakovaně <strong>odmítl předat seznam členů oddílu stolního tenisu</strong>.
-                    Tento seznam je klíčový pro kontrolu finančního hospodaření a ověření odvodu členských
-                    příspěvků. Bez něj nelze zjistit, kolik členů oddíl skutečně měl a kolik příspěvků mělo
-                    být odvedeno do spolkové pokladny.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                <span className="text-2xl flex-shrink-0">💰</span>
-                <div>
-                  <h3 className="font-bold text-slate-900 mb-2">Odmítl zaplatit prokazatelně vzniklé náklady oddílu</h3>
-                  <p className="text-sm text-slate-700">
-                    Vaniš <strong>odmítl zaplatit náklady oddílu, které prokazatelně vznikly činností jeho oddílu</strong>.
-                    Jedná se zejména o energie (elektřina a plyn) za používání sportovních prostor, které jeho
-                    oddíl využíval, ale náklady odmítl uhradit. Celková výše nezaplacených energií činí 43.466 Kč.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                <span className="text-2xl flex-shrink-0">🧾</span>
-                <div>
-                  <h3 className="font-bold text-slate-900 mb-2">Žádal proplácení dokladů bez skutečné platby</h3>
-                  <p className="text-sm text-slate-700">
-                    Vaniš <strong>požadoval proplacení dokladů, u kterých bylo zjištěno, že platby ve skutečnosti neproběhly</strong>.
-                    Tímto způsobem se pokoušel získat finanční prostředky ze spolkové pokladny za výdaje,
-                    které ve skutečnosti neuskutečnil. Šlo o podvodný pokus o získání peněz.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                <span className="text-2xl flex-shrink-0">🎯</span>
-                <div>
-                  <h3 className="font-bold text-slate-900 mb-2">V rámci dotací chtěl proplácet nesprávné náklady</h3>
-                  <p className="text-sm text-slate-700">
-                    V rámci dotačního financování <strong>požadoval proplácení nákladů, které neodpovídaly
-                    podmínkám dotace nebo byly nesprávné</strong>. Porušoval tak pravidla pro čerpání
-                    dotačních prostředků a vystavoval spolek riziku vrácení dotace včetně sankcí.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                <span className="text-2xl flex-shrink-0">📝</span>
-                <div>
-                  <h3 className="font-bold text-slate-900 mb-2">Sám vytvářel a proplácet požadoval falešné doklady</h3>
-                  <p className="text-sm text-slate-700">
-                    Marek Vaniš <strong>sám vytvářel doklady, které následně požadoval proplatit</strong>.
-                    Jednalo se o falšování dokumentů za účelem získání finančních prostředků ze spolkové
-                    pokladny. Toto jednání naplňuje znaky trestného činu podvodu a zneužití pravomoci.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                <span className="text-2xl flex-shrink-0">👩</span>
-                <div>
-                  <h3 className="font-bold text-slate-900 mb-2">Požadoval dohody pro svou manželku za více než 70.000 Kč</h3>
-                  <p className="text-sm text-slate-700">
-                    Vaniš <strong>na svou manželku Denisu Vanišovou žádal proplatit dohody o provedení práce
-                    za více než 70.000 Kč</strong>. Šlo o další pokus o neoprávněné získání finančních prostředků
-                    ze spolkové pokladny prostřednictvím fingovaných pracovních dohod pro osobu blízkou,
-                    což představuje konflikt zájmů a zneužití funkce.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Klíčové kroky */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             📊 Časová osa klíčových kroků
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200">
+          <div className="bg-white rounded-xl shadow-lg p-8">
             <div className="space-y-4">
               {actor.keyActions.map((action, index) => (
                 <div
                   key={index}
-                  className={`flex items-start gap-4 p-4 rounded-lg border-2 ${
+                  className={`flex items-start gap-4 p-4 rounded-lg shadow-sm ${
                     action.type === 'consequence'
-                      ? 'bg-slate-50 border-slate-300'
-                      : 'bg-slate-50 border-slate-300'
+                      ? 'bg-slate-50'
+                      : 'bg-slate-50'
                   }`}
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center font-bold text-sm text-slate-600">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center font-bold text-sm text-slate-600">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -367,7 +373,7 @@ export default function MarekVanisPage() {
             📄 Dokumenty a důkazy
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="p-6 bg-slate-50 rounded-xl border-2 border-slate-300 hover:shadow-lg transition">
+            <div className="p-6 bg-slate-50 rounded-xl shadow-md hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">📨</span>
                 <div>
@@ -387,7 +393,7 @@ export default function MarekVanisPage() {
               </div>
             </div>
 
-            <div className="p-6 bg-slate-50 rounded-xl border-2 border-slate-300 hover:shadow-lg transition">
+            <div className="p-6 bg-slate-50 rounded-xl shadow-md hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">⚖️</span>
                 <div>
@@ -407,7 +413,7 @@ export default function MarekVanisPage() {
               </div>
             </div>
 
-            <div className="p-6 bg-slate-50 rounded-xl border-2 border-slate-300 hover:shadow-lg transition">
+            <div className="p-6 bg-slate-50 rounded-xl shadow-md hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">📊</span>
                 <div>
@@ -427,7 +433,7 @@ export default function MarekVanisPage() {
               </div>
             </div>
 
-            <div className="p-6 bg-slate-50 rounded-xl border-2 border-slate-300 hover:shadow-lg transition">
+            <div className="p-6 bg-slate-50 rounded-xl shadow-md hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">📧</span>
                 <div>
@@ -459,7 +465,7 @@ export default function MarekVanisPage() {
               <a
                 key={index}
                 href={link.href}
-                className="block p-5 bg-white rounded-xl border-2 border-slate-200 hover:border-slate-500 hover:shadow-lg transition"
+                className="block p-5 bg-white rounded-xl shadow hover:shadow-lg transition"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{link.icon}</span>
@@ -471,7 +477,7 @@ export default function MarekVanisPage() {
         </section>
 
         {/* Navigace */}
-        <div className="flex items-center justify-between pt-8 border-t-2 border-slate-200">
+        <div className="flex items-center justify-between pt-8 mt-8">
           <a
             href="/akteri"
             className="flex items-center gap-2 px-6 py-3 bg-slate-200 hover:bg-slate-300 rounded-lg font-bold text-slate-900 transition"

@@ -95,7 +95,7 @@ export default function GustavVlachPage() {
             </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur border-2 border-white/30 rounded-2xl p-8 mt-8">
+          <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-8 mt-8">
             <div className="flex items-center justify-between">
               <div>
                 <div className="text-blue-100 text-sm font-medium mb-2">Celková způsobená škoda</div>
@@ -117,7 +117,7 @@ export default function GustavVlachPage() {
       <div className="container mx-auto px-8 py-12 max-w-5xl">
         {/* Shrnutí */}
         <section className="mb-12">
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-blue-200">
+          <div className="bg-white rounded-xl shadow-lg p-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
               <span>📋</span>
               <span>Shrnutí</span>
@@ -144,7 +144,7 @@ export default function GustavVlachPage() {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-xl border-2 ${severityColors[fact.severity]} transition hover:shadow-lg`}
+                  className={`p-6 rounded-xl ${severityColors[fact.severity]} transition hover:shadow-lg shadow`}
                 >
                   <div className="flex items-start gap-4">
                     <span className="text-4xl">{fact.icon}</span>
@@ -182,7 +182,7 @@ export default function GustavVlachPage() {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-xl border-2 ${severityColors[item.severity]} transition hover:shadow-lg`}
+                  className={`p-6 rounded-xl ${severityColors[item.severity]} transition hover:shadow-lg`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
@@ -229,7 +229,7 @@ export default function GustavVlachPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             ⚠️ Další porušení povinností
           </h2>
-          <div className="bg-red-50 rounded-xl border-2 border-red-300 p-8">
+          <div className="bg-red-50 rounded-xl shadow p-8">
             <div className="space-y-4">
               <div className="flex items-start gap-4 p-4 bg-white rounded-lg border border-red-200">
                 <span className="text-2xl flex-shrink-0">🎿</span>
@@ -290,18 +290,18 @@ export default function GustavVlachPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             📊 Časová osa klíčových kroků
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200">
+          <div className="bg-white rounded-xl shadow-lg p-8 shadow">
             <div className="space-y-4">
               {actor.keyActions.map((action, index) => (
                 <div
                   key={index}
-                  className={`flex items-start gap-4 p-4 rounded-lg border-2 ${
+                  className={`flex items-start gap-4 p-4 rounded-lg shadow ${
                     action.type === 'consequence'
                       ? 'bg-blue-50 border-blue-300'
                       : 'bg-red-50 border-red-300'
                   }`}
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center font-bold text-sm text-slate-600">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white shadow flex items-center justify-center font-bold text-sm text-slate-600">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -326,9 +326,9 @@ export default function GustavVlachPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             📊 Srovnání škod oddílů
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200">
+          <div className="bg-white rounded-xl shadow-lg p-8 shadow">
             <div className="space-y-4">
-              <div className="flex items-center justify-between p-4 bg-red-100 border-2 border-red-400 rounded-lg">
+              <div className="flex items-center justify-between p-4 bg-red-100 shadow rounded-lg">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">⛷️</span>
                   <div>
@@ -381,7 +381,7 @@ export default function GustavVlachPage() {
               <a
                 key={index}
                 href={link.href}
-                className="block p-5 bg-white rounded-xl border-2 border-slate-200 hover:border-blue-500 hover:shadow-lg transition"
+                className="block p-5 bg-white rounded-xl shadow hover:border-blue-500 hover:shadow-lg transition"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{link.icon}</span>

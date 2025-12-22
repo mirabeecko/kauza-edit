@@ -111,7 +111,7 @@ export default function JaromirPivonkaPage() {
       <div className="container mx-auto px-8 py-12 max-w-5xl">
         {/* Shrnutí */}
         <section className="mb-12">
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-orange-200">
+          <div className="bg-white rounded-xl shadow-lg p-8 shadow">
             <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
               <span>📋</span>
               <span>Shrnutí</span>
@@ -165,7 +165,7 @@ export default function JaromirPivonkaPage() {
               return (
                 <div
                   key={index}
-                  className={`p-6 rounded-xl border-2 ${severityColors[item.severity]} transition hover:shadow-lg`}
+                  className={`p-6 rounded-xl ${severityColors[item.severity]} transition hover:shadow-lg`}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
@@ -215,7 +215,7 @@ export default function JaromirPivonkaPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             ⚖️ Předžalobní výzva
           </h2>
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border-2 border-amber-300 p-8 shadow-lg">
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl shadow p-8 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-4xl">📨</span>
               <div>
@@ -276,18 +276,18 @@ export default function JaromirPivonkaPage() {
           <h2 className="text-3xl font-bold text-slate-900 mb-6">
             📊 Časová osa klíčových kroků
           </h2>
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200">
+          <div className="bg-white rounded-xl shadow-lg p-8 shadow">
             <div className="space-y-4">
               {actor.keyActions.map((action, index) => (
                 <div
                   key={index}
-                  className={`flex items-start gap-4 p-4 rounded-lg border-2 ${
+                  className={`flex items-start gap-4 p-4 rounded-lg shadow ${
                     action.type === 'consequence'
                       ? 'bg-blue-50 border-blue-300'
                       : 'bg-orange-50 border-orange-300'
                   }`}
                 >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 flex items-center justify-center font-bold text-sm text-slate-600">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-white shadow flex items-center justify-center font-bold text-sm text-slate-600">
                     {index + 1}
                   </div>
                   <div className="flex-1">
@@ -313,7 +313,7 @@ export default function JaromirPivonkaPage() {
             📄 Dokumenty a důkazy
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="p-6 bg-amber-50 rounded-xl border-2 border-amber-300 hover:shadow-lg transition">
+            <div className="p-6 bg-amber-50 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">📨</span>
                 <div>
@@ -333,7 +333,7 @@ export default function JaromirPivonkaPage() {
               </div>
             </div>
 
-            <div className="p-6 bg-blue-50 rounded-xl border-2 border-blue-300 hover:shadow-lg transition">
+            <div className="p-6 bg-blue-50 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">⚖️</span>
                 <div>
@@ -353,7 +353,7 @@ export default function JaromirPivonkaPage() {
               </div>
             </div>
 
-            <div className="p-6 bg-green-50 rounded-xl border-2 border-green-300 hover:shadow-lg transition">
+            <div className="p-6 bg-green-50 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">📊</span>
                 <div>
@@ -373,7 +373,7 @@ export default function JaromirPivonkaPage() {
               </div>
             </div>
 
-            <div className="p-6 bg-purple-50 rounded-xl border-2 border-purple-300 hover:shadow-lg transition">
+            <div className="p-6 bg-purple-50 rounded-xl shadow hover:shadow-lg transition">
               <div className="flex items-start gap-4">
                 <span className="text-4xl">🏛️</span>
                 <div>
@@ -405,7 +405,7 @@ export default function JaromirPivonkaPage() {
               <a
                 key={index}
                 href={link.href}
-                className="block p-5 bg-white rounded-xl border-2 border-slate-200 hover:border-blue-500 hover:shadow-lg transition"
+                className="block p-5 bg-white rounded-xl shadow hover:border-blue-500 hover:shadow-lg transition"
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{link.icon}</span>
