@@ -1,5 +1,156 @@
 import Link from 'next/link';
 
+// KOMPONENTY PRO VIZUALIZACI
+
+interface StatCardProps {
+  value: string;
+  label: string;
+  icon: string;
+  color: 'red' | 'orange' | 'blue' | 'green';
+  trend: string;
+}
+
+function StatCard({ value, label, icon, color }: StatCardProps) {
+  const colors = {
+    red: 'from-red-500 to-red-600 border-red-300',
+    orange: 'from-orange-500 to-orange-600 border-orange-300',
+    blue: 'from-blue-500 to-blue-600 border-blue-300',
+    green: 'from-green-500 to-green-600 border-green-300',
+  };
+
+  return (
+    <div className={`bg-gradient-to-br ${colors[color]} rounded-2xl p-6 text-white shadow-xl border-4 transform hover:scale-105 transition`}>
+      <div className="text-5xl mb-3">{icon}</div>
+      <div className="text-4xl font-black mb-2">{value}</div>
+      <div className="text-lg font-semibold opacity-90">{label}</div>
+    </div>
+  );
+}
+
+interface ProgressBarProps {
+  label: string;
+  value: number;
+  max: number;
+  color: 'red' | 'orange' | 'yellow';
+}
+
+function ProgressBar({ label, value, max, color }: ProgressBarProps) {
+  const percentage = (value / max) * 100;
+  const colors = {
+    red: 'bg-red-500',
+    orange: 'bg-orange-500',
+    yellow: 'bg-yellow-500',
+  };
+
+  return (
+    <div>
+      <div className="flex justify-between mb-2">
+        <span className="font-semibold">{label}</span>
+        <span className="font-bold">{(value / 1000).toFixed(0)}k Kč</span>
+      </div>
+      <div className="w-full bg-slate-200 rounded-full h-6 overflow-hidden">
+        <div
+          className={`${colors[color]} h-full rounded-full transition-all duration-1000 flex items-center justify-end pr-2`}
+          style={{ width: `${percentage}%` }}
+        >
+          <span className="text-xs font-bold text-white">{percentage.toFixed(0)}%</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+interface TimelinePointProps {
+  year: string;
+  label: string;
+  status: 'complete' | 'active';
+  description: string;
+}
+
+function TimelinePoint({ year, label, status, description }: TimelinePointProps) {
+  return (
+    <div className="flex items-start space-x-4">
+      <div className="flex-shrink-0">
+        <div className={`w-16 h-16 rounded-full flex items-center justify-center font-black text-lg ${
+          status === 'active'
+            ? 'bg-blue-500 text-white animate-pulse'
+            : 'bg-green-500 text-white'
+        }`}>
+          {status === 'active' ? '▶' : '✓'}
+        </div>
+      </div>
+      <div className="flex-1">
+        <div className="font-bold text-lg">{year}</div>
+        <div className="text-xl font-black text-slate-900">{label}</div>
+        <div className="text-sm text-slate-600">{description}</div>
+      </div>
+    </div>
+  );
+}
+
+interface ActionCardProps {
+  href: string;
+  icon: string;
+  title: string;
+  description: string;
+  color: 'blue' | 'purple' | 'orange';
+  time: string;
+}
+
+function ActionCard({ href, icon, title, description, color, time }: ActionCardProps) {
+  const colors = {
+    blue: 'from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700',
+    purple: 'from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700',
+    orange: 'from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700',
+  };
+
+  return (
+    <Link href={href}>
+      <div className={`bg-gradient-to-br ${colors[color]} rounded-2xl p-8 text-white shadow-xl transform hover:scale-105 transition h-full`}>
+        <div className="text-6xl mb-4">{icon}</div>
+        <h3 className="text-2xl font-black mb-2">{title}</h3>
+        <p className="text-white/80 mb-4">{description}</p>
+        <div className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-semibold">
+          ⏱️ {time}
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+interface FactBoxProps {
+  icon: string;
+  title: string;
+  facts: string[];
+  color: 'green' | 'red';
+}
+
+function FactBox({ icon, title, facts, color }: FactBoxProps) {
+  const colors = {
+    green: 'bg-green-50 border-green-300',
+    red: 'bg-red-50 border-red-300',
+  };
+
+  return (
+    <div className={`${colors[color]} rounded-2xl p-6 border-2`}>
+      <h3 className="text-3xl font-black mb-4 flex items-center">
+        <span className="mr-3 text-4xl">{icon}</span>
+        {title}
+      </h3>
+      <ul className="space-y-3">
+        {facts.map((fact, i) => (
+          <li key={i} className="flex items-start">
+            <span className="mr-3 text-xl flex-shrink-0">{color === 'green' ? '✓' : '✗'}</span>
+            <span className="font-semibold">{fact}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// HLAVNÍ KOMPONENTA
+
 export default function Home() {
   return (
     <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 min-h-screen">
@@ -228,155 +379,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+  </div>
   );
 }
-
-// KOMPONENTY PRO VIZUALIZACI
-
-interface StatCardProps {
-  value: string;
-  label: string;
-  icon: string;
-  color: 'red' | 'orange' | 'blue' | 'green';
-  trend: string;
-}
-
-function StatCard({ value, label, icon, color, trend }: StatCardProps) {
-  const colors = {
-    red: 'from-red-500 to-red-600 border-red-300',
-    orange: 'from-orange-500 to-orange-600 border-orange-300',
-    blue: 'from-blue-500 to-blue-600 border-blue-300',
-    green: 'from-green-500 to-green-600 border-green-300',
-  };
-
-  return (
-    <div className={`bg-gradient-to-br ${colors[color]} rounded-2xl p-6 text-white shadow-xl border-4 transform hover:scale-105 transition`}>
-      <div className="text-5xl mb-3">{icon}</div>
-      <div className="text-4xl font-black mb-2">{value}</div>
-      <div className="text-lg font-semibold opacity-90">{label}</div>
-    </div>
-  );
-}
-
-interface ProgressBarProps {
-  label: string;
-  value: number;
-  max: number;
-  color: 'red' | 'orange' | 'yellow';
-}
-
-function ProgressBar({ label, value, max, color }: ProgressBarProps) {
-  const percentage = (value / max) * 100;
-  const colors = {
-    red: 'bg-red-500',
-    orange: 'bg-orange-500',
-    yellow: 'bg-yellow-500',
-  };
-
-  return (
-    <div>
-      <div className="flex justify-between mb-2">
-        <span className="font-semibold">{label}</span>
-        <span className="font-bold">{(value / 1000).toFixed(0)}k Kč</span>
-      </div>
-      <div className="w-full bg-slate-200 rounded-full h-6 overflow-hidden">
-        <div
-          className={`${colors[color]} h-full rounded-full transition-all duration-1000 flex items-center justify-end pr-2`}
-          style={{ width: `${percentage}%` }}
-        >
-          <span className="text-xs font-bold text-white">{percentage.toFixed(0)}%</span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-interface TimelinePointProps {
-  year: string;
-  label: string;
-  status: 'complete' | 'active';
-  description: string;
-}
-
-function TimelinePoint({ year, label, status, description }: TimelinePointProps) {
-  return (
-    <div className="flex items-start space-x-4">
-      <div className="flex-shrink-0">
-        <div className={`w-16 h-16 rounded-full flex items-center justify-center font-black text-lg ${
-          status === 'active'
-            ? 'bg-blue-500 text-white animate-pulse'
-            : 'bg-green-500 text-white'
-        }`}>
-          {status === 'active' ? '▶' : '✓'}
-        </div>
-      </div>
-      <div className="flex-1">
-        <div className="font-bold text-lg">{year}</div>
-        <div className="text-xl font-black text-slate-900">{label}</div>
-        <div className="text-sm text-slate-600">{description}</div>
-      </div>
-    </div>
-  );
-}
-
-interface ActionCardProps {
-  href: string;
-  icon: string;
-  title: string;
-  description: string;
-  color: 'blue' | 'purple' | 'orange';
-  time: string;
-}
-
-function ActionCard({ href, icon, title, description, color, time }: ActionCardProps) {
-  const colors = {
-    blue: 'from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700',
-    purple: 'from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700',
-    orange: 'from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700',
-  };
-
-  return (
-    <Link href={href}>
-      <div className={`bg-gradient-to-br ${colors[color]} rounded-2xl p-8 text-white shadow-xl transform hover:scale-105 transition h-full`}>
-        <div className="text-6xl mb-4">{icon}</div>
-        <h3 className="text-2xl font-black mb-2">{title}</h3>
-        <p className="text-white/80 mb-4">{description}</p>
-        <div className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-semibold">
-          ⏱️ {time}
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-interface FactBoxProps {
-  icon: string;
-  title: string;
-  facts: string[];
-  color: 'green' | 'red';
-}
-
-function FactBox({ icon, title, facts, color }: FactBoxProps) {
-  const colors = {
-    green: 'bg-green-50 border-green-300',
-    red: 'bg-red-50 border-red-300',
-  };
-
-  return (
-    <div className={`${colors[color]} rounded-2xl p-6 border-2`}>
-      <h3 className="text-3xl font-black mb-4 flex items-center">
-        <span className="mr-3 text-4xl">{icon}</span>
-        {title}
-      </h3>
-      <ul className="space-y-3">
-        {facts.map((fact, i) => (
-          <li key={i} className="flex items-start">
-            <span className="mr-3 text-xl flex-shrink-0">{color === 'green' ? '✓' : '✗'}</span>
-            <span className="font-semibold">{fact}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
