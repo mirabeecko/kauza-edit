@@ -1,0 +1,133 @@
+import Link from 'next/link';
+
+interface Question {
+  slug: string;
+  title: string;
+  category: string;
+  importance: 'high' | 'medium' | 'low';
+}
+
+const questions: Question[] = [
+  // Členství a legitimita
+  { slug: 'kdo-je-clenem-spolku', title: 'Kdo je členem spolku?', category: 'Členství', importance: 'high' },
+  { slug: 'kdo-mel-pravo-rozhodovat', title: 'Kdo měl právo rozhodovat?', category: 'Členství', importance: 'high' },
+  { slug: 'kdo-mel-vest-clenskou-evidenci', title: 'Kdo měl vést členskou evidenci?', category: 'Členství', importance: 'medium' },
+
+  // Finance
+  { slug: 'vznikla-spolku-financni-ujma', title: 'Vznikla spolku finanční újma?', category: 'Finance', importance: 'high' },
+  { slug: 'kdo-nakladal-s-prispevky', title: 'Kdo nakládal s příspěvky?', category: 'Finance', importance: 'high' },
+  { slug: 'pristup-k-financim-spolku', title: 'Kdo měl přístup k financím spolku?', category: 'Finance', importance: 'medium' },
+
+  // Odpovědnost
+  { slug: 'jednal-predseda-v-souladu-se-zakonem', title: 'Jednal předseda v souladu se zákonem?', category: 'Odpovědnost', importance: 'high' },
+  { slug: 'kdo-koho-poskodil', title: 'Kdo koho poškodil?', category: 'Odpovědnost', importance: 'high' },
+  { slug: 'odpovednost-za-sverene-ukoly', title: 'Kdo nesl odpovědnost za svěřené úkoly?', category: 'Odpovědnost', importance: 'medium' },
+
+  // Schůze
+  { slug: 'byly-schuze-legitimni', title: 'Byly schůze legitimní?', category: 'Schůze', importance: 'high' },
+  { slug: 'jsou-rozhodnuti-platna', title: 'Jsou rozhodnutí platná?', category: 'Schůze', importance: 'high' },
+
+  // Instituce
+  { slug: 'jaka-byla-role-mesta', title: 'Jaká byla role města Krupka?', category: 'Instituce', importance: 'medium' },
+  { slug: 'mely-instituce-zasahnout-drive', title: 'Měly instituce zasáhnout dříve?', category: 'Instituce', importance: 'medium' },
+
+  // Meta
+  { slug: 'co-dnes-vime-s-jistotou', title: 'Co dnes víme s jistotou?', category: 'Meta', importance: 'high' },
+  { slug: 'co-zustava-nejasne', title: 'Co zůstává nejasné?', category: 'Meta', importance: 'medium' },
+  { slug: 'proc-je-kauza-slozita', title: 'Proč je kauza složitá?', category: 'Meta', importance: 'low' },
+];
+
+export default function OtazkyPage() {
+  const categories = Array.from(new Set(questions.map(q => q.category)));
+
+  return (
+    <div className="container mx-auto px-8 py-12 max-w-5xl">
+      <div className="mb-8">
+        <h1 className="text-4xl font-bold text-slate-900 mb-4">
+          Otázky, které si musí položit každý
+        </h1>
+        <p className="text-xl text-slate-600">
+          Klíčové otázky kauzy, zodpovězené výhradně fakty a důkazy
+        </p>
+      </div>
+
+      <div className="mb-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+        <h3 className="text-lg font-bold text-blue-900 mb-2">
+          Jak číst otázky
+        </h3>
+        <div className="text-sm text-blue-800 space-y-2">
+          <p>Každá otázka obsahuje:</p>
+          <ul className="list-disc list-inside space-y-1 ml-4">
+            <li><strong>Proč je důležitá</strong> - kontext a význam</li>
+            <li><strong>Co víme</strong> - prokázaná fakta</li>
+            <li><strong>Co nevíme/chybí</strong> - otevřené body</li>
+            <li><strong>Právní kontext</strong> - relevantní zákony</li>
+            <li><strong>Související uzly</strong> - vazby na události, osoby, dokumenty</li>
+          </ul>
+        </div>
+      </div>
+
+      {categories.map((category) => (
+        <section key={category} className="mb-12">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-slate-200">
+            {category}
+          </h2>
+          <div className="grid gap-4">
+            {questions
+              .filter(q => q.category === category)
+              .map((question) => (
+                <QuestionCard key={question.slug} question={question} />
+              ))}
+          </div>
+        </section>
+      ))}
+
+      <div className="mt-12 p-6 bg-slate-50 rounded-lg border border-slate-200">
+        <h3 className="text-lg font-bold text-slate-900 mb-2">
+          Máte další otázku?
+        </h3>
+        <p className="text-slate-600 text-sm">
+          Tato sekce bude průběžně aktualizována o další důležité otázky
+          na základě vývoje kauzy a zpětné vazby.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function QuestionCard({ question }: { question: Question }) {
+  const importanceColors = {
+    high: 'border-red-300 bg-red-50',
+    medium: 'border-orange-300 bg-orange-50',
+    low: 'border-blue-300 bg-blue-50',
+  };
+
+  const importanceLabels = {
+    high: '🔥 Klíčová',
+    medium: '⚠️ Důležitá',
+    low: 'ℹ️ Kontext',
+  };
+
+  return (
+    <Link href={`/otazky/${question.slug}`}>
+      <div className={`
+        p-6 rounded-lg border-2 hover:shadow-md transition
+        ${importanceColors[question.importance]}
+        hover:border-blue-500
+      `}>
+        <div className="flex items-start justify-between mb-2">
+          <h3 className="text-xl font-semibold text-slate-900 group-hover:text-blue-600">
+            {question.title}
+          </h3>
+          <span className="text-xs font-semibold ml-4 whitespace-nowrap">
+            {importanceLabels[question.importance]}
+          </span>
+        </div>
+        <div className="flex items-center text-sm text-slate-600">
+          <span className="mr-2">→</span>
+          <span>Klikněte pro kompletní odpověď s důkazy</span>
+        </div>
+      </div>
+    </Link>
+  );
+}
