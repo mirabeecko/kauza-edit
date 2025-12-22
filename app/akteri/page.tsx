@@ -100,6 +100,38 @@ export default function AkteriPage() {
       relatedEvents: 4,
     },
     {
+      slug: 'jan-kuzma',
+      name: 'Jan Kuzma',
+      role: 'Starosta města Krupka a jednatel SPORT Krupka s.r.o.',
+      category: 'Zástupci města',
+      status: 'negative' as const,
+      summary: 'Starosta města a jednatel SPORT Krupka s.r.o. - střet zájmů. Koordinoval pokus o převzetí kontroly nad spolkem. SPORT Krupka pod jeho vedením vyměnila zámky a umožnila přístup vyloučeným členům.',
+      keyActions: [
+        'Dvojrole: starosta + jednatel městské společnosti',
+        'SPORT Krupka vyměnila zámky (19.12.2023, 19.1.2024)',
+        'Ignoroval oficiální notifikaci o vyloučení členů',
+        'Koordinoval pokus o "zvolení" Syryčanského',
+        'Tlak na svolání shromáždění do konce ledna 2024',
+      ],
+      relatedEvents: 9,
+    },
+    {
+      slug: 'jan-bokoc',
+      name: 'Jan Bokoč',
+      role: 'Místostarosta města Krupka',
+      category: 'Zástupci města',
+      status: 'negative' as const,
+      summary: 'Místostarosta města, který se aktivně podílel na pokusu o převzetí kontroly nad spolkem. Účastnil se nelegálních schůzí a koordinoval kroky s vedením SPORT Krupka s.r.o.',
+      keyActions: [
+        'Účast na nelegálních schůzích',
+        'Koordinace s SPORT Krupka a Syryčanským',
+        'Zásah do autonomie spolku',
+        'Ignorování oficiálních notifikací',
+        'Politická podpora pokusu o převrat',
+      ],
+      relatedEvents: 8,
+    },
+    {
       slug: 'tomas-syrycansky',
       name: 'Tomáš Syryčanský',
       role: 'Sportovní manažer SPORT Krupka s.r.o.',
@@ -169,7 +201,7 @@ export default function AkteriPage() {
             <p><strong>Celkem osob:</strong> {actors.length}</p>
             <p><strong>Vyloučení členové:</strong> 2 (Vaniš, Pivoňka)</p>
             <p><strong>Zánik členství:</strong> 2 (Vlach, Kulík)</p>
-            <p><strong>Zástupci města:</strong> 1 (Syryčanský)</p>
+            <p><strong>Zástupci města:</strong> 3 (Kuzma, Bokoč, Syryčanský)</p>
           </div>
         </div>
         <div className="p-6 bg-slate-50 rounded-lg border border-slate-200">

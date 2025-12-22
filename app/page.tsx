@@ -183,6 +183,84 @@ export default function Home() {
         </div>
       </div>
 
+      {/* PROSTÁ FAKTA - bez interpretací */}
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 py-16">
+        <div className="container mx-auto px-8 max-w-6xl">
+          <h2 className="text-4xl font-black text-center mb-12 text-slate-900">
+            📋 Prostá fakta (bez interpretací)
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Co bylo slíbeno */}
+            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-green-300">
+              <h3 className="text-3xl font-black mb-6 text-green-700 flex items-center gap-3">
+                <span>✅</span>
+                <span>Co bylo slíbeno</span>
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
+                  <span className="text-green-600 text-xl">✓</span>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900">Předsedové oddílů doloží seznamy členů</div>
+                    <div className="text-sm text-slate-600 mt-1">Dohoda 24.8.2021</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
+                  <span className="text-green-600 text-xl">✓</span>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900">Členské příspěvky 200 Kč/rok patří spolku</div>
+                    <div className="text-sm text-slate-600 mt-1">Stanovy a dohoda</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-green-50 rounded-lg">
+                  <span className="text-green-600 text-xl">✓</span>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900">Oddíly hradí náklady za provoz (energie)</div>
+                    <div className="text-sm text-slate-600 mt-1">Dohoda o nákladech</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Co se nestalo */}
+            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-red-300">
+              <h3 className="text-3xl font-black mb-6 text-red-700 flex items-center gap-3">
+                <span>❌</span>
+                <span>Co se nestalo</span>
+              </h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-4 bg-red-50 rounded-lg">
+                  <span className="text-red-600 text-xl">✗</span>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900">Seznamy NIKDY nebyly předány</div>
+                    <div className="text-sm text-slate-600 mt-1">3+ roky, přes opakované výzvy</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-red-50 rounded-lg">
+                  <span className="text-red-600 text-xl">✗</span>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900">Příspěvky vybírány, ale NEODVEDENY</div>
+                    <div className="text-sm text-slate-600 mt-1">1.214.400 Kč (oddílové příspěvky)</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-red-50 rounded-lg">
+                  <span className="text-red-600 text-xl">✗</span>
+                  <div className="flex-1">
+                    <div className="font-bold text-slate-900">Energie NEPLACENY spolku</div>
+                    <div className="text-sm text-slate-600 mt-1">299.921 Kč (spolek platil za oddíly)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 p-6 bg-white rounded-xl shadow-lg text-center border-2 border-slate-300">
+            <p className="text-lg text-slate-700 font-semibold">
+              Fakta bez hodnocení. To, co bylo dohodnuto vs. to, co se skutečně stalo.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* MEGA STATS - vizuální dominance čísel */}
       <div className="snap-center h-screen flex items-center justify-center py-16">
         <div className="container mx-auto px-8 max-w-7xl">
@@ -297,32 +375,43 @@ export default function Home() {
         </div>
       </div>
 
-      {/* KLÍČOVÍ AKTÉŘI - Syryčanský, Vaniš */}
+      {/* KLÍČOVÍ AKTÉŘI - Zástupci města */}
       <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-16">
         <div className="container mx-auto px-8 max-w-7xl">
           <h2 className="text-4xl font-black text-center mb-12 text-white">
             🎯 Klíčoví aktéři kauzy
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="/akteri/jan-kuzma" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
               <div className="text-6xl mb-4 text-center">🏛️</div>
-              <h3 className="text-2xl font-bold mb-3 text-center text-white">Tomáš Syryčanský</h3>
-              <div className="text-sm text-white/80 mb-4">Sportovní manažer SPORT Krupka s.r.o.</div>
+              <h3 className="text-2xl font-bold mb-3 text-center text-white">Jan Kuzma</h3>
+              <div className="text-sm text-white/80 mb-4">Starosta města + jednatel SPORT Krupka</div>
               <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Střet zájmů - dvojrole</div>
+                <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky 2× (12/2023, 1/2024)</div>
                 <div className="p-2 bg-red-500/40 rounded">Koordinoval pokus o převrat</div>
-                <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky na Pinčesárně</div>
-                <div className="p-2 bg-red-500/40 rounded">Měl být "zvolen" jako předseda</div>
               </div>
             </a>
 
-            <a href="/akteri/marek-vanis" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-6xl mb-4 text-center">🏓</div>
-              <h3 className="text-2xl font-bold mb-3 text-center text-white">Marek Vaniš</h3>
-              <div className="text-sm text-white/80 mb-4">Vyloučený člen - předseda ST</div>
+            <a href="/akteri/jan-bokoc" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-6xl mb-4 text-center">🏛️</div>
+              <h3 className="text-2xl font-bold mb-3 text-center text-white">Jan Bokoč</h3>
+              <div className="text-sm text-white/80 mb-4">Místostarosta města Krupka</div>
               <div className="space-y-2 text-sm">
-                <div className="p-2 bg-red-500/40 rounded">Škoda: 653.659 Kč</div>
-                <div className="p-2 bg-red-500/40 rounded">Vybíral, ale neodváděl</div>
-                <div className="p-2 bg-red-500/40 rounded">Vyloučen 28.11.2023</div>
+                <div className="p-2 bg-red-500/40 rounded">Účast na nelegálních schůzích</div>
+                <div className="p-2 bg-red-500/40 rounded">Politická podpora převratu</div>
+                <div className="p-2 bg-red-500/40 rounded">Zásah do autonomie spolku</div>
+              </div>
+            </a>
+
+            <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-6xl mb-4 text-center">🏛️</div>
+              <h3 className="text-2xl font-bold mb-3 text-center text-white">Tomáš Syryčanský</h3>
+              <div className="text-sm text-white/80 mb-4">Sportovní manažer SPORT Krupka</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Koordinoval převrat na místě</div>
+                <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky na Pinčesárně</div>
+                <div className="p-2 bg-red-500/40 rounded">Měl být "zvolen" jako předseda</div>
               </div>
             </a>
 
