@@ -108,27 +108,27 @@ export default function TemataPage() {
   return (
     <div className="container mx-auto px-8 py-12 max-w-6xl">
       {/* Hero Header */}
-      <div className="mb-12 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-3xl shadow-2xl p-10 text-white">
-        <h1 className="text-5xl font-black mb-4 text-center">
+      <div className="mb-12 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 rounded-2xl shadow-lg p-10 text-white">
+        <h1 className="text-4xl font-bold mb-4 text-center">
           📚 Témata kauzy
         </h1>
-        <p className="text-xl text-center font-medium opacity-95">
+        <p className="text-lg text-center text-slate-300">
           Klíčová témata organizovaná podle oblastí. Každé téma obsahuje faktické informace podložené důkazy.
         </p>
         <div className="mt-6 flex justify-center space-x-4 text-sm">
-          <div className="px-4 py-2 bg-white/20 backdrop-blur rounded-full">
-            <span className="font-bold">{topics.filter(t => t.isKeyTopic).length}</span> klíčových témat
+          <div className="px-4 py-2 bg-white/10 backdrop-blur rounded-full">
+            <span className="font-semibold">{topics.filter(t => t.isKeyTopic).length}</span> klíčových témat
           </div>
-          <div className="px-4 py-2 bg-white/20 backdrop-blur rounded-full">
-            <span className="font-bold">{topics.length}</span> témat celkem
+          <div className="px-4 py-2 bg-white/10 backdrop-blur rounded-full">
+            <span className="font-semibold">{topics.length}</span> témat celkem
           </div>
         </div>
       </div>
 
       {/* Klíčová témata */}
       <div className="mb-12">
-        <h2 className="text-3xl font-black text-slate-900 mb-8 flex items-center justify-center">
-          <span className="text-5xl mr-3 animate-bounce">🔥</span>
+        <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center justify-center">
+          <span className="text-3xl mr-3">🔥</span>
           <span>Klíčová témata</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -141,7 +141,7 @@ export default function TemataPage() {
       {/* Ostatní témata podle kategorií */}
       {categories.filter(cat => cat !== 'Klíčové téma').map(category => (
         <div key={category} className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-slate-200">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b border-slate-200">
             {category}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -154,11 +154,11 @@ export default function TemataPage() {
         </div>
       ))}
 
-      <div className="mt-12 p-6 bg-blue-50 rounded-lg border border-blue-200">
-        <h3 className="text-lg font-bold text-blue-900 mb-2">
+      <div className="mt-12 p-6 bg-slate-50 rounded-lg shadow">
+        <h3 className="text-lg font-bold text-slate-900 mb-2">
           💡 Jak pracovat s tématy
         </h3>
-        <p className="text-sm text-blue-800">
+        <p className="text-sm text-slate-700">
           Každé téma obsahuje shrnutí, související události, osoby a dokumenty.
           Témata jsou propojena - kliknutím na téma uvidíte související uzly v pravém panelu.
         </p>
@@ -186,29 +186,29 @@ function TopicCard({ topic, featured }: { topic: Topic; featured?: boolean }) {
     <a
       href={`/temata/${topic.slug}`}
       className={`
-        block p-6 rounded-xl border-2 transition-all duration-200 transform hover:scale-105
+        block p-6 rounded-xl transition-all duration-200 hover:shadow-lg
         ${featured
-          ? 'bg-gradient-to-br from-blue-50 via-blue-100 to-purple-100 border-blue-400 hover:border-blue-600 hover:shadow-2xl'
-          : 'bg-white border-slate-300 hover:border-blue-500 hover:shadow-xl'
+          ? 'bg-red-50 shadow-md hover:shadow-xl'
+          : 'bg-white shadow hover:shadow-md'
         }
       `}
     >
       <div className="flex items-start justify-between mb-4">
-        <div className={`${featured ? 'text-6xl' : 'text-5xl'} transition-transform hover:rotate-12`}>
+        <div className={`${featured ? 'text-5xl' : 'text-4xl'}`}>
           {topic.icon}
         </div>
         {featured && (
-          <span className="px-3 py-1 bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-black rounded-full shadow-lg animate-pulse">
+          <span className="px-3 py-1 bg-red-600 text-white text-xs font-bold rounded-full">
             🔥 KLÍČOVÉ
           </span>
         )}
       </div>
 
-      <h3 className={`${featured ? 'text-2xl' : 'text-xl'} font-bold mb-3 ${featured ? 'text-blue-900' : 'text-slate-900'}`}>
+      <h3 className={`${featured ? 'text-2xl' : 'text-xl'} font-bold mb-3 text-slate-900`}>
         {topic.title}
       </h3>
 
-      <p className={`text-sm mb-4 leading-relaxed ${featured ? 'text-blue-800' : 'text-slate-700'}`}>
+      <p className="text-sm mb-4 leading-relaxed text-slate-700">
         {topic.description}
       </p>
 
@@ -228,7 +228,7 @@ function TopicCard({ topic, featured }: { topic: Topic; featured?: boolean }) {
               <span className="font-medium">{topic.relatedCount.documents}</span>
             </div>
           </div>
-          <span className={`font-bold ${featured ? 'text-blue-600' : 'text-slate-600'}`}>
+          <span className="font-semibold text-slate-600">
             Detail →
           </span>
         </div>
