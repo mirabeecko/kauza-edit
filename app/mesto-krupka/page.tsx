@@ -178,8 +178,8 @@ export default function MestoKrupkaPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-slate-800 via-blue-800 to-slate-900 py-16 border-b border-slate-600">
-        <div className="container mx-auto px-8 max-w-6xl">
+      <div className="bg-gradient-to-br from-slate-800 via-blue-800 to-slate-900 py-8 md:py-16 border-b border-slate-600">
+        <div className="container mx-auto px-4 md:px-8 max-w-6xl">
           <div className="flex items-start justify-between mb-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -190,7 +190,7 @@ export default function MestoKrupkaPage() {
                   ⚠️ Zásah do autonomie spolku
                 </span>
               </div>
-              <h1 className="text-5xl font-black text-white mb-3">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3">
                 {info.name}
               </h1>
               <p className="text-xl text-slate-200 font-medium max-w-3xl">
@@ -219,12 +219,12 @@ export default function MestoKrupkaPage() {
       <div className="container mx-auto px-8 py-12 max-w-6xl">
         {/* Klíčové osoby */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             👥 Klíčové osoby města a SPORT Krupka
           </h2>
-          <div className="grid gap-6">
+          <div className="grid gap-3 md:gap-6">
             {keyFigures.map((person, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-8 border-2 border-slate-200">
+              <div key={index} className="bg-white rounded-xl shadow-lg p-4 md:p-8 border-2 border-slate-200">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">{person.name}</h3>
@@ -254,7 +254,7 @@ export default function MestoKrupkaPage() {
 
         {/* Porušení */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             ⚠️ Hlavní porušení a právní problémy
           </h2>
           <div className="space-y-4">
@@ -294,7 +294,7 @@ export default function MestoKrupkaPage() {
 
         {/* Timeline */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📊 Chronologie akcí města a SPORT Krupka
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8">
@@ -346,7 +346,7 @@ export default function MestoKrupkaPage() {
 
         {/* Shrnutí */}
         <section className="mb-12">
-          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl shadow-lg p-8 border-2 border-red-200">
+          <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl shadow-lg p-4 md:p-8 border-2 border-red-200">
             <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
               <span>📌</span>
               <span>Shrnutí postupu města a SPORT Krupka</span>
@@ -380,7 +380,7 @@ export default function MestoKrupkaPage() {
 
         {/* Související stránky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🔗 Související stránky
           </h2>
           <div className="grid md:grid-cols-2 gap-4">

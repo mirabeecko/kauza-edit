@@ -372,7 +372,7 @@ export default function CislaPage() {
           <div className="mt-6 pt-6 border-t-2 border-white/30">
             <div className="flex justify-between items-center">
               <span className="text-2xl font-bold">CELKEM:</span>
-              <span className="text-5xl font-black">2.076 mil. Kč</span>
+              <span className="text-3xl md:text-4xl lg:text-5xl font-black">2.076 mil. Kč</span>
             </div>
             <p className="text-center text-sm mt-4 text-white/80">
               Dle dokumentu "TJ ODDÍLY 2021-2023 - výsledek hospodaření"
@@ -382,7 +382,7 @@ export default function CislaPage() {
       </div>
 
       {/* Souvislející sekce */}
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-3 md:gap-6">
         <div className="p-6 bg-slate-50 rounded-lg border border-slate-200">
           <h3 className="text-lg font-bold text-slate-900 mb-4">
             🔗 Související sekce
@@ -425,7 +425,7 @@ export default function CislaPage() {
 
       {/* Právní rámec a judikatura NS ČR */}
       <div className="mb-12">
-        <h2 className="text-3xl font-bold text-slate-900 mb-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
           ⚖️ Právní rámec a judikatura Nejvyššího soudu ČR
         </h2>
         <p className="text-lg text-slate-700 mb-6">
@@ -433,9 +433,9 @@ export default function CislaPage() {
           Judikatura v těchto případech hovoří jasně:
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-3 md:gap-6">
           {/* Judikát 1 */}
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-300 shadow-lg">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 md:p-6 border-2 border-blue-300 shadow-lg">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-4xl">⚖️</span>
               <div>
@@ -455,7 +455,7 @@ export default function CislaPage() {
           </div>
 
           {/* Judikát 2 */}
-          <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 border-2 border-orange-300 shadow-lg">
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-4 md:p-6 border-2 border-orange-300 shadow-lg">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-4xl">⚖️</span>
               <div>
@@ -475,7 +475,7 @@ export default function CislaPage() {
           </div>
 
           {/* Judikát 3 */}
-          <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-2 border-red-300 shadow-lg">
+          <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-4 md:p-6 border-2 border-red-300 shadow-lg">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-4xl">⚖️</span>
               <div>

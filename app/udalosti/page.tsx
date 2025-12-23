@@ -211,7 +211,7 @@ export default function UdalostiPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-20">
-        <div className="container mx-auto px-8 max-w-6xl text-center">
+        <div className="container mx-auto px-4 md:px-8 max-w-6xl text-center">
           <div className="inline-block px-4 py-2 bg-blue-600 rounded-full text-sm font-bold mb-6">
             📅 ČASOVÁ OSA KAUZY
           </div>
@@ -257,7 +257,7 @@ export default function UdalostiPage() {
       </div>
 
       {/* Timeline */}
-      <div className="container mx-auto px-8 py-16 max-w-6xl">
+      <div className="container mx-auto px-8 py-8 md:py-16 max-w-6xl">
         {phases.map((phase) => (
           <div key={phase.id} className="mb-20">
             {/* Phase Header */}
@@ -292,9 +292,9 @@ export default function UdalostiPage() {
       </div>
 
       {/* ČAST Callout */}
-      <div className="container mx-auto px-8 max-w-6xl mb-16">
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl mb-16">
         <div className="bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl p-8 text-white shadow-2xl">
-          <div className="flex items-start gap-6">
+          <div className="flex items-start gap-3 md:gap-6">
             <div className="text-7xl">🏓</div>
             <div className="flex-1">
               <h2 className="text-3xl font-black mb-3">
@@ -322,8 +322,8 @@ export default function UdalostiPage() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-16">
-        <div className="container mx-auto px-8 max-w-4xl text-center text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center text-white">
           <h2 className="text-3xl font-black mb-4">
             Prozkoumejte další detaily kauzy
           </h2>

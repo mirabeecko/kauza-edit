@@ -98,15 +98,15 @@ export default function PrehledPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="text-center p-4 bg-red-50 rounded">
-              <div className="text-3xl font-bold text-red-900">~2 mil. Kč</div>
+              <div className="text-2xl md:text-3xl font-bold text-red-900">~2 mil. Kč</div>
               <div className="text-sm text-red-700 mt-1">Celková škoda</div>
             </div>
             <div className="text-center p-4 bg-red-50 rounded">
-              <div className="text-3xl font-bold text-red-900">500 tis. Kč</div>
+              <div className="text-2xl md:text-3xl font-bold text-red-900">500 tis. Kč</div>
               <div className="text-sm text-red-700 mt-1">Nezaplacené příspěvky</div>
             </div>
             <div className="text-center p-4 bg-red-50 rounded">
-              <div className="text-3xl font-bold text-red-900">560 tis. Kč</div>
+              <div className="text-2xl md:text-3xl font-bold text-red-900">560 tis. Kč</div>
               <div className="text-sm text-red-700 mt-1">Nezaplacené energie</div>
             </div>
           </div>

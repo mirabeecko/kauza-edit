@@ -193,9 +193,9 @@ export default function DetailniAnalyzaPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-indigo-700 via-indigo-800 to-purple-900 py-16 border-b border-indigo-600">
-        <div className="container mx-auto px-8 max-w-6xl">
-          <h1 className="text-5xl font-black text-white mb-6">
+      <div className="bg-gradient-to-br from-indigo-700 via-indigo-800 to-purple-900 py-8 md:py-16 border-b border-indigo-600">
+        <div className="container mx-auto px-4 md:px-8 max-w-6xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6">
             🔬 Detailní analýza
           </h1>
           <p className="text-xl text-indigo-100 leading-relaxed mb-6">
@@ -222,7 +222,7 @@ export default function DetailniAnalyzaPage() {
       <div className="container mx-auto px-8 py-12 max-w-6xl">
         {/* Klíčová zjištění */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🎯 Klíčová zjištění analýzy
           </h2>
           <div className="space-y-4">
@@ -260,7 +260,7 @@ export default function DetailniAnalyzaPage() {
 
         {/* Detailní analýzy */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📋 Detailní rozbory
           </h2>
           <div className="space-y-8">
@@ -276,7 +276,7 @@ export default function DetailniAnalyzaPage() {
               return (
                 <div key={index} className="bg-white rounded-xl shadow-xl overflow-hidden">
                   {/* Header */}
-                  <div className={`bg-gradient-to-br ${colorClasses[analysis.color as keyof typeof colorClasses]} p-6 border-b-4`}>
+                  <div className={`bg-gradient-to-br ${colorClasses[analysis.color as keyof typeof colorClasses]} p-4 md:p-6 border-b-4`}>
                     <div className="flex items-center gap-3 mb-2">
                       <span className="text-4xl">{analysis.icon}</span>
                       <div className="flex-1">
@@ -332,7 +332,7 @@ export default function DetailniAnalyzaPage() {
 
         {/* Metodologie */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📐 Metodologie analýzy
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8">
@@ -411,7 +411,7 @@ export default function DetailniAnalyzaPage() {
 
         {/* Související stránky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🔗 Související stránky
           </h2>
           <div className="grid md:grid-cols-3 gap-4">

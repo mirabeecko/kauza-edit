@@ -134,8 +134,8 @@ export default function MiroslavBrozekPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-green-600 via-emerald-700 to-teal-800 py-16">
-        <div className="container mx-auto px-8 max-w-5xl">
+      <div className="bg-gradient-to-br from-green-600 via-emerald-700 to-teal-800 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-start justify-between mb-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -146,7 +146,7 @@ export default function MiroslavBrozekPage() {
                   ✅ Legitimní předseda
                 </span>
               </div>
-              <h1 className="text-5xl font-black text-white mb-3">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3">
                 {actor.name}
               </h1>
               <p className="text-xl text-green-100 font-medium">
@@ -199,7 +199,7 @@ export default function MiroslavBrozekPage() {
 
         {/* Odpovědnosti funkce */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📊 Odpovědnosti funkce předsedy
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -222,7 +222,7 @@ export default function MiroslavBrozekPage() {
 
         {/* Klíčové kroky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             ✅ Klíčové kroky a aktivity
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8 shadow">
@@ -254,7 +254,7 @@ export default function MiroslavBrozekPage() {
 
         {/* Snaha o nápravu */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🔧 Snaha o nápravu situace
           </h2>
           <div className="space-y-4">
@@ -296,7 +296,7 @@ export default function MiroslavBrozekPage() {
 
         {/* Výzvy a překážky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🚧 Výzvy a překážky
           </h2>
           <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-xl shadow p-8 shadow-lg">
@@ -327,10 +327,10 @@ export default function MiroslavBrozekPage() {
 
         {/* Porovnání s ostatními */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             ⚖️ Srovnání přístupu
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-3 md:gap-6">
             <div className="p-6 bg-green-50 rounded-xl shadow">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">✅</span>
@@ -393,7 +393,7 @@ export default function MiroslavBrozekPage() {
 
         {/* Související stránky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🔗 Související stránky
           </h2>
           <div className="grid md:grid-cols-2 gap-4">

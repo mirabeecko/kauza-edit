@@ -66,8 +66,8 @@ export default function MarekVanisPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 py-16 border-b border-slate-600">
-        <div className="container mx-auto px-8 max-w-5xl">
+      <div className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 py-8 md:py-16 border-b border-slate-600">
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-start justify-between mb-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -78,7 +78,7 @@ export default function MarekVanisPage() {
                   ❌ Vyloučen z členství
                 </span>
               </div>
-              <h1 className="text-5xl font-black text-white mb-3">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3">
                 {actor.name}
               </h1>
               <p className="text-xl text-slate-300 font-medium">
@@ -91,7 +91,7 @@ export default function MarekVanisPage() {
             <div className="flex items-center justify-between">
               <div>
                 <div className="text-slate-300 text-sm font-medium mb-2">Celková způsobená škoda</div>
-                <div className="text-5xl font-black text-white">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-black text-white">
                   {actor.totalDamage.toLocaleString('cs-CZ')} Kč
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function MarekVanisPage() {
       <div className="container mx-auto px-8 py-12 max-w-5xl">
         {/* Porušení povinností a podvodné jednání */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             ⚠️ Porušení povinností a podvodné jednání
           </h2>
           <div className="bg-slate-50 rounded-xl p-8 shadow-md">
@@ -203,7 +203,7 @@ export default function MarekVanisPage() {
 
         {/* Rozpad škody */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             💰 Detailní rozpad škody
           </h2>
           <div className="space-y-4">
@@ -272,7 +272,7 @@ export default function MarekVanisPage() {
 
         {/* Předžalobní výzva */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             ⚖️ Předžalobní výzva
           </h2>
           <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-8 shadow-lg">
@@ -333,7 +333,7 @@ export default function MarekVanisPage() {
 
         {/* Klíčové kroky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📊 Časová osa klíčových kroků
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8">
@@ -369,7 +369,7 @@ export default function MarekVanisPage() {
 
         {/* Dokumenty a důkazy */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📄 Dokumenty a důkazy
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -457,7 +457,7 @@ export default function MarekVanisPage() {
 
         {/* Související stránky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🔗 Související stránky
           </h2>
           <div className="grid md:grid-cols-2 gap-4">

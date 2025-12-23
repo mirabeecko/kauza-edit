@@ -109,7 +109,7 @@ export default function PointyPage() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6 mb-12">
+      <div className="grid md:grid-cols-2 gap-3 md:gap-6 mb-12">
         {insights.map(insight => (
           <InsightCard key={insight.slug} {...insight} />
         ))}

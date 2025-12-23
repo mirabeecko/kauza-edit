@@ -74,8 +74,8 @@ export default function GustavVlachPage() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 py-16">
-        <div className="container mx-auto px-8 max-w-5xl">
+      <div className="bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex items-start justify-between mb-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -86,7 +86,7 @@ export default function GustavVlachPage() {
                   ⛔ {actor.membershipStatus}
                 </span>
               </div>
-              <h1 className="text-5xl font-black text-white mb-3">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3">
                 {actor.name}
               </h1>
               <p className="text-xl text-blue-100 font-medium">
@@ -99,7 +99,7 @@ export default function GustavVlachPage() {
             <div className="flex items-center justify-between">
               <div>
                 <div className="text-blue-100 text-sm font-medium mb-2">Celková způsobená škoda</div>
-                <div className="text-5xl font-black text-white">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-black text-white">
                   {actor.totalDamage.toLocaleString('cs-CZ')} Kč
                 </div>
                 <div className="mt-4 px-4 py-2 bg-red-500/30 backdrop-blur rounded-lg border border-red-300">
@@ -130,7 +130,7 @@ export default function GustavVlachPage() {
 
         {/* Kritická fakta */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🚨 Kritická fakta
           </h2>
           <div className="grid gap-4">
@@ -163,7 +163,7 @@ export default function GustavVlachPage() {
 
         {/* Rozpad škody */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             💰 Detailní rozpad škody
           </h2>
           <div className="space-y-4">
@@ -226,7 +226,7 @@ export default function GustavVlachPage() {
 
         {/* Další porušení povinností */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             ⚠️ Další porušení povinností
           </h2>
           <div className="bg-red-50 rounded-xl shadow p-8">
@@ -287,7 +287,7 @@ export default function GustavVlachPage() {
 
         {/* Klíčové kroky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📊 Časová osa klíčových kroků
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8 shadow">
@@ -323,7 +323,7 @@ export default function GustavVlachPage() {
 
         {/* Porovnání s ostatními oddíly */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             📊 Srovnání škod oddílů
           </h2>
           <div className="bg-white rounded-xl shadow-lg p-8 shadow">
@@ -373,7 +373,7 @@ export default function GustavVlachPage() {
 
         {/* Související stránky */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
             🔗 Související stránky
           </h2>
           <div className="grid md:grid-cols-2 gap-4">

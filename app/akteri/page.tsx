@@ -184,7 +184,7 @@ export default function AkteriPage() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-slate-200">
             {category}
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-3 md:gap-6">
             {actors.filter(a => a.category === category).map(actor => (
               <ActorCard key={actor.slug} actor={actor} />
             ))}
@@ -192,7 +192,7 @@ export default function AkteriPage() {
         </section>
       ))}
 
-      <div className="mt-12 grid md:grid-cols-2 gap-6">
+      <div className="mt-12 grid md:grid-cols-2 gap-3 md:gap-6">
         <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
           <h3 className="text-lg font-bold text-blue-900 mb-2">
             📊 Statistiky

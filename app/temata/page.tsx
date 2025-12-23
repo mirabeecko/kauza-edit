@@ -127,11 +127,11 @@ export default function TemataPage() {
 
       {/* Klíčová témata */}
       <div className="mb-12">
-        <h2 className="text-3xl font-bold text-slate-900 mb-8 flex items-center justify-center">
+        <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 flex items-center justify-center">
           <span className="text-3xl mr-3">🔥</span>
           <span>Klíčová témata</span>
         </h2>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-3 md:gap-6">
           {topics.filter(t => t.isKeyTopic).map(topic => (
             <TopicCard key={topic.slug} topic={topic} featured />
           ))}

@@ -132,7 +132,7 @@ function FactBox({ icon, title, facts, color }: FactBoxProps) {
   };
 
   return (
-    <div className={`${colors[color]} rounded-2xl p-6 border-2`}>
+    <div className={`${colors[color]} rounded-2xl p-4 md:p-6 border-2`}>
       <h3 className="text-3xl font-black mb-4 flex items-center">
         <span className="mr-3 text-4xl">{icon}</span>
         {title}
@@ -157,25 +157,25 @@ export default function Home() {
       {/* Hero sekce - dramatická */}
       <div className="snap-center h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzFmMjkzNyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
-        <div className="container mx-auto px-8 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-bold rounded-full mb-6 animate-pulse">
               🚨 AKTIVNÍ KAUZA
             </div>
-            <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
               Kauza<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
                 TJ Krupka z.s.
               </span>
             </h1>
-            <p className="text-2xl text-blue-200 mb-8">
+            <p className="text-base md:text-xl lg:text-2xl text-blue-200 mb-8">
               {(2045635).toLocaleString('cs-CZ')} Kč škody • 3+ roky trvání • 0 trestně stíhaných
             </p>
-            <div className="flex justify-center gap-4">
-              <Link href="/prehled" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-bold text-lg transition transform hover:scale-105 shadow-2xl">
+            <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+              <Link href="/prehled" className="px-6 md:px-8 py-3 md:py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-bold text-base md:text-lg transition transform hover:scale-105 shadow-2xl">
                 ⚡ Začít zde
               </Link>
-              <Link href="/otazky" className="px-8 py-4 bg-white/10 hover:bg-white/20 rounded-xl font-bold text-lg transition backdrop-blur">
+              <Link href="/otazky" className="px-6 md:px-8 py-3 md:py-4 bg-white/10 hover:bg-white/20 rounded-xl font-bold text-base md:text-lg transition backdrop-blur">
                 ❓ Klíčové otázky
               </Link>
             </div>
@@ -184,15 +184,15 @@ export default function Home() {
       </div>
 
       {/* PROSTÁ FAKTA - bez interpretací */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 py-16">
-        <div className="container mx-auto px-8 max-w-6xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-slate-900">
+      <div className="snap-center min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 py-8 md:py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-6xl">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-slate-900">
             📋 Prostá fakta (bez interpretací)
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-4 md:gap-8">
             {/* Co bylo slíbeno */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-green-300">
-              <h3 className="text-3xl font-black mb-6 text-green-700 flex items-center gap-3">
+            <div className="bg-white rounded-2xl shadow-xl p-4 md:p-4 md:p-8 border-2 border-green-300">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-black mb-4 md:mb-6 text-green-700 flex items-center gap-2 md:gap-3">
                 <span>✅</span>
                 <span>Co bylo slíbeno</span>
               </h3>
@@ -222,8 +222,8 @@ export default function Home() {
             </div>
 
             {/* Co se nestalo */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-red-300">
-              <h3 className="text-3xl font-black mb-6 text-red-700 flex items-center gap-3">
+            <div className="bg-white rounded-2xl shadow-xl p-4 md:p-4 md:p-8 border-2 border-red-300">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-black mb-4 md:mb-6 text-red-700 flex items-center gap-2 md:gap-3">
                 <span>❌</span>
                 <span>Co se nestalo</span>
               </h3>
@@ -253,8 +253,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 p-6 bg-white rounded-xl shadow-lg text-center border-2 border-slate-300">
-            <p className="text-lg text-slate-700 font-semibold">
+          <div className="mt-4 md:mt-8 p-4 md:p-6 bg-white rounded-xl shadow-lg text-center border-2 border-slate-300">
+            <p className="text-sm md:text-base lg:text-lg text-slate-700 font-semibold">
               Fakta bez hodnocení. To, co bylo dohodnuto vs. to, co se skutečně stalo.
             </p>
           </div>
@@ -262,12 +262,12 @@ export default function Home() {
       </div>
 
       {/* MEGA STATS - vizuální dominance čísel */}
-      <div className="snap-center h-screen flex items-center justify-center py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
-        <h2 className="text-4xl font-black text-center mb-12 text-slate-900">
+      <div className="snap-center min-h-screen flex items-center justify-center py-8 md:py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-7xl">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-slate-900">
           Kauza v číslech
         </h2>
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-3 md:gap-6">
           <StatCard
             value={(2045635).toLocaleString('cs-CZ') + " Kč"}
             label="Celková škoda"
@@ -301,13 +301,13 @@ export default function Home() {
       </div>
 
       {/* VIZUÁLNÍ BREAKDOWN */}
-      <div className="snap-center h-screen flex items-center justify-center py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="snap-center min-h-screen flex items-center justify-center py-8 md:py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-7xl">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-4 md:gap-8">
         {/* Levý - Škoda */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-red-200">
-          <h3 className="text-2xl font-bold mb-6 flex items-center">
-            <span className="text-4xl mr-3">💰</span>
+        <div className="bg-white rounded-2xl shadow-xl p-4 md:p-4 md:p-8 border-2 border-red-200">
+          <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 flex items-center">
+            <span className="text-3xl md:text-4xl mr-2 md:mr-3">💰</span>
             Rozložení škody
           </h3>
           <div className="space-y-4">
@@ -339,9 +339,9 @@ export default function Home() {
         </div>
 
         {/* Pravý - Timeline vizuální */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-blue-200">
-          <h3 className="text-2xl font-bold mb-6 flex items-center">
-            <span className="text-4xl mr-3">📅</span>
+        <div className="bg-white rounded-2xl shadow-xl p-4 md:p-4 md:p-8 border-2 border-blue-200">
+          <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 flex items-center">
+            <span className="text-3xl md:text-4xl mr-2 md:mr-3">📅</span>
             Časová osa kauzy
           </h3>
           <div className="space-y-6">
@@ -376,15 +376,15 @@ export default function Home() {
       </div>
 
       {/* KLÍČOVÍ AKTÉŘI - Zástupci města */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
-          <h2 className="text-4xl font-black text-center mb-12 text-white">
+      <div className="snap-center min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-8 md:py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-7xl">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-white">
             🎯 Klíčoví aktéři kauzy
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="/akteri/jan-kuzma" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-6xl mb-4 text-center">🏛️</div>
-              <h3 className="text-2xl font-bold mb-3 text-center text-white">Jan Kuzma</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-3 md:gap-6">
+            <a href="/akteri/jan-kuzma" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Kuzma</h3>
               <div className="text-sm text-white/80 mb-4">Starosta města + jednatel SPORT Krupka</div>
               <div className="space-y-2 text-sm">
                 <div className="p-2 bg-red-500/40 rounded">Střet zájmů - dvojrole</div>
@@ -393,9 +393,9 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="/akteri/jan-bokoc" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-6xl mb-4 text-center">🏛️</div>
-              <h3 className="text-2xl font-bold mb-3 text-center text-white">Jan Bokoč</h3>
+            <a href="/akteri/jan-bokoc" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Bokoč</h3>
               <div className="text-sm text-white/80 mb-4">Místostarosta města Krupka</div>
               <div className="space-y-2 text-sm">
                 <div className="p-2 bg-red-500/40 rounded">Účast na nelegálních schůzích</div>
@@ -404,9 +404,9 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-6xl mb-4 text-center">🏛️</div>
-              <h3 className="text-2xl font-bold mb-3 text-center text-white">Tomáš Syryčanský</h3>
+            <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Tomáš Syryčanský</h3>
               <div className="text-sm text-white/80 mb-4">Sportovní manažer SPORT Krupka</div>
               <div className="space-y-2 text-sm">
                 <div className="p-2 bg-red-500/40 rounded">Koordinoval převrat na místě</div>
@@ -415,9 +415,9 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="/akteri/miroslav-brozek" className="bg-white/10 backdrop-blur rounded-2xl p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400">
-              <div className="text-6xl mb-4 text-center">✅</div>
-              <h3 className="text-2xl font-bold mb-3 text-center text-white">Miroslav Brožek</h3>
+            <a href="/akteri/miroslav-brozek" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">✅</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Miroslav Brožek</h3>
               <div className="text-sm text-white/80 mb-4">Legitimní předseda TJ Krupka</div>
               <div className="space-y-2 text-sm">
                 <div className="p-2 bg-green-500/40 rounded">Zvolen 24.8.2021 na 5 let</div>
@@ -436,9 +436,9 @@ export default function Home() {
       </div>
 
       {/* QUICK ACTIONS - vizuální CTA */}
-      <div className="snap-center h-screen flex items-center justify-center py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="snap-center h-screen flex items-center justify-center py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
         <ActionCard
           href="/prehled"
           icon="⚡"
@@ -476,8 +476,8 @@ export default function Home() {
       </div>
 
       {/* JAK TO VŠECHNO ZAČALO */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           🎬 Jak to všechno začalo?
         </h2>
@@ -517,12 +517,12 @@ export default function Home() {
       </div>
 
       {/* PROČ TO VŠECHNO ZAČALO */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700 py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           🤔 Proč to všechno začalo?
         </h2>
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-3 md:gap-6">
           <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
             <div className="text-3xl mb-3">🎯</div>
             <h3 className="text-xl font-bold mb-3">Záměr nového předsedy</h3>
@@ -556,8 +556,8 @@ export default function Home() {
       </div>
 
       {/* EXISTUJÍ DŮKAZY? */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           📋 Existují důkazy?
         </h2>
@@ -567,7 +567,7 @@ export default function Home() {
             <p className="text-xl">Každé tvrzení je podloženo dokumenty</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-3 md:gap-6">
             <div className="bg-white/10 backdrop-blur rounded-2xl p-6 text-center">
               <div className="text-5xl mb-3">📧</div>
               <div className="text-3xl font-black mb-2">50+</div>
@@ -601,8 +601,8 @@ export default function Home() {
       </div>
 
       {/* HOSPODAŘENÍ ODDÍLŮ */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900 py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           📊 Hospodaření oddílů
         </h2>
@@ -610,7 +610,7 @@ export default function Home() {
           Finanční situace jednotlivých oddílů podle dokumentu "TJ ODDÍLY 2021-2023 - výsledek hospodaření"
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-3 md:gap-6 max-w-5xl mx-auto">
           {/* Oddíl stolního tenisu */}
           <a
             href="/akteri/marek-vanis"
@@ -730,12 +730,12 @@ export default function Home() {
       </div>
 
       {/* KAUZA NA JEDEN POHLED - Infografika */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700 py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700 py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-12 text-white">
           ⚠️ Jádro problému
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div className="grid md:grid-cols-3 gap-4 md:gap-8 text-center">
           <div>
             <div className="text-6xl font-black mb-2">0</div>
             <div className="text-xl font-bold mb-1">seznamů členů</div>
@@ -761,12 +761,12 @@ export default function Home() {
       </div>
 
       {/* PROSTÁ FAKTA */}
-      <div className="snap-center h-screen flex items-center justify-center bg-white py-16">
-        <div className="container mx-auto px-8 max-w-7xl">
+      <div className="snap-center h-screen flex items-center justify-center bg-white py-8 md:py-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-3xl font-black text-center mb-10 text-slate-900">
           Prostá fakta (bez interpretací)
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8">
           <FactBox
             icon="✅"
             title="Co bylo slíbeno"
