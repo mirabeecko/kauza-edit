@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import LeftPanel from "@/components/LeftPanel";
-import RightPanel from "@/components/RightPanel";
 
 export default function RootLayout({
   children,
@@ -37,7 +36,6 @@ export default function RootLayout({
             <main className="flex-1 overflow-y-auto bg-white">
               {children}
             </main>
-            <RightPanel />
           </div>
         </div>
       </body>

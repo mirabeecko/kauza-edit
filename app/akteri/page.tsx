@@ -1,5 +1,7 @@
+import { showCityContent, isCityActor } from '@/lib/config';
+
 export default function AkteriPage() {
-  const actors = [
+  const allActors = [
     {
       slug: 'miroslav-brozek',
       name: 'Miroslav Brožek',
@@ -149,6 +151,11 @@ export default function AkteriPage() {
     },
   ];
 
+  // Filter out city actors if showCityContent is false
+  const actors = showCityContent()
+    ? allActors
+    : allActors.filter(actor => !isCityActor(actor.slug));
+
   const categories = Array.from(new Set(actors.map(a => a.category)));
 
   return (
@@ -201,7 +208,9 @@ export default function AkteriPage() {
             <p><strong>Celkem osob:</strong> {actors.length}</p>
             <p><strong>Vyloučení členové:</strong> 2 (Vaniš, Pivoňka)</p>
             <p><strong>Zánik členství:</strong> 2 (Vlach, Kulík)</p>
-            <p><strong>Zástupci města:</strong> 3 (Kuzma, Bokoč, Syryčanský)</p>
+            {showCityContent() && (
+              <p><strong>Zástupci města:</strong> 3 (Kuzma, Bokoč, Syryčanský)</p>
+            )}
           </div>
         </div>
         <div className="p-6 bg-slate-50 rounded-lg border border-slate-200">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { showCityContent } from '@/lib/config';
 
 // KOMPONENTY PRO VIZUALIZACI
 
@@ -381,41 +382,45 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-white">
             🎯 Klíčoví aktéři kauzy
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-3 md:gap-6">
-            <a href="/akteri/jan-kuzma" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Kuzma</h3>
-              <div className="text-sm text-white/80 mb-4">Starosta města + jednatel SPORT Krupka</div>
-              <div className="space-y-2 text-sm">
-                <div className="p-2 bg-red-500/40 rounded">Střet zájmů - dvojrole</div>
-                <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky 2× (12/2023, 1/2024)</div>
-                <div className="p-2 bg-red-500/40 rounded">Koordinoval pokus o převrat</div>
-              </div>
-            </a>
+          <div className={`grid gap-4 md:gap-3 md:gap-6 ${showCityContent() ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' : 'grid-cols-1 justify-items-center'}`}>
+            {showCityContent() && (
+              <>
+                <a href="/akteri/jan-kuzma" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Kuzma</h3>
+                  <div className="text-sm text-white/80 mb-4">Starosta města + jednatel SPORT Krupka</div>
+                  <div className="space-y-2 text-sm">
+                    <div className="p-2 bg-red-500/40 rounded">Střet zájmů - dvojrole</div>
+                    <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky 2× (12/2023, 1/2024)</div>
+                    <div className="p-2 bg-red-500/40 rounded">Koordinoval pokus o převrat</div>
+                  </div>
+                </a>
 
-            <a href="/akteri/jan-bokoc" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Bokoč</h3>
-              <div className="text-sm text-white/80 mb-4">Místostarosta města Krupka</div>
-              <div className="space-y-2 text-sm">
-                <div className="p-2 bg-red-500/40 rounded">Účast na nelegálních schůzích</div>
-                <div className="p-2 bg-red-500/40 rounded">Politická podpora převratu</div>
-                <div className="p-2 bg-red-500/40 rounded">Zásah do autonomie spolku</div>
-              </div>
-            </a>
+                <a href="/akteri/jan-bokoc" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Bokoč</h3>
+                  <div className="text-sm text-white/80 mb-4">Místostarosta města Krupka</div>
+                  <div className="space-y-2 text-sm">
+                    <div className="p-2 bg-red-500/40 rounded">Účast na nelegálních schůzích</div>
+                    <div className="p-2 bg-red-500/40 rounded">Politická podpora převratu</div>
+                    <div className="p-2 bg-red-500/40 rounded">Zásah do autonomie spolku</div>
+                  </div>
+                </a>
 
-            <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
-              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
-              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Tomáš Syryčanský</h3>
-              <div className="text-sm text-white/80 mb-4">Sportovní manažer SPORT Krupka</div>
-              <div className="space-y-2 text-sm">
-                <div className="p-2 bg-red-500/40 rounded">Koordinoval převrat na místě</div>
-                <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky na Pinčesárně</div>
-                <div className="p-2 bg-red-500/40 rounded">Měl být "zvolen" jako předseda</div>
-              </div>
-            </a>
+                <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Tomáš Syryčanský</h3>
+                  <div className="text-sm text-white/80 mb-4">Sportovní manažer SPORT Krupka</div>
+                  <div className="space-y-2 text-sm">
+                    <div className="p-2 bg-red-500/40 rounded">Koordinoval převrat na místě</div>
+                    <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky na Pinčesárně</div>
+                    <div className="p-2 bg-red-500/40 rounded">Měl být "zvolen" jako předseda</div>
+                  </div>
+                </a>
+              </>
+            )}
 
-            <a href="/akteri/miroslav-brozek" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400">
+            <a href="/akteri/miroslav-brozek" className={`bg-white/10 backdrop-blur rounded-2xl p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400 ${!showCityContent() ? 'max-w-md' : ''}`}>
               <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">✅</div>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Miroslav Brožek</h3>
               <div className="text-sm text-white/80 mb-4">Legitimní předseda TJ Krupka</div>
