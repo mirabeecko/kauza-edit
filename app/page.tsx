@@ -20,10 +20,10 @@ function StatCard({ value, label, icon, color }: StatCardProps) {
   };
 
   return (
-    <div className={`bg-gradient-to-br ${colors[color]} rounded-2xl p-6 text-white shadow-xl border-4 transform hover:scale-105 transition`}>
-      <div className="text-5xl mb-3">{icon}</div>
-      <div className="text-4xl font-black mb-2">{value}</div>
-      <div className="text-lg font-semibold opacity-90">{label}</div>
+    <div className={`bg-gradient-to-br ${colors[color]} rounded-xl md:rounded-2xl p-4 md:p-6 text-white shadow-lg md:shadow-xl border-2 md:border-4 hover:scale-105 transition`}>
+      <div className="text-3xl md:text-5xl mb-2 md:mb-3">{icon}</div>
+      <div className="text-2xl md:text-4xl font-black mb-1 md:mb-2">{value}</div>
+      <div className="text-sm md:text-lg font-semibold opacity-90">{label}</div>
     </div>
   );
 }
@@ -45,13 +45,13 @@ function ProgressBar({ label, value, max, color }: ProgressBarProps) {
 
   return (
     <div>
-      <div className="flex justify-between mb-2">
-        <span className="font-semibold">{label}</span>
-        <span className="font-bold">{value.toLocaleString('cs-CZ')} Kč</span>
+      <div className="flex flex-col md:flex-row md:justify-between mb-1 md:mb-2">
+        <span className="text-xs md:text-sm font-semibold">{label}</span>
+        <span className="text-sm md:text-base font-bold">{value.toLocaleString('cs-CZ')} Kč</span>
       </div>
-      <div className="w-full bg-slate-200 rounded-full h-6 overflow-hidden">
+      <div className="w-full bg-slate-200 rounded-full h-5 md:h-6 overflow-hidden">
         <div
-          className={`${colors[color]} h-full rounded-full transition-all duration-1000 flex items-center justify-end pr-2`}
+          className={`${colors[color]} h-full rounded-full transition-all duration-1000 flex items-center justify-end pr-1 md:pr-2`}
           style={{ width: `${percentage}%` }}
         >
           <span className="text-xs font-bold text-white">{percentage.toFixed(0)}%</span>
@@ -70,9 +70,9 @@ interface TimelinePointProps {
 
 function TimelinePoint({ year, label, status, description }: TimelinePointProps) {
   return (
-    <div className="flex items-start space-x-4">
+    <div className="flex items-start space-x-3 md:space-x-4">
       <div className="flex-shrink-0">
-        <div className={`w-16 h-16 rounded-full flex items-center justify-center font-black text-lg ${
+        <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center font-black text-base md:text-lg ${
           status === 'active'
             ? 'bg-blue-500 text-white animate-pulse'
             : 'bg-green-500 text-white'
@@ -81,9 +81,9 @@ function TimelinePoint({ year, label, status, description }: TimelinePointProps)
         </div>
       </div>
       <div className="flex-1">
-        <div className="font-bold text-lg">{year}</div>
-        <div className="text-xl font-black text-slate-900">{label}</div>
-        <div className="text-sm text-slate-600">{description}</div>
+        <div className="font-bold text-base md:text-lg">{year}</div>
+        <div className="text-lg md:text-xl font-black text-slate-900">{label}</div>
+        <div className="text-xs md:text-sm text-slate-600">{description}</div>
       </div>
     </div>
   );
@@ -107,11 +107,11 @@ function ActionCard({ href, icon, title, description, color, time }: ActionCardP
 
   return (
     <Link href={href}>
-      <div className={`bg-gradient-to-br ${colors[color]} rounded-2xl p-8 text-white shadow-xl transform hover:scale-105 transition h-full`}>
-        <div className="text-6xl mb-4">{icon}</div>
-        <h3 className="text-2xl font-black mb-2">{title}</h3>
-        <p className="text-white/80 mb-4">{description}</p>
-        <div className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm font-semibold">
+      <div className={`bg-gradient-to-br ${colors[color]} rounded-xl md:rounded-2xl p-5 md:p-8 text-white shadow-lg md:shadow-xl hover:scale-105 transition h-full`}>
+        <div className="text-4xl md:text-6xl mb-3 md:mb-4">{icon}</div>
+        <h3 className="text-xl md:text-2xl font-black mb-2">{title}</h3>
+        <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">{description}</p>
+        <div className="inline-block px-2 md:px-3 py-1 bg-white/20 rounded-full text-xs md:text-sm font-semibold">
           ⏱️ {time}
         </div>
       </div>
@@ -133,16 +133,16 @@ function FactBox({ icon, title, facts, color }: FactBoxProps) {
   };
 
   return (
-    <div className={`${colors[color]} rounded-2xl p-4 md:p-6 border-2`}>
-      <h3 className="text-3xl font-black mb-4 flex items-center">
-        <span className="mr-3 text-4xl">{icon}</span>
+    <div className={`${colors[color]} rounded-xl md:rounded-2xl p-4 md:p-6 border-2`}>
+      <h3 className="text-xl md:text-3xl font-black mb-3 md:mb-4 flex items-center">
+        <span className="mr-2 md:mr-3 text-2xl md:text-4xl">{icon}</span>
         {title}
       </h3>
-      <ul className="space-y-3">
+      <ul className="space-y-2 md:space-y-3">
         {facts.map((fact, i) => (
           <li key={i} className="flex items-start">
-            <span className="mr-3 text-xl flex-shrink-0">{color === 'green' ? '✓' : '✗'}</span>
-            <span className="font-semibold">{fact}</span>
+            <span className="mr-2 md:mr-3 text-lg md:text-xl flex-shrink-0">{color === 'green' ? '✓' : '✗'}</span>
+            <span className="text-sm md:text-base font-semibold">{fact}</span>
           </li>
         ))}
       </ul>
@@ -154,23 +154,23 @@ function FactBox({ icon, title, facts, color }: FactBoxProps) {
 
 export default function Home() {
   return (
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+    <div className="overflow-y-auto">
       {/* Hero sekce - dramatická */}
-      <div className="snap-center h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzFmMjkzNyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+      <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-12 md:py-0">
+        {/* Simplified background for mobile - only show on desktop */}
+        <div className="hidden md:block absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzFmMjkzNyIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block px-4 py-2 bg-red-600 text-white text-sm font-bold rounded-full mb-6 animate-pulse">
+            <div className="inline-block px-3 md:px-4 py-2 bg-red-600 text-white text-xs md:text-sm font-bold rounded-full mb-4 md:mb-6">
               🚨 AKTIVNÍ KAUZA
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-              Kauza<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                TJ Krupka z.s.
-              </span>
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight">
+              Kauza <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">TJ Krupka z.s.</span>
             </h1>
-            <p className="text-base md:text-xl lg:text-2xl text-blue-200 mb-8">
-              {(2045635).toLocaleString('cs-CZ')} Kč škody • 3+ roky trvání • 0 trestně stíhaných
+            <p className="text-sm md:text-xl lg:text-2xl text-blue-200 mb-6 md:mb-8 px-4">
+              {(2045635).toLocaleString('cs-CZ')} Kč škody<br className="md:hidden" />
+              <span className="hidden md:inline"> • </span>3+ roky trvání<br className="md:hidden" />
+              <span className="hidden md:inline"> • </span>0 trestně stíhaných
             </p>
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
               <Link href="/prehled" className="px-6 md:px-8 py-3 md:py-4 bg-blue-600 hover:bg-blue-700 rounded-xl font-bold text-base md:text-lg transition transform hover:scale-105 shadow-2xl">
@@ -185,7 +185,7 @@ export default function Home() {
       </div>
 
       {/* PROSTÁ FAKTA - bez interpretací */}
-      <div className="snap-center min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 py-8 md:py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 py-8 md:py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-6xl">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-slate-900">
             📋 Prostá fakta (bez interpretací)
@@ -263,7 +263,7 @@ export default function Home() {
       </div>
 
       {/* MEGA STATS - vizuální dominance čísel */}
-      <div className="snap-center min-h-screen flex items-center justify-center py-8 md:py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center py-8 md:py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-7xl">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-slate-900">
           Kauza v číslech
@@ -302,7 +302,7 @@ export default function Home() {
       </div>
 
       {/* VIZUÁLNÍ BREAKDOWN */}
-      <div className="snap-center min-h-screen flex items-center justify-center py-8 md:py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center py-8 md:py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-7xl">
       <div className="grid md:grid-cols-2 gap-4 md:gap-4 md:gap-8">
         {/* Levý - Škoda */}
@@ -377,7 +377,7 @@ export default function Home() {
       </div>
 
       {/* KLÍČOVÍ AKTÉŘI - Zástupci města */}
-      <div className="snap-center min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-8 md:py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-8 md:py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-4 md:px-8 max-w-7xl">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-white">
             🎯 Klíčoví aktéři kauzy
@@ -441,7 +441,7 @@ export default function Home() {
       </div>
 
       {/* QUICK ACTIONS - vizuální CTA */}
-      <div className="snap-center h-screen flex items-center justify-center py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
         <ActionCard
@@ -481,7 +481,7 @@ export default function Home() {
       </div>
 
       {/* JAK TO VŠECHNO ZAČALO */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           🎬 Jak to všechno začalo?
@@ -522,7 +522,7 @@ export default function Home() {
       </div>
 
       {/* PROČ TO VŠECHNO ZAČALO */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700 py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 to-purple-700 py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           🤔 Proč to všechno začalo?
@@ -561,7 +561,7 @@ export default function Home() {
       </div>
 
       {/* EXISTUJÍ DŮKAZY? */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-green-700 py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           📋 Existují důkazy?
@@ -606,7 +606,7 @@ export default function Home() {
       </div>
 
       {/* HOSPODAŘENÍ ODDÍLŮ */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900 py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900 py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-8 text-white">
           📊 Hospodaření oddílů
@@ -735,7 +735,7 @@ export default function Home() {
       </div>
 
       {/* KAUZA NA JEDEN POHLED - Infografika */}
-      <div className="snap-center h-screen flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700 py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-500 to-red-700 py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-4xl font-black text-center mb-12 text-white">
           ⚠️ Jádro problému
@@ -766,7 +766,7 @@ export default function Home() {
       </div>
 
       {/* PROSTÁ FAKTA */}
-      <div className="snap-center h-screen flex items-center justify-center bg-white py-8 md:py-16">
+      <div className="min-h-screen flex items-center justify-center bg-white py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-8 max-w-7xl">
         <h2 className="text-3xl font-black text-center mb-10 text-slate-900">
           Prostá fakta (bez interpretací)
