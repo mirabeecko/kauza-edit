@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import LeftPanel from "@/components/LeftPanel";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -37,6 +38,7 @@ export default function RootLayout({
               {children}
             </main>
           </div>
+          <Footer />
         </div>
       </body>
     </html>
