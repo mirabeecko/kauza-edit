@@ -204,6 +204,11 @@ export default function Footer() {
                 <h4 className="text-sm font-semibold text-slate-400 mb-2">Ostatní</h4>
                 <ul className="space-y-2 text-sm">
                   <li>
+                    <Link href="/myty-a-dezinformace" className="text-slate-300 hover:text-blue-400 transition">
+                      Mýty a dezinformace
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/cisla" className="text-slate-300 hover:text-blue-400 transition">
                       Čísla
                     </Link>
