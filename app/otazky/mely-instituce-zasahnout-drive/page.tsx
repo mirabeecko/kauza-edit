@@ -4,241 +4,209 @@ export default function MelyInstituceZasahnoutDrivePage() {
   const cityVisible = showCityContent();
 
   return (
-    <div className="container mx-auto px-3 md:px-8 py-6 md:py-12 max-w-4xl">
-      <nav className="text-sm text-slate-600 mb-6">
-        <a href="/otazky" className="hover:text-blue-600">← Všechny otázky</a>
-        <span className="mx-2">/</span>
-        <span>Instituce</span>
-      </nav>
-
-      <div className="mb-8">
-        <div className="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-semibold mb-4">
-          ⚠️ Důležitá otázka
+    <div className="min-h-screen bg-slate-50">
+      {/* Legal Disclaimer Banner */}
+      <div className="bg-blue-900 text-white py-4">
+        <div className="container mx-auto px-3 md:px-8 max-w-4xl">
+          <p className="text-sm leading-relaxed">
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s. ohledně role institucí ve sporech. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné instituce a osoby mají právo na odlišný právní názor.
+          </p>
         </div>
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">
-          Měly instituce zasáhnout dříve?
-        </h1>
       </div>
 
-      <section className="mb-8 p-4 md:p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
-        <h2 className="text-xl font-bold text-blue-900 mb-3 flex items-center">
-          <span className="text-2xl mr-2">💡</span>
-          Proč je otázka důležitá
-        </h2>
-        <div className="text-blue-900 space-y-2">
-          <p>
-            Spolek je autonomní subjekt, ale v určitých případech mají státní
-            a municipální instituce právo nebo dokonce povinnost zasáhnout.
-          </p>
-          <p className="mt-3">
-            <strong>Klíčové momenty:</strong>
-          </p>
-          <ul className="list-disc list-inside ml-4 space-y-1">
-            <li>Kdy měla ČAST zasáhnout?</li>
-            <li>Kdy měla policie začít vyšetřovat?</li>
-            {cityVisible && <li>Mělo město Krupka respektovat autonomii spolku?</li>}
-            <li>Jaké jsou hranice vměšování institucí?</li>
-          </ul>
+      <div className="container mx-auto px-3 md:px-8 py-6 md:py-12 max-w-4xl">
+        <nav className="text-sm text-slate-600 mb-6">
+          <a href="/otazky" className="hover:text-blue-600">← Všechny otázky</a>
+          <span className="mx-2">/</span>
+          <span>Instituce</span>
+        </nav>
+
+        <div className="mb-8">
+          <div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+            ⚖️ Právní pozice spolku
+          </div>
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+            Měly instituce zasáhnout dříve?
+          </h1>
         </div>
-      </section>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-          <span className="text-2xl mr-2">⚖️</span>
-          Co instituce udělaly
-        </h2>
-        <div className="space-y-4">
-          <FactBox
-            status="proven"
-            title="ČAST: Zasáhla správně a včas (2022)"
-            evidence={['Rozhodčí komise ČAST', 'Zápis z jednání 2022']}
-          >
+        <section className="mb-8 p-4 md:p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
+          <h2 className="text-xl font-bold text-blue-900 mb-3 flex items-center">
+            <span className="text-2xl mr-2">💡</span>
+            Proč je otázka důležitá
+          </h2>
+          <div className="text-blue-900 space-y-2">
             <p>
-              <strong>ČAST (Česká asociace Sport pro všechny) rozhodla:</strong>
+              Spolek je autonomní subjekt, ale v určitých případech mají státní
+              a municipální instituce právo nebo povinnost reagovat na vzniklé situace.
             </p>
-            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-              <li>2022: Potvrdila legitimitu volby Brožka (24.8.2021)</li>
-              <li>2022: Potvrdila, že vyloučení Vaniše a Pivoňky bylo v souladu se zákonem</li>
-              <li>Zasáhla na žádost Brožka - řešila spor v rámci své působnosti</li>
-            </ul>
-            <p className="mt-3 text-green-700 font-semibold">
-              ČAST reagovala řádně a v přiměřené době na podání Brožka.
-            </p>
-          </FactBox>
-
-          <FactBox
-            status="proven"
-            title="Policie: Vyšetřuje od roku 2024"
-            evidence={['Trestní oznámení', 'Výslechy 2024']}
-          >
-            <p>
-              <strong>Policie zahájila vyšetřování po trestním oznámení:</strong>
-            </p>
-            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-              <li>Brožek podal trestní oznámení na zpronevěru</li>
-              <li>Policie vyslechla Vaniše, Vlacha a další</li>
-              <li>Vaniš při výslechu přiznal vybírání příspěvků</li>
-              <li>Vlach při výslechu přiznal pokladnu 132.523 Kč</li>
-            </ul>
             <p className="mt-3">
-              Otázka: Měla policie začít dříve? Odpověď: Trestní oznámení bylo
-              podáno až po vyčerpání jiných řešení.
+              <strong>Klíčové otázky:</strong>
             </p>
-          </FactBox>
-
-          <FactBox
-            status="proven"
-            title="Krajský soud: Rozhodl v roce 2024"
-            evidence={['Rozsudek 30 C 104/2024', 'Žaloba 8.4.2024']}
-          >
-            <p>
-              <strong>Soud rozhodl po podání žaloby:</strong>
-            </p>
-            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-              <li>Žaloba podána 8.4.2024 (39 dní po prekluzivní lhůtě)</li>
-              <li>Soud potvrdil platnost volby Brožka</li>
-              <li>Rozhodl o neplatnosti vyloučení (sporné - žaloba po lhůtě)</li>
+            <ul className="list-disc list-inside ml-4 space-y-1">
+              <li>Jaká je role odborných svazů?</li>
+              <li>Kdy má policie vyšetřovat spory ve spolcích?</li>
+              {cityVisible && <li>Jaká je role obce jako pronajímatele?</li>}
+              <li>Jaké jsou hranice autonomie spolku?</li>
             </ul>
-          </FactBox>
+          </div>
+        </section>
 
-          {cityVisible && (
-            <DisputedBox title="Město Krupka: Mělo respektovat autonomii spolku">
-              <p className="font-semibold text-red-700">
-                Město aktivně zasahovalo do autonomie spolku:
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+            <span className="text-2xl mr-2">📋</span>
+            Role institucí (dle pozice spolku)
+          </h2>
+          <div className="space-y-4">
+            <FactBox
+              status="soud"
+              title="ČAST: Rozhodčí komise (2022)"
+              evidence={['Rozhodčí komise ČAST', 'Zápis z jednání 2022']}
+            >
+              <p>
+                <strong>Rozhodčí komise ČAST rozhodla:</strong>
               </p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>SPORT Krupka vyměnila zámky 2× (prosinec 2023, leden 2024)</li>
-                <li>Ignorovala oficiální notifikaci o vyloučení členů (26.1.2024)</li>
-                <li>Koordinovala pokus o "zvolení" Syryčanského</li>
-                <li>Podporovala nelegální schůze svolané vyloučenými členy</li>
+                <li>2022: Potvrdila legitimitu volby předsedy (24.8.2021)</li>
+                <li>2022: Potvrdila, že vyloučení bylo v souladu se zákonem</li>
+                <li>Řešila spor v rámci své působnosti</li>
               </ul>
-              <p className="mt-3 font-semibold text-red-700">
-                § 20a NOZ: Stát a obce mají povinnost respektovat autonomii spolku.
-                Město Krupka tuto povinnost porušilo.
-              </p>
-            </DisputedBox>
-          )}
-        </div>
-      </section>
+            </FactBox>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-          <span className="text-2xl mr-2">❓</span>
-          Co zůstává sporné
-        </h2>
-        <div className="space-y-4">
-          <UnknownBox title="Mohla ČAST zakázat nelegální schůze?">
-            <p>
-              ČAST potvrdila legitimitu Brožka, ale vyloučení členové pokračovali
-              ve svolávání schůzí. Měla ČAST:
-            </p>
-            <ul className="list-disc list-inside ml-4 space-y-1">
-              <li>Výslovně zakázat schůze svolané vyloučenými členy?</li>
-              <li>Informovat ostatní orgány (soud, policii)?</li>
-              <li>Má ČAST vůbec takové pravomoci?</li>
-            </ul>
-          </UnknownBox>
-
-          <UnknownBox title="Měla policie jednat před trestním oznámením?">
-            <p>
-              Pokud existovalo podezření ze zpronevěry, měla policie:
-            </p>
-            <ul className="list-disc list-inside ml-4 space-y-1">
-              <li>Začít vyšetřovat i bez trestního oznámení?</li>
-              <li>Spolupracovat s ČASTem při jeho šetření?</li>
-              <li>Jaké jsou hranice iniciativního postupu policie?</li>
-            </ul>
-          </UnknownBox>
-
-          {cityVisible && (
-            <UnknownBox title="Měl krajský úřad kontrolovat město?">
+            <FactBox
+              status="spolek"
+              title="Trestní oznámení (2024)"
+              evidence={['Trestní oznámení', 'Písemnosti policie']}
+            >
               <p>
-                Krajský úřad má dohled nad obcemi. Měl:
+                <strong>Evidence spolku:</strong>
               </p>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Zkontrolovat postup města Krupka?</li>
-                <li>Prověřit střet zájmů starosty Kuzmy?</li>
-                <li>Zasáhnout při porušení § 20a NOZ (autonomie spolku)?</li>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                <li>Spolek podal trestní oznámení</li>
+                <li>Policie provádí šetření</li>
+                <li>Probíhá vyšetřování</li>
               </ul>
-            </UnknownBox>
-          )}
-        </div>
-      </section>
+              <p className="mt-2 text-xs italic">
+                Výsledek vyšetřování není znám. Platí presumpce neviny.
+              </p>
+            </FactBox>
 
-      <section className="mb-8 p-4 md:p-6 bg-slate-50 rounded-lg border-2 border-slate-200">
-        <h2 className="text-xl font-bold text-slate-900 mb-3">
-          ⚖️ Právní kontext
-        </h2>
-        <div className="space-y-3 text-slate-900">
-          <div>
-            <h3 className="font-semibold mb-1">§ 20a NOZ - Autonomie spolku</h3>
-            <p className="text-sm">
-              Stát a obce mají povinnost respektovat autonomii spolku a rozhodnutí
-              jeho legitimních orgánů. Vměšování je možné jen v zákonem stanovených případech.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-1">ČAST - Sportovní arbitráž</h3>
-            <p className="text-sm">
-              ČAST řeší spory mezi členy tělovýchovných jednot. Jeho rozhodnutí jsou
-              závazná pro členy TJ. Řeší spory rychleji než soudy.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-1">§ 158 TŘ - Trestní oznámení</h3>
-            <p className="text-sm">
-              Každý má právo podat trestní oznámení, pokud má podezření na spáchání
-              trestného činu. Policie je povinna ho prošetřit.
-            </p>
-          </div>
-        </div>
-      </section>
+            {cityVisible && (
+              <FactBox
+                status="spor"
+                title="Role města Krupka"
+                evidence={['Korespondence', 'Nájemní smlouvy']}
+              >
+                <p>
+                  <strong>Právní pozice spolku:</strong> Spolek zastává právní názor, že město Krupka mělo respektovat autonomii spolku podle § 20a NOZ.
+                </p>
+                <p className="mt-2">
+                  Spolek eviduje situace související s přístupem k prostorám a spory o uznání orgánů spolku.
+                </p>
+                <p className="mt-2 text-xs italic">
+                  Město má právo na odlišný právní názor. Konečné posouzení je v kompetenci příslušných orgánů.
+                </p>
+              </FactBox>
+            )}
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-900 mb-4">
-          🔗 Související uzly
-        </h2>
-        <div className="grid md:grid-cols-2 gap-4">
-          <RelatedNode type="document" title="Rozhodčí komise ČAST" href="/cast" />
-          <RelatedNode type="document" title="Trestní oznámení" href="/udalosti" />
-          {cityVisible && <RelatedNode type="question" title="Jaká byla role města?" href="/otazky/jaka-byla-role-mesta" />}
-          <RelatedNode type="question" title="Jsou rozhodnutí platná?" href="/otazky/jsou-rozhodnuti-platna" />
-          <RelatedNode type="person" title="Miroslav Brožek" href="/akteri/miroslav-brozek" />
-          {cityVisible && <RelatedNode type="person" title="Jan Kuzma - starosta" href="/akteri/jan-kuzma" />}
-        </div>
-      </section>
+            <FactBox
+              status="spolek"
+              title="Krajský soud v Ústí nad Labem (2024)"
+              evidence={['Rozsudky krajského soudu']}
+            >
+              <p>
+                Krajský soud v Ústí nad Labem rozhodl ve sporech o vyloučení členů.
+                Spolek má k některým rozhodnutím odlišný právní názor a zvažuje odvolání.
+              </p>
+              <p className="mt-2 text-xs italic">
+                Všechna soudní rozhodnutí si zasluhují respekt. Konečné posouzení je v kompetenci odvolacích soudů.
+              </p>
+            </FactBox>
+          </div>
+        </section>
 
-      <section className="-mx-3 md:-mx-8 px-3 md:px-8 py-8 md:py-12 bg-gradient-to-r from-blue-600 to-blue-700">
-        <h3 className="text-xl font-bold text-white mb-4">
-          📌 Shrnutí
-        </h3>
-        <div className="text-white space-y-3">
-          <p>
-            <strong>ČAST správně:</strong> Potvrdila legitimitu Brožka (2022) a vyloučení
-            členů. Reagovala v přiměřené době na podání.
-          </p>
-          <p>
-            <strong>Policie správně:</strong> Vyšetřuje po trestním oznámení. Brožek
-            vyčerpal jiná řešení před podáním.
-          </p>
-          {cityVisible && (
+        <section className="mb-8 p-4 md:p-6 bg-slate-50 rounded-lg border-2 border-slate-200">
+          <h2 className="text-xl font-bold text-slate-900 mb-3">
+            ⚖️ Právní kontext
+          </h2>
+          <div className="space-y-3 text-slate-700">
+            <div>
+              <h3 className="font-semibold mb-1">§ 20a NOZ - Autonomie spolku</h3>
+              <p className="text-sm">
+                Stát a obce mají povinnost respektovat právo spolku na samosprávnou činnost.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1">Řád ČAST</h3>
+              <p className="text-sm">
+                ČAST má rozhodčí komisi, která řeší spory mezi členskými spolky.
+              </p>
+            </div>
+            {cityVisible && (
+              <div>
+                <h3 className="font-semibold mb-1">Zákon o obcích</h3>
+                <p className="text-sm">
+                  Obce spravují majetek a uzavírají nájemní smlouvy. Musí respektovat autonomii spolků.
+                </p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+            🔗 Související stránky
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <RelatedNode type="question" title="Jednal předseda v souladu se zákonem?" href="/otazky/jednal-predseda-v-souladu-se-zakonem" />
+            {cityVisible && (
+              <RelatedNode type="question" title="Jaká byla role města?" href="/otazky/jaka-byla-role-mesta" />
+            )}
+            <RelatedNode type="question" title="Byly schůze legitimní?" href="/otazky/byly-schuze-legitimni" />
+            <RelatedNode type="document" title="Právní rámec" href="/pravni-ramec" />
+          </div>
+        </section>
+
+        <section className="p-4 md:p-6 bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg border-2 border-orange-300">
+          <h3 className="text-xl font-bold text-orange-900 mb-4">
+            📌 Shrnutí právní pozice spolku
+          </h3>
+          <div className="text-orange-900 space-y-3 text-sm">
             <p>
-              <strong>Město Krupka špatně:</strong> Aktivně zasahovalo do autonomie spolku
-              (výměna zámků 2×, podpora vyloučených členů). Porušilo § 20a NOZ.
+              <strong>Rozhodčí komise ČAST:</strong> V roce 2022 rozhodla ve prospěch spolku a potvrdila legitimitu postupů předsedy.
             </p>
-          )}
-          <p>
-            <strong>Sporné:</strong> Měla ČAST výslovně zakázat nelegální schůze?
-            Měl krajský úřad kontrolovat město? Jaké jsou hranice vměšování institucí?
+            <p>
+              <strong>Trestní oznámení:</strong> Spolek podal trestní oznámení. Probíhá vyšetřování. Platí presumpce neviny.
+            </p>
+            {cityVisible && (
+              <p>
+                <strong>Role obce:</strong> Spolek zastává právní názor o potřebě respektování autonomie spolku. Obec má právo na odlišný právní názor.
+              </p>
+            )}
+            <p className="mt-3 pt-3 border-t-2 border-orange-300">
+              <strong>Upozornění:</strong> Konečné právní posouzení je výlučně v kompetenci příslušných orgánů. Všechny zúčastněné osoby a instituce mají právo na odlišný právní názor.
+            </p>
+          </div>
+        </section>
+
+        <section className="mt-8 p-4 md:p-6 bg-slate-50 border-2 border-slate-200 rounded-lg">
+          <h3 className="text-lg font-bold text-slate-900 mb-2">
+            ⚖️ Námitky k uvedeným údajům
+          </h3>
+          <p className="text-sm text-slate-700">
+            Pokud máte podloženou námitku k jakémukoli údaji na této stránce, kontaktujte nás prostřednictvím stránky{' '}
+            <a href="/pravni-ramec" className="text-blue-600 hover:underline font-semibold">
+              Právní rámec a kontakt
+            </a>.
           </p>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }
 
 interface FactBoxProps {
-  status: 'proven' | 'claimed' | 'disputed';
+  status: 'spolek' | 'soud' | 'spor';
   title: string;
   evidence: string[];
   children: React.ReactNode;
@@ -246,15 +214,15 @@ interface FactBoxProps {
 
 function FactBox({ status, title, evidence, children }: FactBoxProps) {
   const statusColors = {
-    proven: 'bg-green-50 border-green-300',
-    claimed: 'bg-yellow-50 border-yellow-300',
-    disputed: 'bg-red-50 border-red-300',
+    spolek: 'bg-blue-50 border-blue-300',
+    soud: 'bg-green-50 border-green-300',
+    spor: 'bg-amber-50 border-amber-300',
   };
 
   const statusLabels = {
-    proven: '✅ Prokázáno',
-    claimed: '⚠️ Tvrzeno',
-    disputed: '❌ Sporné',
+    spolek: '📋 Pozice spolku',
+    soud: '⚖️ Soudní rozhodnutí',
+    spor: '⚠️ Předmět sporu',
   };
 
   return (
@@ -263,12 +231,12 @@ function FactBox({ status, title, evidence, children }: FactBoxProps) {
         <h3 className="font-semibold text-slate-900">{title}</h3>
         <span className="text-xs font-semibold ml-2">{statusLabels[status]}</span>
       </div>
-      <div className="text-sm text-slate-900 space-y-2">
+      <div className="text-sm text-slate-700 space-y-2">
         {children}
       </div>
       {evidence.length > 0 && (
         <div className="mt-3 pt-3 border-t border-slate-300">
-          <div className="text-xs font-semibold text-slate-600 mb-1">Důkazy:</div>
+          <div className="text-xs font-semibold text-slate-600 mb-1">Zdroje informací:</div>
           <ul className="text-xs text-slate-600 space-y-1">
             {evidence.map((e, i) => (
               <li key={i}>📎 {e}</li>
@@ -276,34 +244,6 @@ function FactBox({ status, title, evidence, children }: FactBoxProps) {
           </ul>
         </div>
       )}
-    </div>
-  );
-}
-
-function DisputedBox({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="p-4 rounded-lg border-2 bg-red-50 border-red-300">
-      <h3 className="font-semibold text-slate-900 mb-2 flex items-center">
-        <span className="mr-2">❌</span>
-        {title}
-      </h3>
-      <div className="text-sm text-slate-900 space-y-2">
-        {children}
-      </div>
-    </div>
-  );
-}
-
-function UnknownBox({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="p-4 rounded-lg border-2 bg-slate-50 border-slate-300">
-      <h3 className="font-semibold text-slate-900 mb-2 flex items-center">
-        <span className="mr-2">❓</span>
-        {title}
-      </h3>
-      <div className="text-sm text-slate-900 space-y-2">
-        {children}
-      </div>
     </div>
   );
 }
@@ -326,7 +266,7 @@ function RelatedNode({ type, title, href }: RelatedNodeProps) {
   return (
     <a
       href={href}
-      className="block p-4 bg-white rounded-lg border-2 border-slate-200 hover:border-blue-400 hover:shadow-sm transition"
+      className="block p-4 bg-white rounded-lg border-2 border-slate-200 hover:border-blue-500 hover:shadow-md transition"
     >
       <div className="text-xs text-slate-500 mb-1">{typeLabels[type] || type}</div>
       <div className="text-sm font-medium text-slate-900">{title}</div>

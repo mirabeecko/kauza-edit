@@ -41,55 +41,71 @@ export default function OtazkyPage() {
   const categories = Array.from(new Set(questions.map(q => q.category)));
 
   return (
-    <div className="container mx-auto px-3 md:px-8 py-6 md:py-12 max-w-5xl">
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold text-slate-900 mb-4">
-          Otázky, které si musí položit každý
-        </h1>
-        <p className="text-xl text-slate-600">
-          Klíčové otázky kauzy, zodpovězené výhradně fakty a důkazy
-        </p>
-      </div>
-
-      <div className="mb-8 p-4 md:p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
-        <h3 className="text-lg font-bold text-blue-900 mb-2">
-          Jak číst otázky
-        </h3>
-        <div className="text-sm text-blue-800 space-y-2">
-          <p>Každá otázka obsahuje:</p>
-          <ul className="list-disc list-inside space-y-1 ml-4">
-            <li><strong>Proč je důležitá</strong> - kontext a význam</li>
-            <li><strong>Co víme</strong> - prokázaná fakta</li>
-            <li><strong>Co nevíme/chybí</strong> - otevřené body</li>
-            <li><strong>Právní kontext</strong> - relevantní zákony</li>
-            <li><strong>Související uzly</strong> - vazby na události, osoby, dokumenty</li>
-          </ul>
+    <div className="min-h-screen bg-slate-50">
+      {/* Legal Disclaimer Banner */}
+      <div className="bg-blue-900 text-white py-4">
+        <div className="container mx-auto px-3 md:px-8 max-w-5xl">
+          <p className="text-sm leading-relaxed">
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tyto stránky prezentují právní pozici spolku TJ Krupka z.s. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
+          </p>
         </div>
       </div>
 
-      {categories.map((category) => (
-        <section key={category} className="mb-12">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-slate-200">
-            {category}
-          </h2>
-          <div className="grid gap-4">
-            {questions
-              .filter(q => q.category === category)
-              .map((question) => (
-                <QuestionCard key={question.slug} question={question} />
-              ))}
-          </div>
-        </section>
-      ))}
+      <div className="container mx-auto px-3 md:px-8 py-6 md:py-12 max-w-5xl">
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+            Otázky, které si musí položit každý
+          </h1>
+          <p className="text-xl text-slate-600">
+            Klíčové otázky kauzy, zodpovězené podle právní pozice spolku TJ Krupka
+          </p>
+        </div>
 
-      <div className="mt-12 p-4 md:p-6 bg-slate-50 rounded-lg border-2 border-slate-200">
-        <h3 className="text-lg font-bold text-slate-900 mb-2">
-          Máte další otázku?
-        </h3>
-        <p className="text-slate-600 text-sm">
-          Tato sekce bude průběžně aktualizována o další důležité otázky
-          na základě vývoje kauzy a zpětné vazby.
-        </p>
+        <div className="mb-8 p-4 md:p-6 bg-blue-50 rounded-lg border-2 border-blue-200">
+          <h3 className="text-lg font-bold text-blue-900 mb-2">
+            Jak číst otázky
+          </h3>
+          <div className="text-sm text-blue-800 space-y-2">
+            <p>Každá otázka obsahuje:</p>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li><strong>Proč je důležitá</strong> - kontext a význam</li>
+              <li><strong>Evidence spolku</strong> - dokumentované informace</li>
+              <li><strong>Co zůstává nejasné</strong> - otevřené body</li>
+              <li><strong>Právní kontext</strong> - relevantní zákony</li>
+              <li><strong>Související stránky</strong> - vazby na události, osoby, dokumenty</li>
+            </ul>
+            <p className="mt-3 text-xs italic">
+              Všechny odpovědi prezentují právní pozici spolku. Konečné posouzení je v kompetenci příslušných soudů.
+            </p>
+          </div>
+        </div>
+
+        {categories.map((category) => (
+          <section key={category} className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-slate-200">
+              {category}
+            </h2>
+            <div className="grid gap-4">
+              {questions
+                .filter(q => q.category === category)
+                .map((question) => (
+                  <QuestionCard key={question.slug} question={question} />
+                ))}
+            </div>
+          </section>
+        ))}
+
+        <div className="mt-12 p-4 md:p-6 bg-slate-50 rounded-lg border-2 border-slate-200">
+          <h3 className="text-lg font-bold text-slate-900 mb-2">
+            ⚖️ Námitky k uvedeným údajům
+          </h3>
+          <p className="text-sm text-slate-700">
+            Pokud máte podloženou námitku k jakémukoli údaji na těchto stránkách, kontaktujte nás prostřednictvím stránky{' '}
+            <a href="/pravni-ramec" className="text-blue-600 hover:underline font-semibold">
+              Právní rámec a kontakt
+            </a>.
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -125,7 +141,7 @@ function QuestionCard({ question }: { question: Question }) {
         </div>
         <div className="flex items-center text-sm text-slate-600">
           <span className="mr-2">→</span>
-          <span>Klikněte pro kompletní odpověď s důkazy</span>
+          <span>Klikněte pro kompletní odpověď</span>
         </div>
       </div>
     </Link>
