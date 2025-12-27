@@ -112,14 +112,9 @@ export default function MiroslavBrozekPage() {
         description: 'Spolek eviduje škodu ve výši přes 2 miliony Kč (neodvedené příspěvky, neplacené energie, zadržené pokladny). Spolek má omezené prostředky na provoz.',
       },
       {
-        icon: '⚖️',
-        title: 'Soudní řízení',
-        description: 'Probíhají soudní řízení týkající se vyloučení členů a dalších sporů. Spolek zastává právní názor, že jeho rozhodnutí byla v souladu s § 239 NOZ a stanovami.',
-      },
-      {
         icon: '🏛️',
         title: 'Situace s přístupem k prostorům',
-        description: 'Spolek eviduje situaci s omezeným přístupem k některým prostorám. Detaily jsou předmětem právního posouzení.',
+        description: 'Spolek eviduje situaci s omezeným přístupem k některým prostorům. Detaily jsou předmětem právního posouzení.',
       },
     ],
     relatedLinks: [

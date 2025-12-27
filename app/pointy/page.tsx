@@ -102,7 +102,7 @@ export default function PointyPage() {
             který vede ke stejnému závěru z různých úhlů pohledu:
           </p>
 
-          <div className="grid md:grid-cols-3 gap-4 my-6">
+          <div className="grid md:grid-cols-2 gap-4 my-6">
             <div className="p-4 bg-white rounded-lg border-2 border-red-200">
               <div className="text-3xl mb-2">📊</div>
               <div className="font-bold text-lg mb-1">Evidence</div>
@@ -112,11 +112,6 @@ export default function PointyPage() {
               <div className="text-3xl mb-2">💸</div>
               <div className="font-bold text-lg mb-1">Finance</div>
               <div className="text-sm">2,05 mil. Kč vybráno, neodevzdáno + 300k Kč neuhrazené náklady</div>
-            </div>
-            <div className="p-4 bg-white rounded-lg border-2 border-red-200">
-              <div className="text-3xl mb-2">⚖️</div>
-              <div className="font-bold text-lg mb-1">Soudní řízení</div>
-              <div className="text-sm">Žaloba po lhůtě + ignorování nepoctivosti žalobců</div>
             </div>
           </div>
 

@@ -69,15 +69,6 @@ export default function TemataPage() {
       relatedCount: { events: 2, persons: 8, documents: 5 },
     },
     {
-      slug: 'soudni-rizeni',
-      title: 'Soudní řízení',
-      icon: '⚖️',
-      description: 'Právní spory o členství a hospodaření. Odvolací řízení. Výklad § 259 NOZ.',
-      category: 'Právní',
-      relatedCount: { events: 4, persons: 6, documents: 10 },
-      isKeyTopic: true,
-    },
-    {
       slug: 'akteri-a-jejich-role',
       title: 'Aktéři a jejich role',
       icon: '👥',

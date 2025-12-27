@@ -197,7 +197,7 @@ export default function UdalostiPage() {
             Kompletní chronologie
           </h1>
           <p className="text-2xl text-blue-200 mb-8">
-            Od zvolení předsedy (24.8.2021) po soudní řízení (2024)
+            Od zvolení předsedy (24.8.2021) do současnosti
           </p>
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">

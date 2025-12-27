@@ -364,12 +364,6 @@ export default function Home() {
               status="complete"
               description="28.11. - Vaniš a Pivoňka vyloučeni"
             />
-            <TimelinePoint
-              year="2024"
-              label="Soudní řízení"
-              status="active"
-              description="Žaloby PO LHŮTĚ, problematické rozhodnutí"
-            />
           </div>
         </div>
       </div>
