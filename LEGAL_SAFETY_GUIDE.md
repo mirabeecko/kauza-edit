@@ -180,7 +180,6 @@ Every factual claim must have:
 - [x] `/otazky/jednal-predseda-v-souladu-se-zakonem` - NEEDS REFACTORING
 - [x] `/otazky/jsou-rozhodnuti-platna` - NEEDS REFACTORING
 - [x] `/otazky/kdo-je-clenem-spolku` - NEEDS REFACTORING
-- [x] `/otazky/kdo-koho-poskodil` - NEEDS REFACTORING
 - [x] `/otazky/kdo-mel-pravo-rozhodovat` - NEEDS REFACTORING
 - [x] `/otazky/kdo-mel-vest-clenskou-evidenci` - NEEDS REFACTORING
 - [x] `/otazky/kdo-nakladal-s-prispevky` - NEEDS REFACTORING

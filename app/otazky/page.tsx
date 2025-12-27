@@ -20,7 +20,6 @@ const questions: Question[] = [
 
   // Odpovědnost
   { slug: 'jednal-predseda-v-souladu-se-zakonem', title: 'Jednal předseda v souladu se zákonem?', category: 'Odpovědnost', importance: 'high' },
-  { slug: 'kdo-koho-poskodil', title: 'Kdo koho poškodil?', category: 'Odpovědnost', importance: 'high' },
   { slug: 'odpovednost-za-sverene-ukoly', title: 'Kdo nesl odpovědnost za svěřené úkoly?', category: 'Odpovědnost', importance: 'medium' },
 
   // Schůze

@@ -226,9 +226,6 @@ export default function AkteriPage() {
               <a href="/udalosti" className="block text-sm text-blue-600 hover:underline">
                 → Události s účastí aktérů
               </a>
-              <a href="/otazky/kdo-koho-poskodil" className="block text-sm text-blue-600 hover:underline">
-                → Otázka: Kdo koho poškodil?
-              </a>
             </div>
           </div>
         </div>

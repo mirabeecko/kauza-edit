@@ -190,7 +190,6 @@ export default function JednalPredsedaVSouladuSeZakonemPage() {
           <RelatedNode type="person" title="Miroslav Brožek" href="/akteri/miroslav-brozek" />
           <RelatedNode type="event" title="28.11.2023 - Vyloučení" href="/udalosti" />
           <RelatedNode type="document" title="Rozhodčí komise ČAST" href="/cast" />
-          <RelatedNode type="question" title="Kdo koho poškodil?" href="/otazky/kdo-koho-poskodil" />
           <RelatedNode type="event" title="Trestní oznámení" href="/udalosti" />
           <RelatedNode type="insight" title="Péče řádného hospodáře" href="/temata" />
         </div>

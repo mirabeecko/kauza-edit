@@ -89,11 +89,6 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/otazky/kdo-koho-poskodil" className="text-slate-300 hover:text-blue-400 transition">
-                      Kdo koho poškodil?
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="/otazky/odpovednost-za-sverene-ukoly" className="text-slate-300 hover:text-blue-400 transition">
                       Odpovědnost za úkoly
                     </Link>

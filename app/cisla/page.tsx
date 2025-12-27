@@ -397,9 +397,6 @@ export default function CislaPage() {
             <Link href="/temata/finance-a-majetek" className="block text-sm text-blue-600 hover:underline">
               → Téma: Finance a majetek
             </Link>
-            <Link href="/otazky/kdo-koho-poskodil" className="block text-sm text-blue-600 hover:underline">
-              → Otázka: Kdo koho poškodil?
-            </Link>
           </div>
         </div>
 

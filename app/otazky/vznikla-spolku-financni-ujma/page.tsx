@@ -208,7 +208,6 @@ export default function VznikladSpolkuFinancniUjma() {
             <RelatedNode type="person" title="Marek Vaniš" href="/akteri/marek-vanis" />
             <RelatedNode type="person" title="Martin Kulík" href="/akteri/martin-kulik" />
             <RelatedNode type="question" title="Kdo nakládal s příspěvky?" href="/otazky/kdo-nakladal-s-prispevky" />
-            <RelatedNode type="question" title="Kdo koho poškodil?" href="/otazky/kdo-koho-poskodil" />
             <RelatedNode type="question" title="Přístup k financím spolku" href="/otazky/pristup-k-financim-spolku" />
           </div>
         </section>

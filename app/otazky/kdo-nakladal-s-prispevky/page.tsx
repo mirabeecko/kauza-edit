@@ -144,7 +144,6 @@ export default function KdoNakladalSPrispevkyPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             <RelatedNode type="question" title="Vznikla spolku finanční újma?" href="/otazky/vznikla-spolku-financni-ujma" />
-            <RelatedNode type="question" title="Kdo koho poškodil?" href="/otazky/kdo-koho-poskodil" />
             <RelatedNode type="person" title="Marek Vaniš" href="/akteri/marek-vanis" />
             <RelatedNode type="person" title="Gustav Vlach" href="/akteri/gustav-vlach" />
           </div>
