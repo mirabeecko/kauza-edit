@@ -32,7 +32,7 @@ const questions: Question[] = [
 
   // Meta
   { slug: 'co-dnes-vime-s-jistotou', title: 'Co dnes víme s jistotou?', category: 'Meta', importance: 'high' },
-  { slug: 'co-zustava-nejasne', title: 'Co zůstává nejasné?', category: 'Meta', importance: 'medium' },
+  //{ slug: 'co-zustava-nejasne', title: 'Co zůstává nejasné?', category: 'Meta', importance: 'medium' },
   { slug: 'proc-je-kauza-slozita', title: 'Proč je kauza složitá?', category: 'Meta', importance: 'low' },
 ];
 

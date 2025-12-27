@@ -125,11 +125,11 @@ export default function Footer() {
                       Co víme s jistotou?
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/otazky/co-zustava-nejasne" className="text-slate-300 hover:text-blue-400 transition">
                       Co zůstává nejasné?
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/otazky/proc-je-kauza-slozita" className="text-slate-300 hover:text-blue-400 transition">
                       Proč je kauza složitá?

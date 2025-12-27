@@ -175,7 +175,7 @@ Every factual claim must have:
 ### Question Pages (17 pages)
 - [x] `/otazky/byly-schuze-legitimni` - NEEDS REFACTORING
 - [x] `/otazky/co-dnes-vime-s-jistotou` - NEEDS REFACTORING
-- [x] `/otazky/co-zustava-nejasne` - NEEDS REFACTORING
+// - [x] `/otazky/co-zustava-nejasne` - NEEDS REFACTORING
 - [x] `/otazky/jaka-byla-role-mesta` - NEEDS REFACTORING
 - [x] `/otazky/jednal-predseda-v-souladu-se-zakonem` - NEEDS REFACTORING
 - [x] `/otazky/jsou-rozhodnuti-platna` - NEEDS REFACTORING

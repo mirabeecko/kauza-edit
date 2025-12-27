@@ -235,7 +235,7 @@ export default function CoDnesVimeSJistotouPage() {
           🔗 Související uzly
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
-          <RelatedNode type="question" title="Co zůstává nejasné?" href="/otazky/co-zustava-nejasne" />
+          {/* <RelatedNode type="question" title="Co zůstává nejasné?" href="/otazky/co-zustava-nejasne" /> */}
           <RelatedNode type="document" title="Rozhodčí komise ČAST" href="/cast" />
           <RelatedNode type="insight" title="Detailní analýza" href="/detailni-analyza" />
           <RelatedNode type="event" title="Timeline událostí" href="/udalosti" />

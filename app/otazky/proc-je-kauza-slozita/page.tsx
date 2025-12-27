@@ -39,6 +39,15 @@ export default function ProcJeKauzaSlozitaPage() {
             <p className="mt-3 font-semibold">
               Pochopení složitosti pomáhá vidět celý obraz, ne jen izolované události.
             </p>
+            <p className="mt-4 p-3 bg-blue-100 border border-blue-200 rounded-lg text-sm text-blue-900">
+              Pro lepší pochopení si celou situaci můžete představit jako hádku v nájemním domě:
+              Představte si, že si nájemníci zvolí nového správce, aby dal do pořádku účetnictví.
+              Nájemníci sice dál vybírají od svých podnájemníků peníze, ale správci je neposílají,
+              tají před ním, kdo v domě vlastně bydlí, a účty za elektřinu v jejich bytech nechají
+              platit ze společné kasy. Když na to správce upozorní a chce dluhy vymáhat, spojí
+              se tito nájemníci se starostou, který jim pomůže v domě vyměnit zámky, aby správce
+              vyhodili a dosadili si tam někoho „pohodlnějšího“.
+            </p>
           </div>
         </section>
 
@@ -227,7 +236,7 @@ export default function ProcJeKauzaSlozitaPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             <RelatedNode type="question" title="Co dnes víme s jistotou?" href="/otazky/co-dnes-vime-s-jistotou" />
-            <RelatedNode type="question" title="Co zůstává nejasné?" href="/otazky/co-zustava-nejasne" />
+            {/* <RelatedNode type="question" title="Co zůstává nejasné?" href="/otazky/co-zustava-nejasne" /> */}
             <RelatedNode type="document" title="Právní rámec" href="/pravni-ramec" />
             <RelatedNode type="question" title="Byly schůze legitimní?" href="/otazky/byly-schuze-legitimni" />
           </div>
