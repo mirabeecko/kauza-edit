@@ -83,7 +83,7 @@ export default function VznikladSpolkuFinancniUjma() {
                 <strong>Podle evidence spolku:</strong>
               </p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Spolek eviduje úhrady energií z rozpočtu TJ Krupka</li>
+                <li>Spolek eviduje úhrady energií z rozpočtu Tělovýchovná jednota Krupka z.s.</li>
                 <li>Spolek k datu neeviduje doložení úhrad za energie od oddílů</li>
                 <li>Vyčíslený rozdíl: 556.375 Kč</li>
               </ul>
@@ -191,7 +191,7 @@ export default function VznikladSpolkuFinancniUjma() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Stanovy TJ Krupka</h3>
+              <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s.</h3>
               <p className="text-sm">
                 Stanovy upravují povinnosti předsedů oddílů ohledně hospodaření a odvodu příspěvků.
               </p>

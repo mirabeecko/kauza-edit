@@ -386,7 +386,7 @@ export default function Home() {
             <a href="/akteri/miroslav-brozek" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400">
               <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">✅</div>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Miroslav Brožek</h3>
-              <div className="text-sm text-slate-100 mb-4">Legitimní předseda TJ Krupka</div>
+              <div className="text-sm text-slate-100 mb-4">Legitimní předseda Tělovýchovná jednota Krupka z.s.</div>
               <div className="space-y-2 text-sm">
                 <div className="p-2 bg-green-500/40 rounded">Zvolen 24.8.2021 na 5 let</div>
                 <div className="p-2 bg-green-500/40 rounded">Jednal v souladu se zákonem</div>

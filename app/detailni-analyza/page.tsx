@@ -60,7 +60,7 @@ export default function DetailniAnalyzaPage() {
         },
         {
           subtitle: 'Neplacené energie: 299.921 Kč (14,7%)',
-          content: 'Oddíl ST: 43.466 Kč (elektřina + plyn), Lyžařský oddíl: 256.455 Kč (elektřina). Zatímco oddíly vybíraly příspěvky, TJ Krupka musela platit jejich energie ze svého rozpočtu.',
+          content: 'Oddíl ST: 43.466 Kč (elektřina + plyn), Lyžařský oddíl: 256.455 Kč (elektřina). Zatímco oddíly vybíraly příspěvky, Tělovýchovná jednota Krupka z.s. musela platit jejich energie ze svého rozpočtu.',
           evidence: ['Faktury za energie', 'PDF "TJ ODDÍLY 2021-2023"'],
         },
         {

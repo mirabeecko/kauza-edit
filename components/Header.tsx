@@ -47,7 +47,7 @@ export default function Header({ onMenuToggle }: HeaderProps) {
             </button>
 
             <Link href="/" className="text-lg md:text-xl font-bold hover:text-blue-400 transition">
-              Kauza TJ Krupka
+              Kauza Tělovýchovná jednota Krupka z.s.
             </Link>
 
             {/* Version Badge */}

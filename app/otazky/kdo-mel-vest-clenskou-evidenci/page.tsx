@@ -48,14 +48,14 @@ export default function KdoMelVestClenskouEvidenciPage() {
             <FactBox
               status="spolek"
               title="Stanovy TJ: Povinnost předsedů oddílů"
-              evidence={['Stanovy TJ Krupka', 'Email 13.9.2021', 'Email 10.12.2021']}
+              evidence={['Stanovy Tělovýchovná jednota Krupka z.s.', 'Email 13.9.2021', 'Email 10.12.2021']}
             >
               <p>
-                <strong>Podle stanov TJ Krupka:</strong>
+                <strong>Podle stanov Tělovýchovná jednota Krupka z.s.:</strong>
               </p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
                 <li>Předsedové oddílů mají povinnost vést evidenci členů svého oddílu</li>
-                <li>Seznamy členů musí předat předsedovi TJ Krupka</li>
+                <li>Seznamy členů musí předat předsedovi Tělovýchovná jednota Krupka z.s.</li>
                 <li>Předseda TJ konsoliduje evidenci všech členů</li>
               </ul>
             </FactBox>
@@ -84,7 +84,7 @@ export default function KdoMelVestClenskouEvidenciPage() {
                 Podle právní pozice spolku nebyla absence seznamů členů možná:
               </p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Ověřit, kdo je skutečně členem TJ Krupka</li>
+                <li>Ověřit, kdo je skutečně členem Tělovýchovná jednota Krupka z.s.</li>
                 <li>Pozvat všechny členy na shromáždění</li>
                 <li>Kontrolovat, zda příspěvky odpovídají počtu členů</li>
               </ul>
@@ -115,7 +115,7 @@ export default function KdoMelVestClenskouEvidenciPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Stanovy TJ Krupka</h3>
+              <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s.</h3>
               <p className="text-sm">
                 Stanovy upravují povinnosti předsedů oddílů vést evidenci a předávat ji předsedovi spolku.
               </p>
@@ -141,7 +141,7 @@ export default function KdoMelVestClenskouEvidenciPage() {
           </h3>
           <div className="text-orange-900 space-y-3 text-sm">
             <p>
-              <strong>Stanovy:</strong> Podle stanov TJ Krupka mají předsedové oddílů povinnost vést evidenci a předat ji předsedovi spolku.
+              <strong>Stanovy:</strong> Podle stanov Tělovýchovná jednota Krupka z.s. mají předsedové oddílů povinnost vést evidenci a předat ji předsedovi spolku.
             </p>
             <p>
               <strong>Evidence spolku:</strong> Spolek k datu neeviduje doložení seznamů členů od předsedů oddílů přes opakované výzvy (2021-2023).

@@ -68,7 +68,7 @@ export default function CoDnesVimeSJistotouPage() {
               <li>Vaniš a Pivoňka vyloučeni po opakovaných výzvách (2021-2023)</li>
               <li>Doručenky potvrzují doručení oznámení o vyloučení</li>
               <li>Rozhodčí komise ČAST potvrdila, že vyloučení bylo v souladu se zákonem</li>
-              <li>Od 28.11.2023 nejsou členy TJ Krupka</li>
+              <li>Od 28.11.2023 nejsou členy Tělovýchovná jednota Krupka z.s.</li>
             </ul>
           </FactBox>
 
@@ -78,7 +78,7 @@ export default function CoDnesVimeSJistotouPage() {
           >
             <ul className="list-disc list-inside space-y-1">
               <li>SPORT Krupka vyměnila zámky na Pinčesárně 19.12.2023</li>
-              <li>17.1.2024: TJ Krupka zaslala návrh nájemní smlouvy městu</li>
+              <li>17.1.2024: Tělovýchovná jednota Krupka z.s. zaslala návrh nájemní smlouvy městu</li>
               <li>19.1.2024: SPORT Krupka vyměnila zámky podruhé (2 dny po smlouvě!)</li>
               <li>Legitimní předseda Brožek zablokován, vyloučení členové měli přístup</li>
             </ul>
@@ -106,7 +106,7 @@ export default function CoDnesVimeSJistotouPage() {
         <div className="space-y-4">
           <FactBox
             title="Celková škoda: 2.045.635 Kč"
-            evidence={['PDF "TJ ODDÍLY 2021-2023"', 'Účetnictví TJ Krupka', 'Faktury']}
+            evidence={['PDF "TJ ODDÍLY 2021-2023"', 'Účetnictví Tělovýchovná jednota Krupka z.s.', 'Faktury']}
           >
             <ul className="list-disc list-inside space-y-1">
               <li><strong>1.214.400 Kč</strong> - Zapřené oddílové příspěvky (59,4%)</li>
@@ -125,7 +125,7 @@ export default function CoDnesVimeSJistotouPage() {
               "Vybíral jsem příspěvky jménem spolku"
             </p>
             <p className="mt-2">
-              Spolek eviduje, že tyto příspěvky nebyly TJ Krupka doloženy. Celková evidovaná nesouladnost oddílu stolního tenisu: 653.659 Kč.
+              Spolek eviduje, že tyto příspěvky nebyly Tělovýchovná jednota Krupka z.s. doloženy. Celková evidovaná nesouladnost oddílu stolního tenisu: 653.659 Kč.
             </p>
             <p className="mt-2 text-xs italic">
               Poznámka: Výpočty vycházejí z interní evidence spolku a obsahují odhady. Viz <a href="/metodika" className="underline">metodika</a>.
@@ -170,7 +170,7 @@ export default function CoDnesVimeSJistotouPage() {
             evidence={['Datová schránka 26.1.2024', 'Potvrzení o doručení']}
           >
             <p>
-              26.1.2024: TJ Krupka zaslala městu Krupka oficiální notifikaci o vyloučení
+              26.1.2024: Tělovýchovná jednota Krupka z.s. zaslala městu Krupka oficiální notifikaci o vyloučení
               Vaniše a Pivoňky s žádostí o respektování legitimních orgánů spolku.
             </p>
           </FactBox>
@@ -200,7 +200,7 @@ export default function CoDnesVimeSJistotouPage() {
           >
             <p>
               Příspěvky členů tělovýchovného oddílu se stávají majetkem tělovýchovné jednoty
-              (TJ Krupka) okamžikem jejich předání.
+              (Tělovýchovná jednota Krupka z.s.) okamžikem jejich předání.
             </p>
           </FactBox>
         </div>

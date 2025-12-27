@@ -150,7 +150,7 @@ export default function UdalostiPage() {
     {
       date: '25.1.2024',
       year: 2024,
-      title: 'Shromáždění delegátů TJ Krupka',
+      title: 'Shromáždění delegátů Tělovýchovná jednota Krupka z.s.',
       icon: '🏛️',
       importance: 'high' as const,
       description: 'Souhlas s rozhodnutím výboru o vyloučení. Schválení podání trestního oznámení. Schválení nových stanov.',

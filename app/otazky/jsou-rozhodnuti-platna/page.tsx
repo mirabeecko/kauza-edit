@@ -80,7 +80,7 @@ export default function JsouRozhodnutiPlatnaPage() {
             <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
               <li>Opakované výzvy spolku (2021-2023)</li>
               <li>Předžalobní výzvy (11/2023)</li>
-              <li>Vyloučení podle § 13 Stanov TJ Krupka</li>
+              <li>Vyloučení podle § 13 Stanov Tělovýchovná jednota Krupka z.s.</li>
               <li>Potvrzeno Rozhodčí komisí ČAST</li>
             </ul>
           </FactBox>

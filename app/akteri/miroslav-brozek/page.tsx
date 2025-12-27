@@ -2,7 +2,7 @@
 export default function MiroslavBrozekPage() {
   const actor = {
     name: 'Miroslav Brožek',
-    role: 'Předseda spolku TJ Krupka',
+    role: 'Předseda spolku Tělovýchovná jednota Krupka z.s.',
     department: 'Vedení spolku',
     departmentIcon: '⚖️',
     status: 'positive' as const,

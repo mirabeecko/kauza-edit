@@ -2,7 +2,7 @@ export default function TemataPage() {
   const topics = [
     {
       slug: 'historie-tj-krupka',
-      title: 'Historie TJ Krupka',
+      title: 'Historie Tělovýchovná jednota Krupka z.s.',
       icon: '📜',
       description: 'Pozadí a vývoj spolku před rokem 2021. Kontextové informace pro pochopení kauzy.',
       category: 'Kontext',

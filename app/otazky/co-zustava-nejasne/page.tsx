@@ -72,7 +72,7 @@ export default function CoZustavaNejasnePage() {
                 <strong>Nejasné zůstává:</strong>
               </p>
               <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Kolik lidí skutečně bylo členy TJ Krupka?</li>
+                <li>Kolik lidí skutečně bylo členy Tělovýchovná jednota Krupka z.s.?</li>
                 <li>Kolik lidí skutečně zaplatilo příspěvky?</li>
                 <li>Jsou čísla v evidenci přesná, nebo obsahují odhady?</li>
                 <li>Věděli všichni platící, že jsou členy TJ?</li>
@@ -104,7 +104,7 @@ export default function CoZustavaNejasnePage() {
             Členství a legitimita
           </h2>
           <div className="space-y-4">
-            <UnknownBox title="Kdo jsou skuteční členové TJ Krupka?">
+            <UnknownBox title="Kdo jsou skuteční členové Tělovýchovná jednota Krupka z.s.?">
               <p>
                 <strong>Ze evidence spolku vyplývá:</strong> Seznamy členů od předsedů oddílů nebyly k datu doloženy.
               </p>

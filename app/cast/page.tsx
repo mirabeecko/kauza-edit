@@ -3,7 +3,7 @@ export default function CASTPage() {
     name: 'ČAST - Česká asociace stolního tenisu',
     role: 'Sportovní svaz',
     status: 'Problematické jednání',
-    description: 'Sportovní svaz, který měl zajistit dodržování pravidel stolního tenisu v ČR. Namísto toho systematicky ignoroval žádosti TJ Krupka a umožnil vyloučeným členům manipulovat s registrací hráčů.',
+    description: 'Sportovní svaz, který měl zajistit dodržování pravidel stolního tenisu v ČR. Namísto toho systematicky ignoroval žádosti Tělovýchovná jednota Krupka z.s. a umožnil vyloučeným členům manipulovat s registrací hráčů.',
   };
 
   const keyFigures = [
@@ -24,7 +24,7 @@ export default function CASTPage() {
     {
       title: 'Vyloučení členů neodstranění ze soupisek',
       severity: 'critical' as const,
-      description: 'Přes opakované žádosti TJ Krupka o odstranění Ing. Marka Vaniše a Jaromíra Pivoňky ze soupisek a registru ČAST nebyly tyto osoby vyškrtnuty. Spolek informoval ČAST, že tito lidé již nejsou členy od 28.11.2023.',
+      description: 'Přes opakované žádosti Tělovýchovná jednota Krupka z.s. o odstranění Ing. Marka Vaniše a Jaromíra Pivoňky ze soupisek a registru ČAST nebyly tyto osoby vyškrtnuty. Spolek informoval ČAST, že tito lidé již nejsou členy od 28.11.2023.',
       violatedRules: [
         'Směrnice ČAST č. 5/2023 - povinnost provést aktualizaci soupisek',
         'Soutěžní řád ČAST - členství musí být aktuální a doložitelné',
@@ -33,7 +33,7 @@ export default function CASTPage() {
     {
       title: 'Zanedbání povinnosti reagovat na oficiální žádosti',
       severity: 'critical' as const,
-      description: 'TJ Krupka opakovaně žádala o změnu správce klubu a vyškrtnutí členů. Dne 28.3.2024 byla doručena další oficiální žádost prostřednictvím datové schránky, na kterou však ČAST VŮBEC NEREAGOVALA.',
+      description: 'Tělovýchovná jednota Krupka z.s. opakovaně žádala o změnu správce klubu a vyškrtnutí členů. Dne 28.3.2024 byla doručena další oficiální žádost prostřednictvím datové schránky, na kterou však ČAST VŮBEC NEREAGOVALA.',
       violatedRules: [
         'Organizační řád ČAST (2024) - povinnost reagovat na oficiální žádosti',
       ],
@@ -41,7 +41,7 @@ export default function CASTPage() {
     {
       title: 'Zpochybňování legitimních rozhodnutí spolku',
       severity: 'high' as const,
-      description: 'ČAST odmítla respektovat rozhodnutí spolku o vyloučení členů a legitimitě jeho orgánů. Bylo zpochybněno rozhodnutí TJ Krupka, ačkoli spolek doložil všechny potřebné dokumenty.',
+      description: 'ČAST odmítla respektovat rozhodnutí spolku o vyloučení členů a legitimitě jeho orgánů. Bylo zpochybněno rozhodnutí Tělovýchovná jednota Krupka z.s., ačkoli spolek doložil všechny potřebné dokumenty.',
       violatedRules: [
         'Stanovy ČAST - asociace nemá pravomoc zasahovat do interních záležitostí spolků',
         'Směrnice ČAST č. 1/2010 - arbitrážní komise má být nestranná',
@@ -50,7 +50,7 @@ export default function CASTPage() {
     {
       title: 'Opomenutí projednání žádostí',
       severity: 'high' as const,
-      description: 'Na schůzi výkonného výboru ČAST (3.4.2024) nebyla projednána žádost TJ Krupka, ačkoli byla v programu.',
+      description: 'Na schůzi výkonného výboru ČAST (3.4.2024) nebyla projednána žádost Tělovýchovná jednota Krupka z.s., ačkoli byla v programu.',
       violatedRules: [
         'Organizační řád ČAST - vedení je povinno projednat všechny oficiální žádosti',
       ],
@@ -69,7 +69,7 @@ export default function CASTPage() {
     {
       date: '3.1.2024',
       title: 'První oznámení ČAST',
-      description: 'TJ Krupka oficiálně informovala ČAST o vyloučení Vaniše a Pivoňky. Požadavek na odstranění ze soupisek a změnu správce klubu.',
+      description: 'Tělovýchovná jednota Krupka z.s. oficiálně informovala ČAST o vyloučení Vaniše a Pivoňky. Požadavek na odstranění ze soupisek a změnu správce klubu.',
       type: 'request' as const,
       details: [
         'Oznámeno: Vyloučení Vaniše a Pivoňky k 28.11.2023',
@@ -107,7 +107,7 @@ export default function CASTPage() {
     {
       date: '3.4.2024',
       title: 'Schůze výkonného výboru - Žádost neprojednána',
-      description: 'Žádost TJ Krupka byla v programu schůze, ale nebyla projednána.',
+      description: 'Žádost Tělovýchovná jednota Krupka z.s. byla v programu schůze, ale nebyla projednána.',
       type: 'response' as const,
       severity: 'high' as const,
       details: [
@@ -135,7 +135,7 @@ export default function CASTPage() {
       severity: 'high' as const,
       details: [
         'Henžel vyzval: "Zašlete žádost o změnu správce"',
-        'TJ Krupka zaslala: Třetí oficiální žádost',
+        'Tělovýchovná jednota Krupka z.s. zaslala: Třetí oficiální žádost',
         'Henžel zamítl: S odkazem na stanovisko z ledna',
         'Problém: Stanovisko není rozhodnutí',
       ],
@@ -178,7 +178,7 @@ export default function CASTPage() {
         'ČAST nereaguje na žádné další komunikace',
         'Vaniš stále správce klubu (10 měsíců po vyloučení)',
         'Všichni hráči již přestoupili do KST Krupka',
-        'TJ Krupka znemožněna jakákoliv činnost v ST',
+        'Tělovýchovná jednota Krupka z.s. znemožněna jakákoliv činnost v ST',
       ],
     },
   ];
@@ -187,12 +187,12 @@ export default function CASTPage() {
     {
       label: 'Ztráta výchovného za mládež',
       amount: 33300,
-      description: 'ČAST umožnila neoprávněné přestupy dětí, čímž TJ Krupka přišla o výchovné.',
+      description: 'ČAST umožnila neoprávněné přestupy dětí, čímž Tělovýchovná jednota Krupka z.s. přišla o výchovné.',
     },
     {
       label: 'Ztráta členské základny stolního tenisu',
       amount: 0,
-      description: 'Všichni hráči stolního tenisu byli neoprávněně převedeni do KST Krupka. TJ Krupka nemůže provozovat stolní tenis.',
+      description: 'Všichni hráči stolního tenisu byli neoprávněně převedeni do KST Krupka. Tělovýchovná jednota Krupka z.s. nemůže provozovat stolní tenis.',
       isNonFinancial: true,
     },
     {
@@ -409,7 +409,7 @@ export default function CASTPage() {
         {/* Škody způsobené */}
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-            💸 Škody způsobené TJ Krupka
+            💸 Škody způsobené Tělovýchovná jednota Krupka z.s.
           </h2>
           <div className="space-y-4">
             {damages.map((damage, index) => (

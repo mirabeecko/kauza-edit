@@ -114,7 +114,7 @@ export default function BylySchuzeLegitimnPage() {
               </ul>
             <p className="mt-3">
               <strong>Rozhodčí komise ČAST:</strong> Vyloučení bylo provedeno v souladu se stanovami
-              a zákonem. Vaniš a Pivoňka nejsou členové TJ Krupka od 28.11.2023.
+              a zákonem. Vaniš a Pivoňka nejsou členové Tělovýchovná jednota Krupka z.s. od 28.11.2023.
             </p>
           </FactBox>
 

@@ -5,7 +5,7 @@ export default function AkteriPage() {
     {
       slug: 'miroslav-brozek',
       name: 'Miroslav Brožek',
-      role: 'Předseda spolku TJ Krupka',
+      role: 'Předseda spolku Tělovýchovná jednota Krupka z.s.',
       category: 'Představitel spolku',
       status: 'spolek' as const,
       summary: 'Zvolen na funkci předsedy spolku dne 24.8.2021 na období 5 let. Spolek eviduje jeho kroky v souvislosti se spory o členství a hospodaření oddílů.',

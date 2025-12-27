@@ -110,7 +110,7 @@ export default function JakaBylaRoleMestaPage() {
             </p>
             <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
               <li><strong>19.12.2023:</strong> První výměna zámků</li>
-              <li><strong>17.1.2024:</strong> TJ Krupka zaslala návrh nájemní smlouvy</li>
+              <li><strong>17.1.2024:</strong> Tělovýchovná jednota Krupka z.s. zaslala návrh nájemní smlouvy</li>
               <li><strong>19.1.2024:</strong> Druhá výměna - 2 dny po smlouvě</li>
             </ul>
             <p className="mt-2 text-slate-700">
@@ -124,7 +124,7 @@ export default function JakaBylaRoleMestaPage() {
             evidence={['Datová schránka', 'Potvrzení o doručení']}
           >
             <p>
-              26.1.2024: TJ Krupka zaslala městu Krupka oficiální notifikaci o vyloučení
+              26.1.2024: Tělovýchovná jednota Krupka z.s. zaslala městu Krupka oficiální notifikaci o vyloučení
               Vaniše a Pivoňky s žádostí, aby město respektovalo orgány spolku zvolené na shromáždění 25.1.2024.
             </p>
             <p className="mt-2 font-semibold text-slate-700">
@@ -139,7 +139,7 @@ export default function JakaBylaRoleMestaPage() {
           >
             <p>
               Spolek eviduje setkání starosty Kuzmy, místostarosty Bokoče a Tomáše Syryčanského (sportovní manažer
-              SPORT Krupka) ohledně volby nového předsedy TJ Krupka:
+              SPORT Krupka) ohledně volby nového předsedy Tělovýchovná jednota Krupka z.s.:
             </p>
             <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
               <li>Setkání Kuzma + Bokoč + Syryčanský (12/2023)</li>
@@ -241,7 +241,7 @@ export default function JakaBylaRoleMestaPage() {
 
       <section className="-mx-3 md:-mx-8 px-3 md:px-8 py-8 md:py-12 bg-gradient-to-r from-blue-600 to-blue-700">
         <h3 className="text-xl font-bold text-white mb-4">
-          📌 Shrnutí (právní pozice TJ Krupka)
+          📌 Shrnutí (právní pozice Tělovýchovná jednota Krupka z.s.)
         </h3>
         <div className="text-white space-y-3">
           <p>
@@ -262,7 +262,7 @@ export default function JakaBylaRoleMestaPage() {
             a zastává právní názor, že město mělo tuto notifikaci respektovat.
           </p>
           <p className="mt-4 pt-4 border-t border-blue-500 text-sm">
-            <strong>Upozornění:</strong> Uvedená tvrzení představují právní argumentaci TJ Krupka v probíhajícím
+            <strong>Upozornění:</strong> Uvedená tvrzení představují právní argumentaci Tělovýchovná jednota Krupka z.s. v probíhajícím
             sporu. Konečné právní posouzení je v kompetenci příslušných orgánů.
           </p>
         </div>

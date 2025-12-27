@@ -40,7 +40,7 @@ export default function PristupKFinancimSpolkuPage() {
               <strong>Klíčové otázky:</strong>
             </p>
             <ul className="list-disc list-inside ml-4 space-y-1">
-              <li>Kdo měl přístup k bankovním účtům TJ Krupka?</li>
+              <li>Kdo měl přístup k bankovním účtům Tělovýchovná jednota Krupka z.s.?</li>
               <li>Jak probíhala kontrola hospodaření oddílů?</li>
               <li>Jak byl předseda spolku informován o financích oddílů?</li>
             </ul>
@@ -55,15 +55,15 @@ export default function PristupKFinancimSpolkuPage() {
           <div className="space-y-4">
             <FactBox
               status="spolek"
-              title="Přístup předsedy k bankovním účtům TJ Krupka"
+              title="Přístup předsedy k bankovním účtům Tělovýchovná jednota Krupka z.s."
               evidence={['Bankovní dokumenty', 'Výpisy z účtů', 'Stanovy TJ']}
             >
               <p>
                 <strong>Podle evidence spolku:</strong>
               </p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Předseda měl přístup k hlavnímu účtu TJ Krupka</li>
-                <li>Předseda platil energie, nájemné a další závazky TJ Krupka</li>
+                <li>Předseda měl přístup k hlavnímu účtu Tělovýchovná jednota Krupka z.s.</li>
+                <li>Předseda platil energie, nájemné a další závazky Tělovýchovná jednota Krupka z.s.</li>
                 <li>Podle stanov má předseda právo kontrolovat hospodaření oddílů</li>
               </ul>
             </FactBox>
@@ -113,7 +113,7 @@ export default function PristupKFinancimSpolkuPage() {
                 <strong>Evidence spolku:</strong>
               </p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Spolek eviduje úhrady energií z rozpočtu TJ Krupka</li>
+                <li>Spolek eviduje úhrady energií z rozpočtu Tělovýchovná jednota Krupka z.s.</li>
                 <li>Spolek k datu neeviduje doložení úhrad za energie od oddílů</li>
               </ul>
               <p className="mt-2 text-xs italic">
@@ -151,7 +151,7 @@ export default function PristupKFinancimSpolkuPage() {
           </h2>
           <div className="space-y-3 text-slate-700">
             <div>
-              <h3 className="font-semibold mb-1">Stanovy TJ Krupka - Finanční kontrola</h3>
+              <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s. - Finanční kontrola</h3>
               <p className="text-sm">
                 Předseda TJ má právo a povinnost kontrolovat hospodaření oddílů.
                 Oddíly jsou součástí TJ, nemají samostatnou právní subjektivitu.
@@ -194,7 +194,7 @@ export default function PristupKFinancimSpolkuPage() {
           </h3>
           <div className="text-orange-900 space-y-3 text-sm">
             <p>
-              <strong>Přístup k financím:</strong> Předseda spolku měl přístup k bankovním účtům TJ Krupka a platil závazky spolku.
+              <strong>Přístup k financím:</strong> Předseda spolku měl přístup k bankovním účtům Tělovýchovná jednota Krupka z.s. a platil závazky spolku.
             </p>
             <p>
               <strong>Spory:</strong> Spolek eviduje spory ohledně kontroly hospodaření oddílů a přístupu k objektům.

@@ -36,7 +36,7 @@ export default function KdoMelPravoRozhodovat() {
           </h2>
           <div className="text-blue-900 space-y-2">
             <p>
-              Legitimita rozhodnutí závisí na tom, kdo měl právo je přijímat. Podle stanov TJ Krupka:
+              Legitimita rozhodnutí závisí na tom, kdo měl právo je přijímat. Podle stanov Tělovýchovná jednota Krupka z.s.:
             </p>
             <ul className="list-disc list-inside ml-4 space-y-1">
               <li>Shromáždění delegátů je nejvyšším orgánem spolku</li>
@@ -68,7 +68,7 @@ export default function KdoMelPravoRozhodovat() {
             <FactBox
               status="spolek"
               title="Předseda má právo řídit spolek mezi shromážděními"
-              evidence={['Stanovy TJ Krupka čl. 9', '§ 252 NOZ']}
+              evidence={['Stanovy Tělovýchovná jednota Krupka z.s. čl. 9', '§ 252 NOZ']}
             >
               <p>
                 Podle stanov a občanského zákoníku má předseda právo:
@@ -116,7 +116,7 @@ export default function KdoMelPravoRozhodovat() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Stanovy TJ Krupka</h3>
+              <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s.</h3>
               <p className="text-sm">
                 Stanovy upravují systém delegátů a pravomoci jednotlivých orgánů spolku.
               </p>
@@ -133,7 +133,7 @@ export default function KdoMelPravoRozhodovat() {
             <RelatedNode type="question" title="Kdo je členem spolku?" href="/otazky/kdo-je-clenem-spolku" />
             <RelatedNode type="question" title="Byly schůze legitimní?" href="/otazky/byly-schuze-legitimni" />
             <RelatedNode type="person" title="Miroslav Brožek" href="/akteri/miroslav-brozek" />
-            <RelatedNode type="document" title="Stanovy TJ Krupka" href="/pravni-ramec" />
+            <RelatedNode type="document" title="Stanovy Tělovýchovná jednota Krupka z.s." href="/pravni-ramec" />
           </div>
         </section>
 

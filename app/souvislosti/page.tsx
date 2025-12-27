@@ -152,7 +152,7 @@ export default function SouvislostiPage() {
       group: 'Legitimní představitel',
       color: 'green',
       members: [
-        { name: 'Miroslav Brožek', role: 'Legitimní předseda TJ Krupka', connections: 12 },
+        { name: 'Miroslav Brožek', role: 'Legitimní předseda Tělovýchovná jednota Krupka z.s.', connections: 12 },
       ],
     },
   ];

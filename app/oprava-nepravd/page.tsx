@@ -141,9 +141,9 @@ export default function OpravaNepravdPage() {
               <div>
                 <h4 className="font-semibold text-slate-900 mb-1">Jaké podklady to podporují:</h4>
                 <ul className="text-sm text-slate-900 list-disc list-inside space-y-1">
-                  <li>Účetnictví TJ Krupka za období 2021-2024</li>
+                  <li>Účetnictví Tělovýchovná jednota Krupka z.s. za období 2021-2024</li>
                   <li>Výpisy z bankovních účtů</li>
-                  <li>Stanovy TJ Krupka (povinnost odvádět příspěvky)</li>
+                  <li>Stanovy Tělovýchovná jednota Krupka z.s. (povinnost odvádět příspěvky)</li>
                   <li>Judikatura NS ČR 7 Tdo 102/2019</li>
                 </ul>
                 <div className="mt-2">

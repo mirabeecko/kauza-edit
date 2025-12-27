@@ -95,7 +95,7 @@ export default function KdoJeClenemSpolkuPage() {
           >
             <p>
               Spolek eviduje, že turistický oddíl zaslal požadovaný seznam členů. Následně požádal
-              o ukončení členství v TJ Krupka (leden 2022).
+              o ukončení členství v Tělovýchovná jednota Krupka z.s. (leden 2022).
             </p>
           </FactBox>
 
@@ -163,7 +163,7 @@ export default function KdoJeClenemSpolkuPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold mb-1">Stanovy TJ Krupka</h3>
+            <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s.</h3>
             <p className="text-sm">
               Předsedové oddílů mají povinnost vést evidenci členů oddílu a předávat ji
               předsedovi spolku.

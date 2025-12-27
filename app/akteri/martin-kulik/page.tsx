@@ -321,7 +321,7 @@ export default function MartinKulikPage() {
                   <strong>Výhrada:</strong> Skutečná částka může být jiná bez doložených seznamů členů.
                 </p>
                 <p className="text-xs text-slate-600">
-                  <strong>Podklad:</strong> Účetní evidence TJ Krupka, odhady členské základny.
+                  <strong>Podklad:</strong> Účetní evidence Tělovýchovná jednota Krupka z.s., odhady členské základny.
                 </p>
               </div>
 

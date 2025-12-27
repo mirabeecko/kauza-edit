@@ -21,7 +21,7 @@ export default function MytyADezinformacePage() {
             Mýty a dezinformace o kauze
           </h1>
           <p className="text-xl text-slate-600">
-            Vyvrácení nejčastějších dezinformací podle právní pozice spolku TJ Krupka
+            Vyvrácení nejčastějších dezinformací podle právní pozice spolku Tělovýchovná jednota Krupka z.s.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export default function MytyADezinformacePage() {
           </h2>
           <div className="text-blue-900 space-y-2">
             <p>
-              Kolem kauzy TJ Krupka se šíří řada dezinformací, které zkreslují skutečnost a brání
+              Kolem kauzy Tělovýchovná jednota Krupka z.s. se šíří řada dezinformací, které zkreslují skutečnost a brání
               pochopení celé situace. Tato stránka prezentuje právní pozici spolku a vyvrací nejčastější mýty.
             </p>
             <p className="mt-3 text-sm italic">
@@ -62,7 +62,7 @@ export default function MytyADezinformacePage() {
                 <ul className="list-disc list-inside text-sm text-slate-700 space-y-1">
                   <li>Zápis ze shromáždění 24.8.2021</li>
                   <li>Rozhodčí komise ČAST potvrdila legitimitu volby (2022)</li>
-                  <li>Volba proběhla podle stanov TJ Krupka</li>
+                  <li>Volba proběhla podle stanov Tělovýchovná jednota Krupka z.s.</li>
                 </ul>
               </div>
               <div>
@@ -83,7 +83,7 @@ export default function MytyADezinformacePage() {
               <div>
                 <h4 className="font-semibold text-green-900 mb-2">✅ Realita podle pozice spolku:</h4>
                 <p className="text-slate-700">
-                  Podle právní pozice spolku a judikatury Nejvyššího soudu jsou oddíly součástí TJ Krupka
+                  Podle právní pozice spolku a judikatury Nejvyššího soudu jsou oddíly součástí Tělovýchovná jednota Krupka z.s.
                   a nemají samostatnou právní subjektivitu.
                 </p>
               </div>
@@ -91,7 +91,7 @@ export default function MytyADezinformacePage() {
                 <h4 className="font-semibold text-slate-900 mb-2">📋 Právní základ:</h4>
                 <ul className="list-disc list-inside text-sm text-slate-700 space-y-1">
                   <li>NS ČR 7 Tdo 102/2019: Příspěvky patří tělovýchovné jednotě, ne oddílům</li>
-                  <li>Stanovy TJ Krupka: Oddíly jsou organizační součástí TJ</li>
+                  <li>Stanovy Tělovýchovná jednota Krupka z.s.: Oddíly jsou organizační součástí TJ</li>
                   <li>§ 214 NOZ: Spolek má jednu právní subjektivitu</li>
                 </ul>
               </div>
@@ -151,7 +151,7 @@ export default function MytyADezinformacePage() {
                 <h4 className="font-semibold text-slate-900 mb-2">📋 Právní základ:</h4>
                 <ul className="list-disc list-inside text-sm text-slate-700 space-y-1">
                   <li>NS ČR 7 Tdo 102/2019: Příspěvky jsou majetkem TJ, nikoli oddílů</li>
-                  <li>Stanovy TJ Krupka: Povinnost odvodu příspěvků spolku</li>
+                  <li>Stanovy Tělovýchovná jednota Krupka z.s.: Povinnost odvodu příspěvků spolku</li>
                   <li>§ 217 NOZ: Členský příspěvek patří spolku</li>
                 </ul>
               </div>

@@ -52,7 +52,7 @@ export default function MestoKrupkaPage() {
     {
       title: 'Výměna zámků bez právního titulu',
       severity: 'critical' as const,
-      description: 'SPORT Krupka vyměnil zámky na prostorách, které užívá TJ Krupka, a umožnil přístup vyloučeným členům místo legitimního předsedy.',
+      description: 'SPORT Krupka vyměnil zámky na prostorách, které užívá Tělovýchovná jednota Krupka z.s., a umožnil přístup vyloučeným členům místo legitimního předsedy.',
       law: '§ 208 TZ - Neoprávněný zásah do práva k prostoru',
     },
     {
@@ -112,11 +112,11 @@ export default function MestoKrupkaPage() {
     {
       date: '25.1.2024',
       title: 'Legitimní shromáždění ignorováno',
-      description: 'Konalo se legitimní shromáždění skutečných členů TJ Krupka. SPORT Krupka a město ho ignorovali a pokračovali v podpoře vyloučených členů.',
+      description: 'Konalo se legitimní shromáždění skutečných členů Tělovýchovná jednota Krupka z.s.. SPORT Krupka a město ho ignorovali a pokračovali v podpoře vyloučených členů.',
       type: 'violation' as const,
       severity: 'high' as const,
       details: [
-        'Legitimní shromáždění delegátů TJ Krupka',
+        'Legitimní shromáždění delegátů Tělovýchovná jednota Krupka z.s.',
         'Odsouhlaseno vyloučení Vaniše a Pivoňky',
         'Schváleno podání trestního oznámení',
         'SPORT Krupka a město to ignorovali',
@@ -358,7 +358,7 @@ export default function MestoKrupkaPage() {
               </div>
               <div className="p-4 bg-white rounded-lg">
                 <h3 className="font-bold text-slate-900 mb-2">Cíl:</h3>
-                <p>"Zvolit" Syryčanského jako nového předseda TJ Krupka na nelegálních schůzích a získat kontrolu nad spolkem.</p>
+                <p>"Zvolit" Syryčanského jako nového předseda Tělovýchovná jednota Krupka z.s. na nelegálních schůzích a získat kontrolu nad spolkem.</p>
               </div>
               <div className="p-4 bg-white rounded-lg">
                 <h3 className="font-bold text-slate-900 mb-2">Metody:</h3>

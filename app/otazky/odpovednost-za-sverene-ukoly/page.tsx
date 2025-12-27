@@ -55,8 +55,8 @@ export default function OdpovednostZaSvereneUkolyPage() {
           <div className="space-y-4">
             <FactBox
               status="spolek"
-              title="Předseda spolku TJ Krupka"
-              evidence={['Stanovy TJ Krupka', 'Zápis z volby 24.8.2021']}
+              title="Předseda spolku Tělovýchovná jednota Krupka z.s."
+              evidence={['Stanovy Tělovýchovná jednota Krupka z.s.', 'Zápis z volby 24.8.2021']}
             >
               <p>
                 <strong>Podle stanov má předseda spolku odpovědnost za:</strong>
@@ -72,7 +72,7 @@ export default function OdpovednostZaSvereneUkolyPage() {
             <FactBox
               status="spolek"
               title="Předsedové oddílů"
-              evidence={['Stanovy TJ Krupka', 'Email 13.9.2021']}
+              evidence={['Stanovy Tělovýchovná jednota Krupka z.s.', 'Email 13.9.2021']}
             >
               <p>
                 <strong>Podle stanov mají předsedové oddílů odpovědnost za:</strong>
@@ -122,7 +122,7 @@ export default function OdpovednostZaSvereneUkolyPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Stanovy TJ Krupka</h3>
+              <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s.</h3>
               <p className="text-sm">
                 Stanovy definují povinnosti předsedy spolku a předsedů oddílů.
               </p>
@@ -138,7 +138,7 @@ export default function OdpovednostZaSvereneUkolyPage() {
             <RelatedNode type="question" title="Kdo měl vést členskou evidenci?" href="/otazky/kdo-mel-vest-clenskou-evidenci" />
             <RelatedNode type="question" title="Kdo nakládal s příspěvky?" href="/otazky/kdo-nakladal-s-prispevky" />
             <RelatedNode type="question" title="Jednal předseda v souladu se zákonem?" href="/otazky/jednal-predseda-v-souladu-se-zakonem" />
-            <RelatedNode type="document" title="Stanovy TJ Krupka" href="/pravni-ramec" />
+            <RelatedNode type="document" title="Stanovy Tělovýchovná jednota Krupka z.s." href="/pravni-ramec" />
           </div>
         </section>
 
@@ -148,7 +148,7 @@ export default function OdpovednostZaSvereneUkolyPage() {
           </h3>
           <div className="text-orange-900 space-y-3 text-sm">
             <p>
-              <strong>Stanovy:</strong> Stanovy TJ Krupka definují odpovědnosti předsedy spolku a předsedů oddílů.
+              <strong>Stanovy:</strong> Stanovy Tělovýchovná jednota Krupka z.s. definují odpovědnosti předsedy spolku a předsedů oddílů.
             </p>
             <p>
               <strong>Spory:</strong> Spolek eviduje spory ohledně plnění některých povinností. Vyloučení členové mají k tomuto odlišný právní názor.

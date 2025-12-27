@@ -114,11 +114,11 @@ export default function JednalPredsedaVSouladuSeZakonemPage() {
 
           <FactBox
             status="spolek"
-            title="Platil členské příspěvky za TJ Krupka"
+            title="Platil členské příspěvky za Tělovýchovná jednota Krupka z.s."
             evidence={['Doklad o platbě', 'ČAST potvrzení']}
           >
             <p>
-              Spolek eviduje, že předseda platil členské příspěvky za TJ Krupka do ČAST (2.400 Kč/rok).
+              Spolek eviduje, že předseda platil členské příspěvky za Tělovýchovná jednota Krupka z.s. do ČAST (2.400 Kč/rok).
             </p>
             <p className="mt-2">
               Právní pozice spolku: Oddíly OLH, TTC, SKP neevidují doložení příspěvků za své oddíly.
@@ -174,7 +174,7 @@ export default function JednalPredsedaVSouladuSeZakonemPage() {
             </p>
           </div>
           <div>
-            <h3 className="font-semibold mb-1">Stanovy TJ Krupka § 13</h3>
+            <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s. § 13</h3>
             <p className="text-sm">
               Stanovy stanovují postup pro vyloučení člena. Předseda tento postup dodržel.
             </p>

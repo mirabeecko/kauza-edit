@@ -40,7 +40,7 @@ export default function KdoNakladalSPrispevkyPage() {
               <strong>Dva druhy příspěvků:</strong>
             </p>
             <ul className="list-disc list-inside ml-4 space-y-1">
-              <li><strong>Členské příspěvky (200 Kč/rok/osoba):</strong> Podle stanov patří spolku TJ Krupka</li>
+              <li><strong>Členské příspěvky (200 Kč/rok/osoba):</strong> Podle stanov patří spolku Tělovýchovná jednota Krupka z.s.</li>
               <li><strong>Oddílové příspěvky (různé částky):</strong> Podle stanov patří spolku, oddíly jsou součástí TJ</li>
             </ul>
           </div>
@@ -124,7 +124,7 @@ export default function KdoNakladalSPrispevkyPage() {
           </h2>
           <div className="space-y-3 text-slate-700">
             <div>
-              <h3 className="font-semibold mb-1">Stanovy TJ Krupka</h3>
+              <h3 className="font-semibold mb-1">Stanovy Tělovýchovná jednota Krupka z.s.</h3>
               <p className="text-sm">
                 Stanovy upravují povinnost předsedů oddílů vést evidenci členů a odvádět příspěvky spolku.
               </p>

@@ -56,7 +56,7 @@ export default function OtazkyPage() {
             Otázky, které si musí položit každý
           </h1>
           <p className="text-xl text-slate-600">
-            Klíčové otázky kauzy, zodpovězené podle právní pozice spolku TJ Krupka
+            Klíčové otázky kauzy, zodpovězené podle právní pozice spolku Tělovýchovná jednota Krupka z.s.
           </p>
         </div>
 
