@@ -119,22 +119,6 @@ export default function LeftPanel({ isOpen = false, onClose }: LeftPanelProps) {
             </div>
           </div>
 
-          <div className="mt-8">
-            <h3 className="text-sm font-semibold text-slate-600 uppercase mb-4">
-              Fáze kauzy
-            </h3>
-            <div className="space-y-2 text-sm">
-              <div className="px-3 py-2 bg-green-50 rounded text-green-800 border border-green-200">
-                📍 Fáze 1: Příprava (2021)
-              </div>
-              <div className="px-3 py-2 bg-orange-50 rounded text-orange-800 border border-orange-200">
-                📍 Fáze 2: Eskalace (2022-23)
-              </div>
-              <div className="px-3 py-2 bg-red-50 rounded text-red-800 border border-red-200">
-                📍 Fáze 3: Právní boj (2024)
-              </div>
-            </div>
-          </div>
         </div>
       </aside>
     </>
