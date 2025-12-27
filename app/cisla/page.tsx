@@ -409,7 +409,7 @@ export default function CislaPage() {
             <span>Klíčový fakt</span>
           </h3>
           <p className="text-lg text-red-900 leading-relaxed font-semibold">
-            Zatímco vybrané příspěvky zůstávaly mimo kontrolu jednoty, TJ Krupka z.s. ze svého rozpočtu
+            Zatímco vybrané příspěvky zůstávaly mimo kontrolu jednoty, Tělovýchovná jednota Krupka z.s. ze svého rozpočtu
             <strong> hradila veškeré provozní náklady těchto oddílů</strong>, zejména energie (elektřinu, vodu, plyn),
             které tyto oddíly svou činností vygenerovaly, ale neuhradily.
           </p>
@@ -446,7 +446,7 @@ export default function CislaPage() {
             <div className="mb-4">
               <h4 className="font-bold text-slate-900 mb-2">Majetek jednoty</h4>
               <p className="text-sm text-slate-700 leading-relaxed">
-                <strong>Příspěvky se stávají majetkem TJ Krupka z.s. v momentě, kdy je člen předá pověřené osobě</strong> (pokladníkovi/vedoucímu oddílu).
+                <strong>Příspěvky se stávají majetkem Tělovýchovná jednota Krupka z.s. v momentě, kdy je člen předá pověřené osobě</strong> (pokladníkovi/vedoucímu oddílu).
               </p>
             </div>
             <div className="p-3 bg-white/70 rounded-lg text-xs text-slate-600">

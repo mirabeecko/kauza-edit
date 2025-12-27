@@ -43,13 +43,8 @@ export default function DetailniAnalyzaPage() {
           content: 'Vaniš odmítal plnit povinnosti člena (seznamy, příspěvky, energie) 3+ roky. Pak se dovolával práv člena (žaloba na neplatnost vyloučení). To je typické zneužití práva.',
           evidence: ['§ 8 NOZ', 'Opakované výzvy 2021-2023 ignorovány'],
         },
-        {
-          subtitle: 'Soud se nezabýval',
-          content: 'Krajský soud rozhodl ve prospěch žalobců, aniž by se zabýval jejich nepoctivým jednáním a zneužitím práva. Ignoroval základní zásady občanského práva (§ 6 a § 8 NOZ).',
-          evidence: ['Rozsudek krajského soudu', 'Absence posouzení § 6 a § 8 NOZ'],
-        },
       ],
-      conclusion: 'Soud legitimizoval nepoctivé jednání. Aktéři, kteří vytvořili škodu 650k Kč a 3+ roky ignorovali povinnosti, se úspěšně dovolali práv člena.',
+      conclusion: 'Aktéři, kteří vytvořili škodu 650k Kč a 3+ roky ignorovali povinnosti, se dovolávají práv člena bez plnění povinností.',
       severity: 'critical' as const,
     },
     {
@@ -213,7 +208,7 @@ export default function DetailniAnalyzaPage() {
             🔬 Detailní analýza
           </h1>
           <p className="text-xl text-indigo-100 leading-relaxed mb-6">
-            Hloubková analýza kauzy TJ Krupka z.s. Právní rozbor, finanční struktura,
+            Hloubková analýza kauzy Tělovýchovná jednota Krupka z.s. Právní rozbor, finanční struktura,
             časová osa, systémové problémy a identifikované vzorce chování.
           </p>
           <div className="flex flex-wrap gap-3">

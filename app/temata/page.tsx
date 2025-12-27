@@ -72,7 +72,7 @@ export default function TemataPage() {
       slug: 'soudni-rizeni',
       title: 'Soudní řízení',
       icon: '⚖️',
-      description: 'Žaloby Vaniše, Pivoňky, Vlacha, Kulíka. Rozhodnutí krajského soudu. Odvolání.',
+      description: 'Právní spory o členství a hospodaření. Odvolací řízení. Výklad § 259 NOZ.',
       category: 'Právní',
       relatedCount: { events: 4, persons: 6, documents: 10 },
       isKeyTopic: true,

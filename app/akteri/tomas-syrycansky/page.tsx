@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function TomasSyrycanskyPage() {
   const actor = {
@@ -9,8 +8,7 @@ export default function TomasSyrycanskyPage() {
     status: 'city_employee' as const,
 
     context: {
-      description: 'Tomáš Syryčanský působí jako sportovní manažer městské společnosti SPORT Krupka s.r.o., která spravuje sportovní prostory využívané spolkem TJ Krupka z.s. Spolek eviduje jeho účast na jednáních souvisejících se spory o autonomii spolku a přístup k prostorům.',
-      classification: 'dolozeno' as const,
+      description: 'Tomáš Syryčanský působí jako sportovní manažer městské společnosti SPORT Krupka s.r.o., která spravuje sportovní prostory využívané spolkem Tělovýchovná jednota Krupka z.s. Spolek eviduje jeho účast na jednáních souvisejících se spory o autonomii spolku a přístup k prostorům.',
     },
 
     keyEvents: [
@@ -18,77 +16,64 @@ export default function TomasSyrycanskyPage() {
         date: '2023-2024',
         event: 'Výkon funkce sportovního manažera',
         description: 'Výkon funkce sportovního manažera společnosti SPORT Krupka s.r.o. během období sporů spolku.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '19.12.2023',
         event: 'První změna přístupu k objektu',
         description: 'Společnost SPORT Krupka s.r.o. provedla změny v přístupu k objektu Pinčesárna.',
-        classification: 'dolozeno' as const,
       },
       {
         date: 'Prosinec 2023',
         event: 'Jednání o shromáždění spolku',
         description: 'Spolek eviduje jednání týkající se termínu konání shromáždění spolku.',
-        classification: 'evidovano' as const,
       },
       {
         date: '17.1.2024',
         event: 'Zaslání návrhu nájemní smlouvy',
-        description: 'SPORT Krupka s.r.o. zaslala návrh nové nájemní smlouvy do datové schránky TJ Krupka z.s.',
-        classification: 'dolozeno' as const,
+        description: 'SPORT Krupka s.r.o. zaslala návrh nové nájemní smlouvy do datové schránky Tělovýchovná jednota Krupka z.s.',
       },
       {
         date: '19.1.2024',
         event: 'Druhá výměna zámků',
         description: 'Dva dny po zaslání návrhu smlouvy došlo k druhé výměně zámků na objektu.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '25.1.2024',
         event: 'Konání shromáždění spolku',
-        description: 'Konalo se shromáždění členů spolku TJ Krupka z.s.',
-        classification: 'dolozeno' as const,
+        description: 'Konalo se shromáždění členů spolku Tělovýchovná jednota Krupka z.s.',
       },
       {
         date: '26.1.2024',
         event: 'Město obdrželo notifikaci',
         description: 'Město Krupka obdrželo do datové schránky oznámení spolku o vyloučení některých členů.',
-        classification: 'dolozeno' as const,
       },
       {
         date: 'Únor-Duben 2024',
         event: 'Pokračující spory',
         description: 'Pokračovaly spory mezi spolkem a městskou společností ohledně přístupu k prostorům.',
-        classification: 'evidovano' as const,
       },
     ],
 
     spolekPosition: {
       title: 'Právní pozice spolku',
       description: 'Spolek zastává právní názor, že městská společnost SPORT Krupka s.r.o. měla respektovat autonomii spolku a jeho rozhodnutí o vyloučení členů. Spolek eviduje situace související s omezeným přístupem k prostorám a koordinací mezi různými aktéry.',
-      classification: 'spor' as const,
       points: [
         {
           title: 'Načasování výměn zámků',
           description: 'Spolek eviduje, že k výměnám zámků došlo v kritických obdobích sporů (19.12.2023 a 19.1.2024, přičemž druhá výměna proběhla dva dny po zaslání návrhu nájemní smlouvy). Spolek vnímá toto načasování jako problematické.',
-          classification: 'evidovano' as const,
         },
         {
           title: 'Přístup k prostorám po notifikaci',
           description: 'Spolek dne 26.1.2024 notifikoval město o vyloučení některých členů. Spolek zastává názor, že městská společnost měla respektovat toto rozhodnutí spolku při správě přístupu k prostorám.',
-          classification: 'spor' as const,
         },
         {
           title: 'Účast na jednáních',
           description: 'Spolek eviduje účast Tomáše Syryčanského na jednáních souvisejících se spory spolku. Spolek vnímá tyto situace jako součást širšího kontextu sporů s městskými institucemi.',
-          classification: 'evidovano' as const,
         },
         {
           title: 'Role městské společnosti',
           description: 'Spolek zastává právní názor, že městská společnost jako správce prostor měla zachovávat neutralitu a respektovat autonomii spolku podle § 20a NOZ.',
           legal: '§ 20a NOZ - Autonomie spolku',
-          classification: 'spor' as const,
         },
       ],
     },
@@ -96,7 +81,6 @@ export default function TomasSyrycanskyPage() {
     employmentContext: {
       title: 'Kontext zaměstnaneckého poměru',
       description: 'Tomáš Syryčanský je zaměstnancem městské společnosti SPORT Krupka s.r.o. Spolek poznamenává, že tato pozice ho staví do komplexní situace při sporech mezi spolkem a městskými institucemi.',
-      classification: 'dolozeno' as const,
     },
 
     legalFramework: [
@@ -104,13 +88,11 @@ export default function TomasSyrycanskyPage() {
         law: '§ 20a NOZ',
         title: 'Autonomie spolku',
         description: 'Spolek je autonomní organizace. Státní orgány a orgány územních samosprávných celků (včetně jejich společností) mají povinnost respektovat autonomii spolku.',
-        classification: 'dolozeno' as const,
       },
       {
         law: '§ 239 NOZ',
         title: 'Vyloučení člena',
         description: 'Spolek může vyloučit člena z důležitého důvodu. Rozhodnutí o vyloučení je vnitřní záležitostí spolku, kterou by měly třetí strany (včetně správců prostor) respektovat.',
-        classification: 'dolozeno' as const,
       },
     ],
 
@@ -131,7 +113,7 @@ export default function TomasSyrycanskyPage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako zaměstnanec městské společnosti v souvislosti se spory spolku TJ Krupka z.s.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako zaměstnanec městské společnosti v souvislosti se spory spolku Tělovýchovná jednota Krupka z.s.
             Veškeré uvedené informace představují výhradně právní pozici spolku a nejsou pravomocným soudním rozhodnutím.
             Spolek respektuje presumpci neviny a prezentuje pouze svůj právní názor na sporné situace.
             {' '}
@@ -195,11 +177,10 @@ export default function TomasSyrycanskyPage() {
                 <p className="text-slate-700 leading-relaxed flex-1">
                   {actor.context.description}
                 </p>
-                <ClassificationBadge type={actor.context.classification} />
               </div>
               <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 mt-4">
                 <p className="text-sm text-blue-900">
-                  <strong>Poznámka:</strong> Tato stránka prezentuje výhradně právní pozici spolku TJ Krupka z.s.
+                  <strong>Poznámka:</strong> Tato stránka prezentuje výhradně právní pozici spolku Tělovýchovná jednota Krupka z.s.
                   ve sporech s městskou společností. Uvedené informace nejsou pravomocným soudním rozhodnutím.
                   Spolek respektuje presumpci neviny všech zúčastněných osob.
                 </p>
@@ -219,7 +200,6 @@ export default function TomasSyrycanskyPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">{actor.employmentContext.title}</h3>
-                  <ClassificationBadge type={actor.employmentContext.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed">
                   {actor.employmentContext.description}
@@ -250,7 +230,6 @@ export default function TomasSyrycanskyPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{event.event}</div>
-                      <ClassificationBadge type={event.classification} />
                     </div>
                     <p className="text-sm text-slate-700 mb-2">{event.description}</p>
                   </div>
@@ -274,7 +253,6 @@ export default function TomasSyrycanskyPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">{actor.spolekPosition.title}</h3>
-                  <ClassificationBadge type={actor.spolekPosition.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   {actor.spolekPosition.description}
@@ -287,7 +265,6 @@ export default function TomasSyrycanskyPage() {
                 <div key={index} className="p-4 bg-white rounded-lg border-2 border-orange-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h4 className="font-bold text-slate-900">{point.title}</h4>
-                    <ClassificationBadge type={point.classification} />
                   </div>
                   <p className="text-sm text-slate-700 mb-2">{point.description}</p>
                   {point.legal && (
@@ -323,7 +300,6 @@ export default function TomasSyrycanskyPage() {
                 <div key={index} className="p-5 bg-white rounded-lg border-2 border-slate-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="font-bold text-slate-900">{item.law} - {item.title}</h3>
-                    <ClassificationBadge type={item.classification} />
                   </div>
                   <p className="text-sm text-slate-700">{item.description}</p>
                 </div>

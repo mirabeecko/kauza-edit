@@ -5,7 +5,7 @@ export default function ProcJeKauzaSlozitaPage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-4xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje kontext a složitost kauzy z pohledu spolku TJ Krupka z.s. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje kontext a složitost kauzy z pohledu spolku Tělovýchovná jednota Krupka z.s. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
           </p>
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function ProcJeKauzaSlozitaPage() {
                 <li><strong>2021:</strong> Volba předsedy, první výzvy</li>
                 <li><strong>2022:</strong> Rozhodčí komise ČAST, opakované výzvy</li>
                 <li><strong>2023:</strong> Vyloučení členů, výměna zámků, předžalobní výzvy</li>
-                <li><strong>2024:</strong> Žaloba, trestní oznámení, rozsudek, výslechy</li>
+                <li><strong>2024:</strong> Trestní oznámení, výslechy</li>
               </ul>
               <p className="mt-2 text-sm">
                 Každá událost navazuje na předchozí. Bez kontextu je těžké pochopit,

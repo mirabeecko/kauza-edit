@@ -20,7 +20,7 @@ export default function PravniRamecPage() {
           </p>
           <p>
             Cílem je věcná reakce na nepravdivé informace šířené o činnosti spolku
-            TJ Krupka z.s. a jeho orgánů. Web slouží k ochraně dobré pověsti spolku
+            Tělovýchovná jednota Krupka z.s. a jeho orgánů. Web slouží k ochraně dobré pověsti spolku
             a jeho legitimních orgánů.
           </p>
           <p>
@@ -99,7 +99,7 @@ export default function PravniRamecPage() {
           </div>
 
           <div className="p-3 rounded border-2 border-slate-200">
-            <div className="font-semibold text-slate-900">Stanovy TJ Krupka z.s.</div>
+            <div className="font-semibold text-slate-900">Stanovy Tělovýchovná jednota Krupka z.s.</div>
             <div className="text-sm text-slate-600">
               Stanovy jasně definují povinnosti členů, předsedů oddílů a orgánů spolku.
             </div>

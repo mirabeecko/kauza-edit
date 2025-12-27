@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function MartinKulikPage() {
   const actor = {
@@ -14,21 +13,18 @@ export default function MartinKulikPage() {
         label: 'Neodvedené oddílové příspěvky',
         amount: 316800,
         description: 'Oddíl karate neeviduje odvod příspěvků za období 2020-2023. 40 členů × 3.600 Kč/rok × 4 roky.',
-        classification: 'evidovano' as const,
         note: 'Výpočet založen na odhadech počtu členů (seznamy nebyly doloženy). Oddíl karate měl nejvyšší roční příspěvek ze všech oddílů.',
       },
       {
         label: 'Nezaplacené členské příspěvky',
         amount: 32000,
         description: 'Členské příspěvky za období 2021-2024 (200 Kč × 4 roky × 40 členů). Úhrada svazům ČSTV, Ústeckému kraji, obci.',
-        classification: 'evidovano' as const,
         note: 'Účetní evidence spolku.',
       },
       {
         label: 'Pokladna oddílu k 31.12.2020',
         amount: 1798,
         description: 'Hotovost v pokladně oddílu k 31.12.2020 ve výši 1.798 Kč nebyla předána ani vyúčtována.',
-        classification: 'evidovano' as const,
         note: 'Účetní evidence spolku.',
       },
     ],
@@ -39,17 +35,14 @@ export default function MartinKulikPage() {
         {
           label: 'Oficiální zápis',
           description: 'Podle oficiálního zápisu ze schůze oddílu byl předsedou oddílu karate Jiří Kulík.',
-          classification: 'dolozeno' as const,
         },
         {
           label: 'Komunikace s Martin Kulíkem',
           description: 'Martin Kulík v komunikaci se spolkem vystupoval jako předseda oddílu karate.',
-          classification: 'dolozeno' as const,
         },
         {
           label: 'Zápis potvrzující zvolení',
           description: 'K datu zveřejnění spolek neeviduje doložení zápisu, který by potvrzoval zvolení Martina Kulíka do funkce předsedy oddílu.',
-          classification: 'dolozeno' as const,
         },
       ],
     },
@@ -58,29 +51,19 @@ export default function MartinKulikPage() {
         icon: '⚖️',
         title: 'Nesoulad v evidenci funkce',
         description: 'Existuje nesoulad mezi oficiálním zápisem (předseda: Jiří Kulík) a komunikací (Martin Kulík vystupoval jako předseda). Věc označujeme jako spor.',
-        classification: 'spor' as const,
       },
       {
         icon: '📋',
         title: 'Seznamy členů nebyly doloženy',
         description: 'K datu zveřejnění spolek neeviduje doložení aktualizovaných seznamů členů oddílu karate, přestože byly zaslány opakované výzvy (2021-2024).',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '💰',
         title: 'Nejvyšší roční příspěvek',
         description: 'Oddíl karate měl nejvyšší roční příspěvek na člena ze všech oddílů (3.600 Kč/rok). Z evidence vyplývá nesoulad ve výši 316.800 Kč.',
-        classification: 'evidovano' as const,
       },
     ],
     keyEvents: [
-      { text: 'Činnost v oddílu karate', date: '2020-2024', classification: 'dolozeno' as const },
-      { text: 'Nesoulad v evidenci funkce předsedy (spor)', date: '2020-2024', classification: 'spor' as const },
-      { text: 'K datu zveřejnění neevidováno doložení seznamů členů', date: '2021-2024', classification: 'dolozeno' as const },
-      { text: 'K datu zveřejnění neevidováno doložení oddílových příspěvků', amount: 316800, date: '2020-2023', classification: 'evidovano' as const },
-      { text: 'Členské příspěvky nebyly uhrazeny', amount: 32000, date: '2021-2024', classification: 'evidovano' as const },
-      { text: 'Pokladna oddílu nebyla předána', amount: 1798, date: '31.12.2020', classification: 'evidovano' as const },
-      { text: 'Zánik členství neplacením členských příspěvků', date: '2024', classification: 'dolozeno' as const },
     ],
     relatedLinks: [
       { label: 'Právní rámec a kontakt', href: '/pravni-ramec', icon: '⚖️' },
@@ -98,7 +81,7 @@ export default function MartinKulikPage() {
       <div className="bg-blue-900 text-white py-3">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm">
-            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s činností v oddílu spolku TJ Krupka z.s., nikoliv soukromě.
+            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s činností v oddílu spolku Tělovýchovná jednota Krupka z.s., nikoliv soukromě.
             Uvedené informace vycházejí z dokumentů, které spolek eviduje. Nejde o pravomocné soudní rozhodnutí.
             {' '}
             <a href="/pravni-ramec" className="underline hover:text-blue-200">
@@ -128,7 +111,6 @@ export default function MartinKulikPage() {
                 {actor.role}
               </p>
               <div className="mt-3 flex items-center gap-2">
-                <ClassificationBadge type="spor" />
                 <span className="text-sm text-green-100">Nesoulad v evidenci funkce</span>
               </div>
             </div>
@@ -142,7 +124,6 @@ export default function MartinKulikPage() {
                   {actor.totalDamage.toLocaleString('cs-CZ')} Kč
                 </div>
                 <div className="mt-3">
-                  <ClassificationBadge type="evidovano" />
                 </div>
               </div>
               <div className="text-8xl opacity-20">
@@ -191,7 +172,6 @@ export default function MartinKulikPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h2 className="text-2xl font-bold text-amber-900">Nesoulad v evidenci funkce</h2>
-                  <ClassificationBadge type="spor" />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   {actor.legitimacyDispute.description} V této věci existují rozdílná tvrzení; stav označujeme jako spor.
@@ -201,7 +181,6 @@ export default function MartinKulikPage() {
                     <div key={index} className="p-4 bg-white rounded-lg border-2 border-orange-200">
                       <div className="flex items-center gap-3 mb-2">
                         <h3 className="font-bold text-slate-900">{detail.label}</h3>
-                        <ClassificationBadge type={detail.classification} />
                       </div>
                       <p className="text-sm text-slate-700">{detail.description}</p>
                     </div>
@@ -236,7 +215,6 @@ export default function MartinKulikPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-xl font-bold text-slate-900">{fact.title}</h3>
-                      <ClassificationBadge type={fact.classification} />
                     </div>
                     <p className="text-sm text-slate-700 leading-relaxed">
                       {fact.description}
@@ -263,7 +241,6 @@ export default function MartinKulikPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-xl font-bold text-slate-900">{item.label}</h3>
-                      <ClassificationBadge type={item.classification} />
                     </div>
                     <p className="text-sm text-slate-700 leading-relaxed mb-2">
                       {item.description}
@@ -317,7 +294,6 @@ export default function MartinKulikPage() {
               <div className="p-4 rounded-lg border-2 bg-orange-50 border-orange-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Seznamy členů nebyly doloženy</h3>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   K datu zveřejnění spolek neeviduje doložení aktualizovaných seznamů členů oddílu karate,
@@ -332,7 +308,6 @@ export default function MartinKulikPage() {
               <div className="p-4 rounded-lg border-2 bg-orange-50 border-orange-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Neodvedené oddílové příspěvky</h3>
-                  <ClassificationBadge type="evidovano" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Z účetních podkladů za období 2020-2023 vyplývá, že oddílové příspěvky ve výši 316.800 Kč
@@ -354,7 +329,6 @@ export default function MartinKulikPage() {
               <div className="p-4 rounded-lg border-2 bg-yellow-50 border-yellow-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Nezaplacené členské příspěvky</h3>
-                  <ClassificationBadge type="evidovano" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Z evidence vyplývá, že členské příspěvky za období 2021-2024 ve výši 32.000 Kč
@@ -372,7 +346,6 @@ export default function MartinKulikPage() {
               <div className="p-4 rounded-lg border-2 bg-yellow-50 border-yellow-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Nepředaná pokladna oddílu</h3>
-                  <ClassificationBadge type="evidovano" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Z evidence vyplývá, že hotovost v pokladně oddílu k 31.12.2020 ve výši 1.798 Kč
@@ -448,7 +421,6 @@ export default function MartinKulikPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{event.text}</div>
-                      <ClassificationBadge type={event.classification} />
                     </div>
                     {event.amount && (
                       <div className="text-lg font-bold text-green-700 mt-1">

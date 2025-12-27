@@ -1,9 +1,9 @@
 export default function UdalostiPage() {
   const events = [
+    // 2021
     {
       date: '24.8.2021',
-      phase: 1,
-      phaseName: 'Příprava',
+      year: 2021,
       title: 'Zvolení nového předsedy',
       icon: '🏛️',
       importance: 'critical' as const,
@@ -17,8 +17,7 @@ export default function UdalostiPage() {
     },
     {
       date: '13.9.2021',
-      phase: 1,
-      phaseName: 'Příprava',
+      year: 2021,
       title: 'První výzva k zaslání seznamů členů',
       icon: '📧',
       importance: 'medium' as const,
@@ -32,8 +31,7 @@ export default function UdalostiPage() {
     },
     {
       date: '26.9.2021',
-      phase: 1,
-      phaseName: 'Příprava',
+      year: 2021,
       title: 'Vypršení lhůty',
       icon: '⚠️',
       importance: 'high' as const,
@@ -47,8 +45,7 @@ export default function UdalostiPage() {
     },
     {
       date: '10.12.2021',
-      phase: 1,
-      phaseName: 'Příprava',
+      year: 2021,
       title: 'Výzva k úhradě členských příspěvků',
       icon: '💰',
       importance: 'medium' as const,
@@ -60,10 +57,10 @@ export default function UdalostiPage() {
       ],
       slug: 'vyzva-uhrada-prispevku',
     },
+    // 2022
     {
       date: '9.9.2022',
-      phase: 2,
-      phaseName: 'Eskalace',
+      year: 2022,
       title: 'Smrt otce MB - První trénink s dětmi',
       icon: '💔',
       importance: 'medium' as const,
@@ -75,10 +72,26 @@ export default function UdalostiPage() {
       ],
       slug: 'smrt-otce-mb',
     },
+    // 2023
+    {
+      date: '19.10.2023',
+      year: 2023,
+      title: 'Pokus o převod majetku spolku na město Krupka',
+      icon: '🏛️',
+      importance: 'critical' as const,
+      description: 'Neplatně svolaná schůze Vanišem, na které se pokusil o převod majetku spolku na město Krupka. Předseda spolku byl v tu dobu na dovolené.',
+      details: [
+        'Svolal: Marek Vaniš (neoprávněně)',
+        'Datum: V době dovolené legitimního předsedy spolku',
+        'Cíl: Převod majetku Tělovýchovné jednoty Krupka z.s. na město Krupka',
+        'Právní pozice spolku: Neplatně svolaná schůze bez oprávnění',
+        'Výsledek: Pokus o převod majetku spolku mimo kontrolu legitimních orgánů',
+      ],
+      slug: 'pokus-prevod-majetku-mesto',
+    },
     {
       date: '6.11.2023',
-      phase: 2,
-      phaseName: 'Eskalace',
+      year: 2023,
       title: 'Předžalobní výzva Vanišovi',
       icon: '📜',
       importance: 'high' as const,
@@ -92,8 +105,7 @@ export default function UdalostiPage() {
     },
     {
       date: '14.11.2023',
-      phase: 2,
-      phaseName: 'Eskalace',
+      year: 2023,
       title: 'Předžalobní výzvy Pivoňkovi a Vlachovi',
       icon: '📜',
       importance: 'high' as const,
@@ -107,8 +119,7 @@ export default function UdalostiPage() {
     },
     {
       date: '28.11.2023',
-      phase: 2,
-      phaseName: 'Eskalace',
+      year: 2023,
       title: 'VYLOUČENÍ Vaniše a Pivoňky',
       icon: '❌',
       importance: 'critical' as const,
@@ -123,8 +134,7 @@ export default function UdalostiPage() {
     },
     {
       date: '19.12.2023',
-      phase: 2,
-      phaseName: 'Eskalace',
+      year: 2023,
       title: 'Mimořádná schůze výboru oddílu',
       icon: '🏛️',
       importance: 'high' as const,
@@ -136,10 +146,10 @@ export default function UdalostiPage() {
       ],
       slug: 'schuze-vyboru-potvrzeni',
     },
+    // 2024
     {
       date: '25.1.2024',
-      phase: 3,
-      phaseName: 'Právní boj',
+      year: 2024,
       title: 'Shromáždění delegátů TJ Krupka',
       icon: '🏛️',
       importance: 'high' as const,
@@ -153,8 +163,7 @@ export default function UdalostiPage() {
     },
     {
       date: '28.2.2024',
-      phase: 3,
-      phaseName: 'Právní boj',
+      year: 2024,
       title: 'Vypršení prekluzivní lhůty',
       icon: '⏰',
       importance: 'critical' as const,
@@ -167,44 +176,13 @@ export default function UdalostiPage() {
       ],
       slug: 'vyprseni-prekluzivni-lhuty',
     },
-    {
-      date: '8.4.2024',
-      phase: 3,
-      phaseName: 'Právní boj',
-      title: 'Žaloba Vaniše a Pivoňky',
-      icon: '⚖️',
-      importance: 'critical' as const,
-      description: 'Žaloba na neplatnost vyloučení - podána 39 DNÍ PO LHŮTĚ! Dle § 259 NOZ by měla být odmítnuta.',
-      details: [
-        'Podáno: 39 dní po vypršení lhůty',
-        'Lhůta vypršela: 28.2.2024',
-        'Právní problém: Prekluzivní lhůta (NS ČR 29 Cdo 4627/2016)',
-        'Očekávaný výsledek: Odmítnutí žaloby',
-      ],
-      slug: 'zaloba-vanis-pivonka',
-    },
-    {
-      date: 'Podzim 2024',
-      phase: 3,
-      phaseName: 'Právní boj',
-      title: 'Rozhodnutí krajského soudu',
-      icon: '⚖️',
-      importance: 'critical' as const,
-      description: 'Krajský soud rozhodl, že vyloučení bylo nicotné. Problematické rozhodnutí ignorující § 6 a § 8 NOZ.',
-      details: [
-        'Ignorována: Prekluzivní lhůta (§ 259 NOZ)',
-        'Ignorováno: § 6 NOZ (nikdo nesmí těžit z nepoctivého činu)',
-        'Ignorováno: § 8 NOZ (zneužití práva)',
-        'Důsledek: Legitimizace nepoctivého jednání',
-      ],
-      slug: 'rozhodnuti-krajskeho-soudu',
-    },
   ];
 
-  const phases = [
-    { id: 1, name: 'Příprava a dohody', period: '2021', color: 'from-green-500 to-emerald-600', bgColor: 'bg-green-50', borderColor: 'border-green-300' },
-    { id: 2, name: 'Eskalace a konflikty', period: '2022-2023', color: 'from-orange-500 to-red-500', bgColor: 'bg-orange-50', borderColor: 'border-orange-300' },
-    { id: 3, name: 'Právní boj', period: '2024', color: 'from-red-600 to-red-800', bgColor: 'bg-red-50', borderColor: 'border-red-300' },
+  const years = [
+    { year: 2021, name: 'Rok 2021', color: 'from-green-500 to-emerald-600', bgColor: 'bg-green-50', borderColor: 'border-green-300' },
+    { year: 2022, name: 'Rok 2022', color: 'from-blue-500 to-blue-600', bgColor: 'bg-blue-50', borderColor: 'border-blue-300' },
+    { year: 2023, name: 'Rok 2023', color: 'from-orange-500 to-red-500', bgColor: 'bg-orange-50', borderColor: 'border-orange-300' },
+    { year: 2024, name: 'Rok 2024', color: 'from-red-600 to-red-800', bgColor: 'bg-red-50', borderColor: 'border-red-300' },
   ];
 
   return (
@@ -227,8 +205,8 @@ export default function UdalostiPage() {
               <div className="text-sm text-blue-200">Klíčových událostí</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">
-              <div className="text-3xl font-black mb-1">3</div>
-              <div className="text-sm text-blue-200">Fáze kauzy</div>
+              <div className="text-3xl font-black mb-1">4</div>
+              <div className="text-sm text-blue-200">Roky</div>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">
               <div className="text-3xl font-black mb-1">3+</div>
@@ -238,57 +216,61 @@ export default function UdalostiPage() {
         </div>
       </div>
 
-      {/* Phase Navigation */}
+      {/* Year Navigation */}
       <div className="sticky top-0 z-10 bg-white/90 backdrop-blur border-b-2 border-slate-200 shadow-lg">
         <div className="container mx-auto px-3 md:px-8 py-4 max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-4">
-            {phases.map((phase) => (
-              <div
-                key={phase.id}
-                className={`p-4 rounded-lg border-2 ${phase.bgColor} ${phase.borderColor} transition hover:shadow-md cursor-pointer`}
-              >
-                <div className="text-sm font-semibold mb-1">Fáze {phase.id}</div>
-                <div className="text-lg font-bold">{phase.name}</div>
-                <div className="text-sm opacity-70">{phase.period}</div>
-              </div>
-            ))}
+          <div className="grid grid-cols-4 gap-4">
+            {years.map((yearInfo) => {
+              const eventCount = events.filter(e => e.year === yearInfo.year).length;
+              return (
+                <div
+                  key={yearInfo.year}
+                  className={`p-4 rounded-lg border-2 ${yearInfo.bgColor} ${yearInfo.borderColor} transition hover:shadow-md cursor-pointer`}
+                >
+                  <div className="text-2xl font-bold mb-1">{yearInfo.year}</div>
+                  <div className="text-sm opacity-70">{eventCount} událostí</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
 
       {/* Timeline */}
       <div className="container mx-auto px-3 md:px-8 py-8 md:py-16 max-w-6xl">
-        {phases.map((phase) => (
-          <div key={phase.id} className="mb-20">
-            {/* Phase Header */}
-            <div className={`bg-gradient-to-r ${phase.color} rounded-2xl p-4 md:p-8 text-white shadow-2xl mb-12`}>
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm font-semibold mb-2 opacity-90">FÁZE {phase.id}</div>
-                  <h2 className="text-4xl font-black mb-2">{phase.name}</h2>
-                  <div className="text-xl opacity-90">{phase.period}</div>
-                </div>
-                <div className="text-7xl opacity-20">
-                  {phase.id === 1 ? '🏁' : phase.id === 2 ? '⚡' : '⚖️'}
+        {years.map((yearInfo) => {
+          const yearEvents = events.filter(e => e.year === yearInfo.year);
+          if (yearEvents.length === 0) return null;
+
+          return (
+            <div key={yearInfo.year} className="mb-20">
+              {/* Year Header */}
+              <div className={`bg-gradient-to-r ${yearInfo.color} rounded-2xl p-4 md:p-8 text-white shadow-2xl mb-12`}>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h2 className="text-5xl font-black mb-2">{yearInfo.year}</h2>
+                    <div className="text-xl opacity-90">{yearEvents.length} klíčových událostí</div>
+                  </div>
+                  <div className="text-7xl opacity-20">
+                    {yearInfo.year === 2021 ? '🏁' : yearInfo.year === 2022 ? '💔' : yearInfo.year === 2023 ? '⚡' : '⚖️'}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Phase Events */}
-            <div className="relative">
-              {/* Vertical line */}
-              <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-300 via-blue-400 to-blue-300 transform -translate-x-1/2"></div>
+              {/* Year Events */}
+              <div className="relative">
+                {/* Vertical line */}
+                <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-300 via-blue-400 to-blue-300 transform -translate-x-1/2"></div>
 
-              <div className="space-y-12">
-                {events
-                  .filter((event) => event.phase === phase.id)
-                  .map((event, index) => (
+                <div className="space-y-12">
+                  {yearEvents.map((event, index) => (
                     <TimelineEvent key={index} event={event} index={index} />
                   ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* ČAST Callout */}
@@ -358,8 +340,7 @@ export default function UdalostiPage() {
 
 interface Event {
   date: string;
-  phase: number;
-  phaseName: string;
+  year: number;
   title: string;
   icon: string;
   importance: 'critical' | 'high' | 'medium' | 'low';
@@ -422,7 +403,6 @@ function TimelineEvent({ event, index }: { event: Event; index: number }) {
                 </div>
               </div>
               <div className="text-2xl font-black mb-2">{event.date}</div>
-              <div className="text-sm opacity-90">{event.phaseName}</div>
             </div>
 
             {/* Card Content */}

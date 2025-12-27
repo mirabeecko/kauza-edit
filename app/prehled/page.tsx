@@ -22,7 +22,7 @@ export default function PrehledPage() {
           </h2>
           <div className="space-y-3 text-slate-700">
             <p>
-              V srpnu 2021 byl <strong>Miroslav Brožek zvolen předsedou</strong> spolku TJ Krupka z.s.
+              V srpnu 2021 byl <strong>Miroslav Brožek zvolen předsedou</strong> spolku Tělovýchovná jednota Krupka z.s.
               na 5 let. První úkol: aktualizovat členskou základnu (obsahovala osoby starší 100 let).
             </p>
             <p>
@@ -38,8 +38,8 @@ export default function PrehledPage() {
               ze spolku za hrubé porušení povinností. Vlach a Kulík vystoupili (neplacení příspěvků).
             </p>
             <p>
-              V dubnu 2024 podali žaloby na TJ Krupka - <strong>po uplynutí prekluzivní lhůty</strong>
-              dle § 259 NOZ (měli žalovat do 3 měsíců, žalovali až po 5 měsících).
+              V roce 2024 pokračují právní spory týkající se členství a hospodaření.
+              Platí presumpce neviny pro všechny zúčastněné.
             </p>
           </div>
         </section>
@@ -154,12 +154,6 @@ export default function PrehledPage() {
               phase="Fáze 3"
               color="blue"
               text="Vypršela prekluzivní lhůta pro žalobu (§ 259 NOZ)."
-            />
-            <TimelineItem
-              date="8.4.2024"
-              phase="Fáze 3"
-              color="red"
-              text="Žaloba Vaniše a Pivoňky - 39 dní PO LHŮTĚ!"
             />
           </div>
         </section>

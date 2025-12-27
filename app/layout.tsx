@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="cs">
       <head>
-        <title>Kauza TJ Krupka z.s.</title>
+        <title>Kauza Tělovýchovná jednota Krupka z.s.</title>
         <meta name="description" content="Interaktivní mapa kauzy Tělovýchovná jednota Krupka z.s., IČO 46070516" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>

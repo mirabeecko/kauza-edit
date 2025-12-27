@@ -149,7 +149,7 @@ export default function AkteriPage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-6xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Uvedené informace představují právní pozici spolku TJ Krupka z.s. ve sporech týkajících se členství, hospodaření oddílů a autonomie spolku. Nejde o pravomocná soudní rozhodnutí. Všechny zúčastněné osoby mají právo na vyjádření a odlišný právní názor.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Uvedené informace představují právní pozici spolku Tělovýchovná jednota Krupka z.s. ve sporech týkajících se členství, hospodaření oddílů a autonomie spolku. Nejde o pravomocná soudní rozhodnutí. Všechny zúčastněné osoby mají právo na vyjádření a odlišný právní názor.
             {' '}
             <a href="/pravni-ramec" className="underline hover:text-blue-200 font-semibold">
               Více o právním rámci →
@@ -164,7 +164,7 @@ export default function AkteriPage() {
             Aktéři
           </h1>
           <p className="text-xl text-slate-600">
-            Osoby a jejich role ve sporech spolku TJ Krupka z.s. prezentované z právní pozice spolku.
+            Osoby a jejich role ve sporech spolku Tělovýchovná jednota Krupka z.s. prezentované z právní pozice spolku.
           </p>
         </div>
 

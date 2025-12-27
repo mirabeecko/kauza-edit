@@ -9,7 +9,7 @@ export default function MelyInstituceZasahnoutDrivePage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-4xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s. ohledně role institucí ve sporech. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné instituce a osoby mají právo na odlišný právní názor.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s. ohledně role institucí ve sporech. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné instituce a osoby mají právo na odlišný právní názor.
           </p>
         </div>
       </div>

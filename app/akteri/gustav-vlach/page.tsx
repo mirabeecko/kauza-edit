@@ -1,5 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
-
 export default function GustavVlachPage() {
   const actor = {
     name: 'Gustav Vlach',
@@ -14,28 +12,24 @@ export default function GustavVlachPage() {
         label: 'Neodvedené oddílové příspěvky',
         amount: 379200,
         description: 'Oddíl lyžování neeviduje odvod příspěvků za období 2020-2023. 79 členů × 1.200 Kč/rok × 4 roky.',
-        classification: 'evidovano' as const,
         note: 'Výpočet založen na odhadech počtu členů (seznamy nebyly doloženy).',
       },
       {
         label: 'Náklady za energie',
         amount: 256455,
         description: 'Z faktur vyplývá, že náklady za elektřinu ve výši 256.455 Kč za období 2020-2023 nebyly uhrazeny. Prostory byly oddílem využívány.',
-        classification: 'dolozeno' as const,
         note: 'Faktury dodavatelů, výzvy k úhradě. Nejvyšší dluh za energie ze všech oddílů.',
       },
       {
         label: 'Pokladna oddílu k 31.12.2020',
         amount: 132523,
         description: 'Hotovost v pokladně oddílu k 31.12.2020 ve výši 132.523 Kč nebyla předána ani vyúčtována.',
-        classification: 'dolozeno' as const,
         note: 'Písemné potvrzení existence hotovosti, výpověď při výslechu (2024).',
       },
       {
         label: 'Nezaplacené členské příspěvky',
         amount: 63200,
         description: 'Členské příspěvky za období 2021-2024 (200 Kč × 4 roky × 79 členů). Úhrada svazům ČSTV, Ústeckému kraji, obci.',
-        classification: 'evidovano' as const,
         note: 'Účetní evidence spolku.',
       },
     ],
@@ -44,19 +38,16 @@ export default function GustavVlachPage() {
         icon: '💰',
         title: 'Pokladna potvrzena písemně',
         description: 'Existence hotovosti 132.523 Kč v pokladně oddílu k 31.12.2020 byla potvrzena písemnou komunikací. K datu zveřejnění spolek neeviduje její předání.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '⚡',
         title: 'Nejvyšší dluh za energie',
         description: 'Lyžařský oddíl má ze všech oddílů nejvyšší dluh za energie: 256.455 Kč. Z faktur vyplývá, že prostory byly využívány, ale náklady nebyly uhrazeny.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '📋',
         title: 'Seznamy členů nebyly doloženy',
         description: 'K datu zveřejnění spolek neeviduje doložení aktualizovaných seznamů členů lyžařského oddílu, přestože byly zaslány opakované výzvy (2021-2024).',
-        classification: 'dolozeno' as const,
       },
     ],
     missingDocuments: [
@@ -64,35 +55,31 @@ export default function GustavVlachPage() {
         icon: '🎿',
         title: 'Průkazy technické způsobilosti',
         description: 'K datu zveřejnění spolek neeviduje doložení průkazů technické způsobilosti lyžařských vleků. Bez těchto dokumentů nelze provozovat lyžařské vleky podle platných předpisů.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '📋',
         title: 'Provozní dokumentace areálu',
         description: 'K datu zveřejnění spolek neeviduje doložení provozní dokumentace týkající se lyžařského areálu (smlouvy, provozní řády, návody).',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '⚙️',
         title: 'Technické listy k vlekům',
         description: 'K datu zveřejnění spolek neeviduje doložení technických listů k lyžařským vlekům, které jsou nutné pro jejich bezpečný provoz a údržbu.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '✅',
         title: 'Dokumentace posledních revizí',
         description: 'K datu zveřejnění spolek neeviduje doložení dokumentace o posledních provedených revizích zařízení, což je nutné pro splnění bezpečnostních a právních požadavků.',
-        classification: 'dolozeno' as const,
       },
     ],
     keyEvents: [
-      { text: 'Činnost jako předseda lyžařského oddílu', date: '2020-2024', classification: 'dolozeno' as const },
-      { text: 'K datu zveřejnění neevidováno doložení seznamů členů', date: '2021-2024', classification: 'dolozeno' as const },
-      { text: 'K datu zveřejnění neevidováno doložení oddílových příspěvků', amount: 379200, date: '2020-2023', classification: 'evidovano' as const },
-      { text: 'Náklady za energie nebyly uhrazeny', amount: 256455, date: '2020-2023', classification: 'dolozeno' as const },
-      { text: 'Pokladna k 31.12.2020 nebyla předána', amount: 132523, date: '31.12.2020', classification: 'dolozeno' as const },
-      { text: 'K datu zveřejnění neevidováno doložení technické dokumentace areálu', date: '2021-2024', classification: 'dolozeno' as const },
-      { text: 'Zánik členství neplacením členských příspěvků', date: '2024', classification: 'dolozeno' as const },
+      { text: 'Činnost jako předseda lyžařského oddílu', date: '2020-2024' },
+      { text: 'K datu zveřejnění neevidováno doložení seznamů členů', date: '2021-2024' },
+      { text: 'K datu zveřejnění neevidováno doložení oddílových příspěvků', amount: 379200, date: '2020-2023' },
+      { text: 'Náklady za energie nebyly uhrazeny', amount: 256455, date: '2020-2023' },
+      { text: 'Pokladna k 31.12.2020 nebyla předána', amount: 132523, date: '31.12.2020' },
+      { text: 'K datu zveřejnění neevidováno doložení technické dokumentace areálu', date: '2021-2024' },
+      { text: 'Zánik členství neplacením členských příspěvků', date: '2024' },
     ],
     relatedLinks: [
       { label: 'Právní rámec a kontakt', href: '/pravni-ramec', icon: '⚖️' },
@@ -110,7 +97,7 @@ export default function GustavVlachPage() {
       <div className="bg-blue-900 text-white py-3">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm">
-            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku TJ Krupka z.s., nikoliv soukromě.
+            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku Tělovýchovná jednota Krupka z.s., nikoliv soukromě.
             Uvedené informace vycházejí z dokumentů, které spolek eviduje. Nejde o pravomocné soudní rozhodnutí.
             {' '}
             <a href="/pravni-ramec" className="underline hover:text-blue-200">
@@ -150,7 +137,6 @@ export default function GustavVlachPage() {
                   {actor.totalDamage.toLocaleString('cs-CZ')} Kč
                 </div>
                 <div className="mt-4 flex items-center gap-2">
-                  <ClassificationBadge type="evidovano" />
                   <span className="px-4 py-2 bg-blue-500/30 backdrop-blur rounded-lg border border-blue-300">
                     <span className="text-sm text-white font-bold">Nejvyšší škoda ze všech oddílů</span>
                   </span>
@@ -209,10 +195,7 @@ export default function GustavVlachPage() {
                 <div className="flex items-start gap-4">
                   <span className="text-4xl">{fact.icon}</span>
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-xl font-bold text-slate-900">{fact.title}</h3>
-                      <ClassificationBadge type={fact.classification} />
-                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">{fact.title}</h3>
                     <p className="text-sm text-slate-700 leading-relaxed">
                       {fact.description}
                     </p>
@@ -236,10 +219,7 @@ export default function GustavVlachPage() {
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <h3 className="text-xl font-bold text-slate-900">{item.label}</h3>
-                      <ClassificationBadge type={item.classification} />
-                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">{item.label}</h3>
                     <p className="text-sm text-slate-700 leading-relaxed mb-2">
                       {item.description}
                     </p>
@@ -290,10 +270,7 @@ export default function GustavVlachPage() {
             <div className="space-y-6">
               {/* 1. Seznamy členů */}
               <div className="p-4 rounded-lg border-2 bg-orange-50 border-orange-300">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-lg font-semibold text-slate-900">Seznamy členů nebyly doloženy</h3>
-                  <ClassificationBadge type="dolozeno" />
-                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Seznamy členů nebyly doloženy</h3>
                 <p className="text-sm text-slate-900 mb-2">
                   K datu zveřejnění spolek neeviduje doložení aktualizovaných seznamů členů lyžařského oddílu,
                   přestože byly zaslány opakované výzvy (2021-2024).
@@ -305,10 +282,7 @@ export default function GustavVlachPage() {
 
               {/* 2. Oddílové příspěvky */}
               <div className="p-4 rounded-lg border-2 bg-orange-50 border-orange-300">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-lg font-semibold text-slate-900">Neodvedené oddílové příspěvky</h3>
-                  <ClassificationBadge type="evidovano" />
-                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Neodvedené oddílové příspěvky</h3>
                 <p className="text-sm text-slate-900 mb-2">
                   Z účetních podkladů za období 2020-2023 vyplývá, že oddílové příspěvky ve výši 379.200 Kč
                   nebyly zaúčtovány jako příjem spolku.
@@ -327,10 +301,7 @@ export default function GustavVlachPage() {
 
               {/* 3. Energie */}
               <div className="p-4 rounded-lg border-2 bg-red-50 border-red-300">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-lg font-semibold text-slate-900">Náklady za energie nebyly uhrazeny</h3>
-                  <ClassificationBadge type="dolozeno" />
-                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Náklady za energie nebyly uhrazeny</h3>
                 <p className="text-sm text-slate-900 mb-2">
                   Z faktur vyplývá, že náklady za elektřinu ve výši 256.455 Kč za období 2020-2023 nebyly uhrazeny.
                   Prostory byly oddílem využívány. Jedná se o nejvyšší dluh za energie ze všech oddílů.
@@ -342,10 +313,7 @@ export default function GustavVlachPage() {
 
               {/* 4. Pokladna */}
               <div className="p-4 rounded-lg border-2 bg-red-50 border-red-300">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-lg font-semibold text-slate-900">Nepředaná pokladna oddílu</h3>
-                  <ClassificationBadge type="dolozeno" />
-                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Nepředaná pokladna oddílu</h3>
                 <p className="text-sm text-slate-900 mb-2">
                   Existence hotovosti v pokladně oddílu k 31.12.2020 ve výši 132.523 Kč byla potvrzena
                   písemnou komunikací. K datu zveřejnění spolek neeviduje její předání ani vyúčtování.
@@ -357,10 +325,7 @@ export default function GustavVlachPage() {
 
               {/* 5. Členské příspěvky */}
               <div className="p-4 rounded-lg border-2 bg-yellow-50 border-yellow-300">
-                <div className="flex items-start justify-between mb-2">
-                  <h3 className="text-lg font-semibold text-slate-900">Nezaplacené členské příspěvky</h3>
-                  <ClassificationBadge type="evidovano" />
-                </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Nezaplacené členské příspěvky</h3>
                 <p className="text-sm text-slate-900 mb-2">
                   Z evidence vyplývá, že členské příspěvky za období 2021-2024 ve výši 63.200 Kč
                   (200 Kč × 4 roky × 79 členů) nebyly uhrazeny.
@@ -391,10 +356,7 @@ export default function GustavVlachPage() {
                 <div key={index} className="flex items-start gap-4 p-4 bg-white rounded-lg border-2 border-blue-200">
                   <span className="text-2xl flex-shrink-0">{doc.icon}</span>
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <h3 className="font-bold text-slate-900">{doc.title}</h3>
-                      <ClassificationBadge type={doc.classification} />
-                    </div>
+                    <h3 className="font-bold text-slate-900 mb-2">{doc.title}</h3>
                     <p className="text-sm text-slate-700">
                       {doc.description}
                     </p>
@@ -433,10 +395,7 @@ export default function GustavVlachPage() {
                     {index + 1}
                   </div>
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-1">
-                      <div className="font-bold text-slate-900">{event.text}</div>
-                      <ClassificationBadge type={event.classification} />
-                    </div>
+                    <div className="font-bold text-slate-900 mb-1">{event.text}</div>
                     {event.amount && (
                       <div className="text-lg font-bold text-blue-700 mt-1">
                         {event.amount.toLocaleString('cs-CZ')} Kč

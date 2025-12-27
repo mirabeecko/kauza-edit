@@ -5,7 +5,7 @@ export default function KdoKohoPoskodil() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-4xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s. ve sporech o hospodaření oddílů a členství. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s. ve sporech o hospodaření oddílů a členství. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function KdoKohoPoskodil() {
               <li><strong>Pozice B (vyloučení členové):</strong> Tvrdí, že předseda spolku jim způsobil škodu</li>
             </ul>
             <p className="mt-3">
-              Tato stránka prezentuje právní argumentaci spolku TJ Krupka z.s.
+              Tato stránka prezentuje právní argumentaci spolku Tělovýchovná jednota Krupka z.s.
             </p>
           </div>
         </section>
@@ -69,23 +69,9 @@ export default function KdoKohoPoskodil() {
             </FactBox>
 
             <FactBox
-              status="soud"
-              title="Soudní rozhodnutí ve prospěch předsedy spolku"
-              evidence={['Rozsudek Krajského soudu v Ústí nad Labem', '§ 239 NOZ']}
-            >
-              <p>Krajský soud v Ústí nad Labem rozhodl:</p>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Vyloučení Vaniše a Pivoňky bylo v souladu s § 239 NOZ</li>
-                <li>Předseda měl právo požadovat plnění povinností</li>
-                <li>Předseda měl právo jednat jménem spolku</li>
-                <li>Žaloby vyloučených členů byly zamítnuty</li>
-              </ul>
-            </FactBox>
-
-            <FactBox
               status="spor"
               title="Protipozice: Tvrzení vyloučených členů"
-              evidence={['Žaloby Vaniše, Pivoňky, Vlacha (zamítnuty soudem)', 'Trestní oznámení']}
+              evidence={['Trestní oznámení', 'Korespondence']}
             >
               <p>Vyloučení členové tvrdí:</p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
@@ -94,7 +80,7 @@ export default function KdoKohoPoskodil() {
                 <li>Způsobil jim škodu na majetku oddílů</li>
               </ul>
               <p className="mt-2 font-semibold text-sm">
-                Krajský soud v Ústí nad Labem všechny žaloby zamítl. Tvrzení nebyla soudem shledána důvodnými.
+                Spolek má k těmto tvrzením odlišný právní názor.
               </p>
             </FactBox>
           </div>
@@ -111,7 +97,7 @@ export default function KdoKohoPoskodil() {
                 Někteří hráči tvrdí, že nemohli trénovat a přišli o příjmy z turnajů. Spolek poznamenává:
               </p>
               <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Tito hráči nebyli evidováni jako členové TJ Krupka z.s.</li>
+                <li>Tito hráči nebyli evidováni jako členové Tělovýchovná jednota Krupka z.s.</li>
                 <li>Podle spolku platili příspěvky Vanišovi, ne spolku</li>
                 <li>Měli možnost přestoupit k jinému klubu</li>
               </ul>
@@ -165,11 +151,11 @@ export default function KdoKohoPoskodil() {
           <div className="text-orange-900 space-y-3 text-sm">
             <p>
               <strong>Právní pozice spolku:</strong> Spolek eviduje finanční nesoulady ve výši 2,045 mil. Kč spojené s hospodařením oddílů.
-              Předseda spolku jednal v souladu se zákonem (potvrzeno Krajským soudem v Ústí nad Labem).
+              Předseda spolku jednal v souladu se zákonem (potvrzeno Rozhodčí komisí ČAST).
             </p>
             <p>
-              <strong>Soudní zamítnutí:</strong> Tvrzení vyloučených členů, že předseda spolku jim způsobil škodu, nebyla soudem shledána důvodnými.
-              Všechny žaloby byly zamítnuty.
+              <strong>Spor o odpovědnost:</strong> Vyloučení členové mají odlišný právní názor.
+              Konečné posouzení je v kompetenci příslušných soudů.
             </p>
             <p className="mt-3 pt-3 border-t-2 border-orange-300">
               <strong>Upozornění:</strong> Toto shrnutí představuje právní argumentaci spolku a není pravomocným soudním rozhodnutím o náhradě škody.

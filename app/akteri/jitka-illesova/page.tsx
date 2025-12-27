@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function JitkaIllesovaPage() {
   const actor = {
@@ -9,14 +8,12 @@ export default function JitkaIllesovaPage() {
     status: 'service_provider' as const,
 
     context: {
-      description: 'Jitka Illéšová poskytovala spolku TJ Krupka z.s. účetní služby v období 2021-2022. Spolek eviduje spor týkající se dokončení účetnictví roku 2021 a předání účetní dokumentace.',
-      classification: 'dolozeno' as const,
+      description: 'Jitka Illéšová poskytovala spolku Tělovýchovná jednota Krupka z.s. účetní služby v období 2021-2022. Spolek eviduje spor týkající se dokončení účetnictví roku 2021 a předání účetní dokumentace.',
     },
 
     payment: {
       amount: 30000,
       description: 'Spolek eviduje platbu 30.000 Kč (6 plateb × 5.000 Kč) za vedení účetnictví za rok 2021.',
-      classification: 'dolozeno' as const,
     },
 
     keyEvents: [
@@ -24,41 +21,34 @@ export default function JitkaIllesovaPage() {
         date: '2021',
         event: 'Platba za účetní služby',
         description: 'Spolek vyplatil Jitce Illéšové 30.000 Kč (6 plateb × 5.000 Kč) za vedení účetnictví roku 2021.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '2022',
         event: 'Spor o dokončení účetnictví',
         description: 'Spolek eviduje spor ohledně dokončení a uzavření účetnictví za rok 2021. K datu zveřejnění spolek neeviduje předání uzavřeného účetnictví.',
-        classification: 'spor' as const,
       },
       {
         date: '2022-2023',
         event: 'Spor o účetní dokumentaci',
         description: 'Spolek eviduje spor týkající se předání účetní dokumentace a okolností jejího zpřístupnění třetím stranám.',
-        classification: 'spor' as const,
       },
     ],
 
     spolekPosition: {
       title: 'Právní pozice spolku',
       description: 'Spolek zastává právní názor, že účetní služby nebyly řádně dokončeny přes obdržení plné odměny. Spolek eviduje situace týkající se přístupu k účetní dokumentaci. Jedná se o spor mezi poskytovatelem služeb a klientem.',
-      classification: 'spor' as const,
       points: [
         {
           title: 'Dokončení účetnictví roku 2021',
           description: 'Spolek vyplatil 30.000 Kč za vedení účetnictví roku 2021. K datu zveřejnění spolek neeviduje předání uzavřeného účetnictví a účetní závěrky za rok 2021.',
-          classification: 'spor' as const,
         },
         {
           title: 'Přístup k účetní dokumentaci',
           description: 'Spolek eviduje situace týkající se přístupu k účetní dokumentaci spolku. Spolek zastává názor, že účetní dokumenty patří spolku a měly být předány legitimnímu vedení.',
-          classification: 'spor' as const,
         },
         {
           title: 'Dopad na hospodaření spolku',
           description: 'Bez uzavřeného účetnictví spolek evidoval ztíženou možnost kontroly hospodaření, podání výkazů a provedení auditu za rok 2021.',
-          classification: 'evidovano' as const,
         },
       ],
     },
@@ -69,17 +59,14 @@ export default function JitkaIllesovaPage() {
         {
           title: 'Smluvní vztah',
           description: 'Vztah mezi účetním a klientem je smluvní. Klient platí za účetní služby, účetní má povinnost služby řádně dokončit a předat výstupy.',
-          classification: 'dolozeno' as const,
         },
         {
           title: 'Vlastnictví účetní dokumentace',
           description: 'Účetní dokumenty patří klientovi (spolku), nikoli účetnímu. Účetní má povinnost předat dokumentaci klientovi.',
-          classification: 'dolozeno' as const,
         },
         {
           title: 'Povinnost mlčenlivosti',
           description: 'Účetní má povinnost mlčenlivosti ohledně finančních informací klienta. Předání dokumentů třetím stranám bez souhlasu klienta může být předmětem sporu.',
-          classification: 'dolozeno' as const,
         },
       ],
     },
@@ -99,7 +86,7 @@ export default function JitkaIllesovaPage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako poskytovatel účetních služeb v souvislosti se spory spolku TJ Krupka z.s.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako poskytovatel účetních služeb v souvislosti se spory spolku Tělovýchovná jednota Krupka z.s.
             Uvedené informace představují právní pozici spolku ve sporu mezi poskytovatelem služeb a klientem.
             Nejde o pravomocné soudní rozhodnutí. Obě strany mají právo na odlišný právní názor.
             {' '}
@@ -162,11 +149,10 @@ export default function JitkaIllesovaPage() {
                 <p className="text-slate-700 leading-relaxed flex-1">
                   {actor.context.description}
                 </p>
-                <ClassificationBadge type={actor.context.classification} />
               </div>
               <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 mt-4">
                 <p className="text-sm text-blue-900">
-                  <strong>Poznámka:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s.
+                  <strong>Poznámka:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s.
                   ve sporu s poskytovatelem účetních služeb. Jedná se o spor mezi klientem a poskytovatelem služeb.
                   Uvedené informace nejsou pravomocným soudním rozhodnutím.
                 </p>
@@ -185,7 +171,6 @@ export default function JitkaIllesovaPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">Evidovaná platba za rok 2021</h3>
-                  <ClassificationBadge type={actor.payment.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed">
                   {actor.payment.description}
@@ -218,7 +203,6 @@ export default function JitkaIllesovaPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{event.event}</div>
-                      <ClassificationBadge type={event.classification} />
                     </div>
                     <p className="text-sm text-slate-700 mb-2">{event.description}</p>
                   </div>
@@ -242,7 +226,6 @@ export default function JitkaIllesovaPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">{actor.spolekPosition.title}</h3>
-                  <ClassificationBadge type={actor.spolekPosition.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   {actor.spolekPosition.description}
@@ -255,7 +238,6 @@ export default function JitkaIllesovaPage() {
                 <div key={index} className="p-4 bg-white rounded-lg border-2 border-orange-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h4 className="font-bold text-slate-900">{point.title}</h4>
-                    <ClassificationBadge type={point.classification} />
                   </div>
                   <p className="text-sm text-slate-700">{point.description}</p>
                 </div>
@@ -286,7 +268,6 @@ export default function JitkaIllesovaPage() {
                 <div key={index} className="p-5 bg-white rounded-lg border-2 border-slate-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="font-bold text-slate-900">{item.title}</h3>
-                    <ClassificationBadge type={item.classification} />
                   </div>
                   <p className="text-sm text-slate-700">{item.description}</p>
                 </div>

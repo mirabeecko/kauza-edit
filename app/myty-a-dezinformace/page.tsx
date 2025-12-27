@@ -5,7 +5,7 @@ export default function MytyADezinformacePage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-4xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s.
             a vyvrací dezinformace šířené o kauze. Uvedené informace nejsou pravomocným soudním rozhodnutím.
             Všechny zúčastněné osoby mají právo na odlišný právní názor.
           </p>
@@ -262,7 +262,7 @@ export default function MytyADezinformacePage() {
           </h3>
           <div className="text-orange-900 space-y-3 text-sm">
             <p>
-              <strong>Důležité:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s.
+              <strong>Důležité:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s.
               a vyvrací dezinformace, které jsou v rozporu s touto pozicí.
             </p>
             <p>

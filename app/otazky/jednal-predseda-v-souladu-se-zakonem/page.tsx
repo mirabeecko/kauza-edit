@@ -5,7 +5,7 @@ export default function JednalPredsedaVSouladuSeZakonemPage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-4xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s. ohledně postupů předsedy spolku. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s. ohledně postupů předsedy spolku. Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo na odlišný právní názor.
           </p>
         </div>
       </div>
@@ -148,8 +148,7 @@ export default function JednalPredsedaVSouladuSeZakonemPage() {
               Předseda mohl informovat členy a veřejnost o problémech dříve a transparentněji.
             </p>
             <p className="mt-2">
-              <strong>Důvod opatrnosti:</strong> Obava z pomluvy, snaha řešit záležitost
-              vnitřně nejprve.
+              <strong>Důvod opatrnosti:</strong> Naivní víra v možnost "se lidsky domluvit" bez potřeby řešit záležitosti mimo spolek.
             </p>
           </UnknownBox>
         </div>
@@ -215,7 +214,7 @@ export default function JednalPredsedaVSouladuSeZakonemPage() {
             rozhodly, že předseda jednal v souladu se zákonem.
           </p>
           <p className="mt-3 pt-3 border-t-2 border-orange-300">
-            <strong>Upozornění:</strong> Toto shrnutí představuje právní argumentaci spolku TJ Krupka z.s. a soudní rozhodnutí, která byla vydána.
+            <strong>Upozornění:</strong> Toto shrnutí představuje právní argumentaci spolku Tělovýchovná jednota Krupka z.s. a soudní rozhodnutí, která byla vydána.
             Všechny zúčastněné osoby mají právo na odlišný právní názor.
           </p>
         </div>

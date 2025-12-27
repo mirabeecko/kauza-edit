@@ -1,7 +1,7 @@
 export default function MestoKrupkaPage() {
   const info = {
     name: 'Město Krupka & SPORT Krupka s.r.o.',
-    description: 'SPORT Krupka s.r.o. je společnost 100% vlastněná městem Krupka. Starosta Jan Kuzma je zároveň jednatelem této společnosti. Jejich koordinované jednání naznačuje pokus o převzetí kontroly nad TJ Krupka z.s.',
+    description: 'SPORT Krupka s.r.o. je společnost 100% vlastněná městem Krupka. Starosta Jan Kuzma je zároveň jednatelem této společnosti. Jejich koordinované jednání naznačuje pokus o převzetí kontroly nad Tělovýchovná jednota Krupka z.s.',
   };
 
   const keyFigures = [

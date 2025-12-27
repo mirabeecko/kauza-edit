@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function MiroslavBrozekPage() {
   const actor = {
@@ -16,7 +15,6 @@ export default function MiroslavBrozekPage() {
         type: 'positive',
         detail: 'Zvolení do funkce předsedy spolku na období 5 let',
         icon: '✅',
-        classification: 'dolozeno' as const,
       },
       {
         text: 'Zaslány výzvy k předání seznamů členů',
@@ -24,7 +22,6 @@ export default function MiroslavBrozekPage() {
         type: 'positive',
         detail: 'Opakované výzvy k předání seznamů členů (13.9.2021, 10.12.2021, 11/2023)',
         icon: '📋',
-        classification: 'dolozeno' as const,
       },
       {
         text: 'Zaslány předžalobní výzvy',
@@ -32,7 +29,6 @@ export default function MiroslavBrozekPage() {
         type: 'positive',
         detail: 'Pokus o mimosoudní řešení před zahájením právních kroků',
         icon: '⚖️',
-        classification: 'dolozeno' as const,
       },
       {
         text: 'Vyloučení členů z členství',
@@ -40,7 +36,6 @@ export default function MiroslavBrozekPage() {
         type: 'positive',
         detail: 'Rozhodnutí o vyloučení podle § 239 NOZ po opakovaném porušení členských povinností',
         icon: '🚫',
-        classification: 'dolozeno' as const,
       },
       {
         text: 'Podáno trestní oznámení',
@@ -48,7 +43,6 @@ export default function MiroslavBrozekPage() {
         type: 'positive',
         detail: 'Trestní oznámení na podezření ze zpronevěry a dalších trestných činů',
         icon: '👮',
-        classification: 'dolozeno' as const,
       },
       {
         text: 'Placeny členské příspěvky',
@@ -56,7 +50,6 @@ export default function MiroslavBrozekPage() {
         type: 'positive',
         detail: '2.400 Kč/rok za oddílové členství',
         icon: '💰',
-        classification: 'dolozeno' as const,
       },
     ],
     responsibilities: [
@@ -64,25 +57,21 @@ export default function MiroslavBrozekPage() {
         icon: '⚖️',
         title: 'Statutární zástupce',
         description: 'Zvolen na shromáždění delegátů 24.8.2021 na období 5 let. Jedná jménem spolku navenek.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '📊',
         title: 'Finanční odpovědnost',
         description: 'Odpovědnost za hospodaření spolku, kontrolu příjmů a výdajů, vymáhání pohledávek.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '📋',
         title: 'Administrace členství',
         description: 'Odpovědnost za evidenci členů, svolávání orgánů spolku, dodržování stanov a zákonů.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '🔍',
         title: 'Kontrola oddílů',
         description: 'Povinnost kontrolovat hospodaření oddílů, vyžadovat seznamy členů a finanční vyrovnání.',
-        classification: 'dolozeno' as const,
       },
     ],
     efforts: [
@@ -91,28 +80,24 @@ export default function MiroslavBrozekPage() {
         description: 'Opakovaně požadoval seznamy členů oddílů pro ověření legitimity rozhodování a hospodaření.',
         outcome: 'K datu zveřejnění spolek neeviduje doložení seznamů přes opakované výzvy (2021-2024)',
         status: 'blocked' as const,
-        classification: 'dolozeno' as const,
       },
       {
         title: 'Pokus o mimosoudní řešení',
         description: 'Zaslány předžalobní výzvy s možností vrátit peníze a dokumenty bez soudního sporu.',
         outcome: 'K termínu plnění nebyly splněny podmínky výzev',
         status: 'blocked' as const,
-        classification: 'dolozeno' as const,
       },
       {
         title: 'Vyloučení členů',
         description: 'Po předžalobních výzvách a opakovaném porušení členských povinností rozhodl o vyloučení členů (§ 239 NOZ).',
         outcome: 'Soudní přezkum rozhodnutí probíhá',
         status: 'pending' as const,
-        classification: 'dolozeno' as const,
       },
       {
         title: 'Trestní oznámení',
         description: 'Podáno trestní oznámení na podezření ze zpronevěry a dalších trestných činů v souvislosti s evidovanou škodou.',
         outcome: 'Vyšetřování probíhá',
         status: 'pending' as const,
-        classification: 'dolozeno' as const,
       },
     ],
     challenges: [
@@ -120,25 +105,21 @@ export default function MiroslavBrozekPage() {
         icon: '🚫',
         title: 'Nedoložené seznamy členů',
         description: 'K datu zveřejnění spolek neeviduje doložení seznamů členů některých oddílů, přestože byly zaslány opakované výzvy (2021-2024). Bez seznamů nelze ověřit legitimitu rozhodování oddílů ani vymáhat pohledávky.',
-        classification: 'dolozeno' as const,
       },
       {
         icon: '💸',
         title: 'Evidovaná škoda',
         description: 'Spolek eviduje škodu ve výši přes 2 miliony Kč (neodvedené příspěvky, neplacené energie, zadržené pokladny). Spolek má omezené prostředky na provoz.',
-        classification: 'evidovano' as const,
       },
       {
         icon: '⚖️',
         title: 'Soudní řízení',
         description: 'Probíhají soudní řízení týkající se vyloučení členů a dalších sporů. Spolek zastává právní názor, že jeho rozhodnutí byla v souladu s § 239 NOZ a stanovami.',
-        classification: 'spor' as const,
       },
       {
         icon: '🏛️',
         title: 'Situace s přístupem k prostorům',
         description: 'Spolek eviduje situaci s omezeným přístupem k některým prostorám. Detaily jsou předmětem právního posouzení.',
-        classification: 'spor' as const,
       },
     ],
     relatedLinks: [
@@ -157,7 +138,7 @@ export default function MiroslavBrozekPage() {
       <div className="bg-blue-900 text-white py-3">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm">
-            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku TJ Krupka z.s., nikoliv soukromě.
+            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku Tělovýchovná jednota Krupka z.s., nikoliv soukromě.
             Uvedené informace vycházejí z dokumentů, které spolek eviduje. Nejde o pravomocné soudní rozhodnutí.
             {' '}
             <a href="/pravni-ramec" className="underline hover:text-blue-200">
@@ -202,12 +183,11 @@ export default function MiroslavBrozekPage() {
               <div>
                 <div className="text-green-100 text-sm font-medium mb-2">Statutární orgán spolku</div>
                 <div className="text-3xl font-black text-white mb-3">
-                  Předseda TJ Krupka z.s.
+                  Předseda Tělovýchovná jednota Krupka z.s.
                 </div>
                 <p className="text-green-100 leading-relaxed max-w-2xl mb-3">
                   Zvolen na řádném shromáždění delegátů 24.8.2021 na období 5 let.
                 </p>
-                <ClassificationBadge type="dolozeno" />
               </div>
               <div className="text-8xl opacity-20">
                 ⚖️
@@ -227,7 +207,7 @@ export default function MiroslavBrozekPage() {
             </h2>
             <div className="text-slate-700 leading-relaxed space-y-3">
               <p>
-                Miroslav Brožek byl zvolen předsedou spolku TJ Krupka z.s. na shromáždění delegátů dne 24.8.2021
+                Miroslav Brožek byl zvolen předsedou spolku Tělovýchovná jednota Krupka z.s. na shromáždění delegátů dne 24.8.2021
                 na období 5 let. Od svého zvolení opakovaně požadoval předání seznamů členů a finančních dokumentů
                 od předsedů oddílů.
               </p>
@@ -261,7 +241,6 @@ export default function MiroslavBrozekPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-lg font-bold text-slate-900">{resp.title}</h3>
-                      <ClassificationBadge type={resp.classification} />
                     </div>
                     <p className="text-sm text-slate-700 leading-relaxed">
                       {resp.description}
@@ -291,7 +270,6 @@ export default function MiroslavBrozekPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{action.text}</div>
-                      <ClassificationBadge type={action.classification} />
                     </div>
                     {action.detail && (
                       <div className="text-sm text-slate-600 mt-1">
@@ -334,7 +312,6 @@ export default function MiroslavBrozekPage() {
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-3">
                       <h3 className="text-xl font-bold text-slate-900">{effort.title}</h3>
-                      <ClassificationBadge type={effort.classification} />
                     </div>
                     <span className="px-3 py-1 bg-white/60 rounded-full text-xs font-bold text-slate-700">
                       {statusLabels[effort.status]}
@@ -373,7 +350,6 @@ export default function MiroslavBrozekPage() {
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
                         <h3 className="text-lg font-bold text-slate-900">{challenge.title}</h3>
-                        <ClassificationBadge type={challenge.classification} />
                       </div>
                       <p className="text-sm text-slate-700 leading-relaxed">
                         {challenge.description}

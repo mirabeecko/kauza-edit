@@ -1,4 +1,4 @@
-# Kauza TJ Krupka z.s.
+# Kauza Tělovýchovná jednota Krupka z.s.
 
 Interaktivní webová aplikace - Mapa kauzy Tělovýchovná jednota Krupka z.s., IČO 46070516
 
@@ -220,7 +220,7 @@ Pro dotazy nebo připomínky ohledně aplikace kontaktujte správce projektu.
 
 ## 📄 Licence
 
-Tento projekt slouží jako dokumentace a referenční zdroj pro kauzu TJ Krupka z.s.
+Tento projekt slouží jako dokumentace a referenční zdroj pro kauzu Tělovýchovná jednota Krupka z.s.
 
 ---
 

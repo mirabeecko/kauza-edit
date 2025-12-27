@@ -165,7 +165,7 @@ export default function Home() {
               🚨 AKTIVNÍ KAUZA
             </div>
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight">
-              Kauza <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">TJ Krupka z.s.</span>
+              Kauza <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Tělovýchovná jednota Krupka z.s.</span>
             </h1>
             <p className="text-sm md:text-xl lg:text-2xl text-blue-200 mb-6 md:mb-8 px-4">
               {(2045635).toLocaleString('cs-CZ')} Kč škody<br className="md:hidden" />
@@ -491,7 +491,7 @@ export default function Home() {
             <div className="text-xl font-bold mb-4">📅 24. srpna 2021</div>
             <p className="text-lg mb-4">
               Na shromáždění delegátů byl <strong>jednomyslně zvolen</strong> Miroslav Brožek
-              předsedou TJ Krupka z.s. na <strong>5 let</strong>.
+              předsedou Tělovýchovná jednota Krupka z.s. na <strong>5 let</strong>.
             </p>
             <div className="mt-6 p-4 bg-white/10 rounded-xl">
               <div className="text-sm font-semibold mb-3">Kdo ho zvolil (přítomní delegáti):</div>

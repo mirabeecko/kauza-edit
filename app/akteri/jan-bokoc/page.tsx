@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function JanBokocPage() {
   const actor = {
@@ -9,8 +8,7 @@ export default function JanBokocPage() {
     status: 'city_official' as const,
 
     context: {
-      description: 'Jan Bokoč působil jako místostarosta města Krupka v období, kdy probíhaly spory mezi spolkem TJ Krupka z.s. a některými jeho bývalými členy. Město Krupka vlastní společnost SPORT Krupka s.r.o., která spravuje sportovní prostory využívané spolkem.',
-      classification: 'dolozeno' as const,
+      description: 'Jan Bokoč působil jako místostarosta města Krupka v období, kdy probíhaly spory mezi spolkem Tělovýchovná jednota Krupka z.s. a některými jeho bývalými členy. Město Krupka vlastní společnost SPORT Krupka s.r.o., která spravuje sportovní prostory využívané spolkem.',
     },
 
     keyEvents: [
@@ -18,36 +16,30 @@ export default function JanBokocPage() {
         date: '2023-2024',
         event: 'Výkon funkce místostarosty',
         description: 'Výkon funkce místostarosty města Krupka během období sporů spolku.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '26.1.2024',
         event: 'Notifikace města o vyloučení členů',
         description: 'Město obdrželo oficiální oznámení spolku o vyloučení některých členů podle § 239 NOZ.',
-        classification: 'dolozeno' as const,
       },
     ],
 
     spolekPosition: {
       title: 'Pozice spolku',
       description: 'Spolek zastává právní názor, že město Krupka a jeho zástupci měli respektovat autonomii spolku podle § 20a NOZ. Spolek eviduje situace, které považuje za zásahy do své autonomie.',
-      classification: 'spor' as const,
       points: [
         {
           title: 'Autonomie spolku',
           description: 'Podle § 20a NOZ má spolek právo na autonomii. Spolek zastává názor, že město a jeho zástupci měli toto právo respektovat.',
           legal: '§ 20a NOZ - Autonomie spolku',
-          classification: 'spor' as const,
         },
         {
           title: 'Přístup k prostorám',
           description: 'Spolek eviduje situace s omezeným přístupem k prostorám spravovaným městskou společností SPORT Krupka s.r.o. v období sporů.',
-          classification: 'dolozeno' as const,
         },
         {
           title: 'Notifikace o vyloučení členů',
           description: 'Spolek dne 26.1.2024 notifikoval město o vyloučení některých členů. Spolek očekával, že město bude respektovat tato rozhodnutí spolkových orgánů.',
-          classification: 'dolozeno' as const,
         },
       ],
     },
@@ -57,13 +49,11 @@ export default function JanBokocPage() {
         law: '§ 20a NOZ',
         title: 'Autonomie spolku',
         description: 'Spolek je autonomní organizace. Státní orgány a orgány územních samosprávných celků mají povinnost respektovat autonomii spolku a zdržet se neoprávněného vměšování do jeho záležitostí.',
-        classification: 'dolozeno' as const,
       },
       {
         law: '§ 239 NOZ',
         title: 'Vyloučení člena',
         description: 'Spolek může vyloučit člena z důležitého důvodu. Rozhodnutí o vyloučení je vnitřní záležitostí spolku.',
-        classification: 'dolozeno' as const,
       },
     ],
 
@@ -82,7 +72,7 @@ export default function JanBokocPage() {
       <div className="bg-blue-900 text-white py-4">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako veřejný činitel města Krupka v souvislosti se spory spolku TJ Krupka z.s.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako veřejný činitel města Krupka v souvislosti se spory spolku Tělovýchovná jednota Krupka z.s.
             Uvedené informace představují právní pozici spolku a nejsou pravomocným soudním rozhodnutím.
             Spolek respektuje presumpci neviny a prezentuje pouze svůj právní názor na události.
             {' '}
@@ -146,11 +136,10 @@ export default function JanBokocPage() {
                 <p className="text-slate-700 leading-relaxed flex-1">
                   {actor.context.description}
                 </p>
-                <ClassificationBadge type={actor.context.classification} />
               </div>
               <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 mt-4">
                 <p className="text-sm text-blue-900">
-                  <strong>Poznámka:</strong> Tato stránka prezentuje právní pozici spolku TJ Krupka z.s.
+                  <strong>Poznámka:</strong> Tato stránka prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s.
                   ve sporech týkajících se autonomie spolku a přístupu k prostorům. Uvedené informace
                   nejsou pravomocným soudním rozhodnutím.
                 </p>
@@ -174,7 +163,6 @@ export default function JanBokocPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{event.event}</div>
-                      <ClassificationBadge type={event.classification} />
                     </div>
                     <p className="text-sm text-slate-700 mb-2">{event.description}</p>
                   </div>
@@ -198,7 +186,6 @@ export default function JanBokocPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">{actor.spolekPosition.title}</h3>
-                  <ClassificationBadge type={actor.spolekPosition.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   {actor.spolekPosition.description}
@@ -211,7 +198,6 @@ export default function JanBokocPage() {
                 <div key={index} className="p-4 bg-white rounded-lg border-2 border-orange-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h4 className="font-bold text-slate-900">{point.title}</h4>
-                    <ClassificationBadge type={point.classification} />
                   </div>
                   <p className="text-sm text-slate-700 mb-2">{point.description}</p>
                   {point.legal && (
@@ -247,7 +233,6 @@ export default function JanBokocPage() {
                 <div key={index} className="p-5 bg-white rounded-lg border-2 border-slate-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="font-bold text-slate-900">{item.law} - {item.title}</h3>
-                    <ClassificationBadge type={item.classification} />
                   </div>
                   <p className="text-sm text-slate-700">{item.description}</p>
                 </div>

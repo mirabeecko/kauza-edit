@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function JaromirPivonkaPage() {
   const actor = {
@@ -14,37 +13,28 @@ export default function JaromirPivonkaPage() {
         label: 'Neodvedené oddílové příspěvky (spolupodíl)',
         amount: 518400,
         description: 'Oddíl stolního tenisu neeviduje odvod příspěvků za období 2020-2024. 60 členů × 2.400 Kč/rok × 3,6 roku.',
-        classification: 'evidovano' as const,
         note: 'Výpočet založen na odhadech počtu členů (seznamy nebyly doloženy).',
       },
       {
         label: 'Náklady za energie (spolupodíl)',
         amount: 43466,
         description: 'Z faktur vyplývá, že náklady za energie nebyly uhrazeny. Elektřina 10.415 Kč + plyn 33.051 Kč (2020-2023).',
-        classification: 'dolozeno' as const,
         note: 'Faktury dodavatelů, výzvy k úhradě.',
       },
       {
         label: 'Pokladna oddílu k 31.12.2020',
         amount: 43793,
         description: 'Hotovost v pokladně oddílu k 31.12.2020 nebyla předána ani vyúčtována.',
-        classification: 'dolozeno' as const,
         note: 'Výpověď při výslechu (2024).',
       },
       {
         label: 'Nezaplacené členské příspěvky',
         amount: 28800,
         description: 'Členské příspěvky za období 2021-2024 (200 Kč × 4 roky × 36 členů). Úhrada svazům ČSTV, Ústeckému kraji, obci.',
-        classification: 'evidovano' as const,
         note: 'Účetní evidence spolku.',
       },
     ],
     keyEvents: [
-      { text: 'Spolupráce na činnosti oddílu stolního tenisu', date: '2020-2023', classification: 'dolozeno' as const },
-      { text: 'K datu zveřejnění neevidováno doložení oddílových příspěvků', amount: 518400, date: '2020-2024', classification: 'evidovano' as const },
-      { text: 'Náklady za energie nebyly uhrazeny', amount: 43466, date: '2020-2023', classification: 'dolozeno' as const },
-      { text: 'Předžalobní výzva na úhradu 72.593 Kč', date: '14.11.2023', classification: 'dolozeno' as const },
-      { text: 'Vyloučen z členství spolku (§ 239 NOZ)', date: '28.11.2023', classification: 'dolozeno' as const },
     ],
     predzalobniVyzva: {
       date: '14.11.2023',
@@ -72,7 +62,7 @@ export default function JaromirPivonkaPage() {
       <div className="bg-blue-900 text-white py-3">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm">
-            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku TJ Krupka z.s., nikoliv soukromě.
+            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku Tělovýchovná jednota Krupka z.s., nikoliv soukromě.
             Uvedené informace vycházejí z dokumentů, které spolek eviduje. Nejde o pravomocné soudní rozhodnutí.
             {' '}
             <a href="/pravni-ramec" className="underline hover:text-blue-200">
@@ -112,7 +102,6 @@ export default function JaromirPivonkaPage() {
                   {actor.collectiveDamage.toLocaleString('cs-CZ')} Kč
                 </div>
                 <div className="mt-3 flex items-center gap-2">
-                  <ClassificationBadge type="evidovano" />
                   <span className="text-sm text-orange-200">
                     Předžalobní výzva: {actor.individualDemand.toLocaleString('cs-CZ')} Kč
                   </span>
@@ -189,7 +178,6 @@ export default function JaromirPivonkaPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-xl font-bold text-slate-900">{item.label}</h3>
-                      <ClassificationBadge type={item.classification} />
                     </div>
                     <p className="text-sm text-slate-700 leading-relaxed mb-2">
                       {item.description}
@@ -243,7 +231,6 @@ export default function JaromirPivonkaPage() {
               <div className="p-4 rounded-lg border-2 bg-orange-50 border-orange-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Seznamy členů nebyly doloženy</h3>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   K datu zveřejnění spolek neeviduje doložení seznamů členů oddílu stolního tenisu,
@@ -258,7 +245,6 @@ export default function JaromirPivonkaPage() {
               <div className="p-4 rounded-lg border-2 bg-orange-50 border-orange-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Neodvedené oddílové příspěvky</h3>
-                  <ClassificationBadge type="evidovano" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Z účetních podkladů za období 2020-2024 vyplývá, že oddílové příspěvky ve výši 518.400 Kč
@@ -280,7 +266,6 @@ export default function JaromirPivonkaPage() {
               <div className="p-4 rounded-lg border-2 bg-red-50 border-red-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Náklady za energie nebyly uhrazeny</h3>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Z faktur vyplývá, že náklady za energie (elektřina 10.415 Kč + plyn 33.051 Kč) ve výši 43.466 Kč
@@ -295,7 +280,6 @@ export default function JaromirPivonkaPage() {
               <div className="p-4 rounded-lg border-2 bg-red-50 border-red-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Nepředaná pokladna oddílu</h3>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Při výslechu bylo přiznáno, že hotovost v pokladně oddílu k 31.12.2020 ve výši 43.793 Kč
@@ -310,7 +294,6 @@ export default function JaromirPivonkaPage() {
               <div className="p-4 rounded-lg border-2 bg-yellow-50 border-yellow-300">
                 <div className="flex items-start justify-between mb-2">
                   <h3 className="text-lg font-semibold text-slate-900">Nezaplacené členské příspěvky</h3>
-                  <ClassificationBadge type="evidovano" />
                 </div>
                 <p className="text-sm text-slate-900 mb-2">
                   Z evidence vyplývá, že členské příspěvky za období 2021-2024 ve výši 28.800 Kč
@@ -339,7 +322,6 @@ export default function JaromirPivonkaPage() {
                 <div className="text-sm text-amber-700 font-medium">Dokument ze dne</div>
                 <div className="text-2xl font-bold text-amber-900">{actor.predzalobniVyzva.date}</div>
               </div>
-              <ClassificationBadge type="dolozeno" />
             </div>
 
             <div className="bg-white/70 rounded-lg p-4 md:p-6 mb-6">
@@ -403,7 +385,6 @@ export default function JaromirPivonkaPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{event.text}</div>
-                      <ClassificationBadge type={event.classification} />
                     </div>
                     {event.amount && (
                       <div className="text-lg font-bold text-orange-700 mt-1">
@@ -437,7 +418,6 @@ export default function JaromirPivonkaPage() {
                     <div>• Pokladna + členské příspěvky</div>
                     <div>• Lhůta: 8 dnů</div>
                   </div>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
               </div>
             </div>
@@ -453,7 +433,6 @@ export default function JaromirPivonkaPage() {
                     <div>• Doručeno datovou schránkou</div>
                     <div>• Porušení členských povinností</div>
                   </div>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
               </div>
             </div>
@@ -469,7 +448,6 @@ export default function JaromirPivonkaPage() {
                     <div>• Oddíl stolního tenisu</div>
                     <div>• Rozpis podle kategorií</div>
                   </div>
-                  <ClassificationBadge type="evidovano" />
                 </div>
               </div>
             </div>
@@ -485,7 +463,6 @@ export default function JaromirPivonkaPage() {
                     <div>• Věc v trestním řízení</div>
                     <div>• Výpověď k nesouladům</div>
                   </div>
-                  <ClassificationBadge type="dolozeno" />
                 </div>
               </div>
             </div>

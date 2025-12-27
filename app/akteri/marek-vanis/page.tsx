@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function MarekVanisPage() {
   return (
@@ -7,7 +6,7 @@ export default function MarekVanisPage() {
       <div className="bg-blue-900 text-white py-3">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm">
-            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku TJ Krupka z.s., nikoliv soukromě.
+            ⚖️ <strong>Právní upozornění:</strong> Osoba je uvedena výhradně v souvislosti s výkonem funkce ve spolku Tělovýchovná jednota Krupka z.s., nikoliv soukromě.
             Uvedené informace vycházejí z dokumentů, které spolek eviduje. Nejde o pravomocné soudní rozhodnutí.
             {' '}<a href="/pravni-ramec" className="underline font-semibold">Více informací</a>
           </p>
@@ -44,7 +43,6 @@ export default function MarekVanisPage() {
                   653.659 Kč
                 </div>
                 <div className="mt-2">
-                  <ClassificationBadge type="evidovano" />
                 </div>
               </div>
               <div className="text-8xl opacity-10 text-slate-400">
@@ -90,7 +88,6 @@ export default function MarekVanisPage() {
                     přestože byly zaslány opakované výzvy (2021-2024).
                   </p>
                   <div className="flex gap-2">
-                    <ClassificationBadge type="dolozeno" />
                     <span className="text-xs text-slate-600">Podklad: výzvy ze dne 13.9.2021, 10.12.2021, 11/2023</span>
                   </div>
                 </div>
@@ -105,7 +102,6 @@ export default function MarekVanisPage() {
                     za období 2020-2023 nebyly uhrazeny. Prostory byly oddílem využívány.
                   </p>
                   <div className="flex gap-2">
-                    <ClassificationBadge type="dolozeno" />
                     <span className="text-xs text-slate-600">Podklad: faktury dodavatelů energií, výzvy k úhradě</span>
                   </div>
                 </div>
@@ -120,7 +116,6 @@ export default function MarekVanisPage() {
                     mezi údaji v dokladu a skutečným stavem (datum platby, částka, dodavatel).
                   </p>
                   <div className="flex gap-2">
-                    <ClassificationBadge type="evidovano" />
                     <span className="text-xs text-slate-600">Podklad: interní kontrola dokladů, účetní evidence</span>
                   </div>
                 </div>
@@ -135,7 +130,6 @@ export default function MarekVanisPage() {
                     pro osobu blízkou předsedovi oddílu ve výši přes 70.000 Kč.
                   </p>
                   <div className="flex gap-2">
-                    <ClassificationBadge type="evidovano" />
                     <span className="text-xs text-slate-600">Podklad: předložené dohody o provedení práce</span>
                   </div>
                 </div>
@@ -163,7 +157,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="text-xl font-bold text-slate-900">Neodvedené oddílové příspěvky</h3>
-                    <ClassificationBadge type="evidovano" />
                   </div>
                   <p className="text-sm text-slate-700 leading-relaxed mb-3">
                     Výpočet: 60 členů × 2.400 Kč/rok × 3,6 roku (2020-2023).
@@ -189,7 +182,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="text-xl font-bold text-slate-900">Nezaplacené členské příspěvky</h3>
-                    <ClassificationBadge type="evidovano" />
                   </div>
                   <p className="text-sm text-slate-700 leading-relaxed mb-3">
                     Výpočet: 60 členů × 200 Kč/rok × 4 roky (2021-2024).
@@ -213,7 +205,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="text-xl font-bold text-slate-900">Nezaplacené energie</h3>
-                    <ClassificationBadge type="dolozeno" />
                   </div>
                   <p className="text-sm text-slate-700 leading-relaxed mb-3">
                     Elektřina 10.415 Kč + plyn 33.051 Kč (2020-2023).
@@ -237,7 +228,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="text-xl font-bold text-slate-900">Pokladna oddílu k 31.12.2020</h3>
-                    <ClassificationBadge type="evidovano" />
                   </div>
                   <p className="text-sm text-slate-700 leading-relaxed mb-3">
                     Hotovost v pokladně oddílu k 31.12.2020.
@@ -279,7 +269,6 @@ export default function MarekVanisPage() {
               <div>
                 <div className="text-sm text-slate-700 font-medium">Dokument ze dne</div>
                 <div className="text-2xl font-bold text-slate-900">6.11.2023</div>
-                <ClassificationBadge type="dolozeno" className="mt-1" />
               </div>
             </div>
 
@@ -351,7 +340,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="font-bold text-slate-900">K datu zveřejnění neevidováno doložení seznamů členů</div>
                   <div className="text-sm text-slate-600 mt-1">Opakované výzvy: 13.9.2021, 10.12.2021, 11/2023</div>
-                  <ClassificationBadge type="dolozeno" className="mt-2" />
                 </div>
                 <div className="text-sm text-slate-600 font-medium whitespace-nowrap">
                   2021-2024
@@ -365,7 +353,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="font-bold text-slate-900">Výpověď při výslechu</div>
                   <div className="text-sm text-slate-600 mt-1">Výpověď potvrzující vybírání příspěvků jménem spolku</div>
-                  <ClassificationBadge type="dolozeno" className="mt-2" />
                 </div>
                 <div className="text-sm text-slate-600 font-medium whitespace-nowrap">
                   2024
@@ -379,7 +366,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="font-bold text-slate-900">Předžalobní výzva</div>
                   <div className="text-sm text-slate-600 mt-1">Požadováno 387.460 Kč (energie + příspěvky)</div>
-                  <ClassificationBadge type="dolozeno" className="mt-2" />
                 </div>
                 <div className="text-sm text-slate-600 font-medium whitespace-nowrap">
                   6.11.2023
@@ -393,7 +379,6 @@ export default function MarekVanisPage() {
                 <div className="flex-1">
                   <div className="font-bold text-slate-900">Vyloučení z členství</div>
                   <div className="text-sm text-slate-600 mt-1">Rozhodnutí o vyloučení podle § 239 NOZ</div>
-                  <ClassificationBadge type="dolozeno" className="mt-2" />
                 </div>
                 <div className="text-sm text-slate-600 font-medium whitespace-nowrap">
                   28.11.2023

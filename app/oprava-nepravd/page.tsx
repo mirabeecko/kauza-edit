@@ -48,7 +48,7 @@ export default function OpravaNepravdPage() {
                 <p className="text-sm text-slate-900">
                   Miroslav Brožek byl zvolen předsedou na shromáždění delegátů 24.8.2021
                   na období 5 let (do roku 2026). Legitimitu volby potvrdila Rozhodčí
-                  komise ČAST (2022) i Krajský soud v Ústí nad Labem (rozsudek 2024).
+                  komise ČAST (2022).
                 </p>
               </div>
               <div>
@@ -56,7 +56,6 @@ export default function OpravaNepravdPage() {
                 <ul className="text-sm text-slate-900 list-disc list-inside space-y-1">
                   <li>Zápis ze shromáždění delegátů (24.8.2021)</li>
                   <li>Rozhodnutí Rozhodčí komise ČAST (2022)</li>
-                  <li>Rozsudek Krajského soudu 30 C 104/2024</li>
                 </ul>
                 <div className="mt-2">
                   <span className="text-xs font-semibold px-2 py-1 bg-green-700 text-white rounded">

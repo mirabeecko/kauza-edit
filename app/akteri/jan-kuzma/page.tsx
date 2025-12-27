@@ -1,4 +1,3 @@
-import ClassificationBadge from '@/components/ClassificationBadge';
 
 export default function JanKuzmaPage() {
   const actor = {
@@ -9,8 +8,7 @@ export default function JanKuzmaPage() {
     status: 'city_official' as const,
 
     context: {
-      description: 'Jan Kuzma působí jako starosta města Krupka a současně jako jednatel městské společnosti SPORT Krupka s.r.o., která spravuje sportovní prostory využívané spolkem TJ Krupka z.s. Spolek zastává právní názor o potřebě respektování autonomie spolku ze strany města a městských společností.',
-      classification: 'dolozeno' as const,
+      description: 'Jan Kuzma působí jako starosta města Krupka a současně jako jednatel městské společnosti SPORT Krupka s.r.o., která spravuje sportovní prostory využívané spolkem Tělovýchovná jednota Krupka z.s. Spolek zastává právní názor o potřebě respektování autonomie spolku ze strany města a městských společností.',
     },
 
     keyEvents: [
@@ -18,59 +16,49 @@ export default function JanKuzmaPage() {
         date: '2023-2024',
         event: 'Výkon funkce starosty a jednatele',
         description: 'Výkon funkce starosty města Krupka a jednatele městské společnosti SPORT Krupka s.r.o. během období sporů spolku.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '19.12.2023',
         event: 'Výměna zámků na Pinčesárně',
         description: 'Společnost SPORT Krupka s.r.o. vyměnila zámky na objektu Pinčesárna. Spolek eviduje situaci jako omezenou dostupnost prostor pro legitimního předsedu.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '17.1.2024',
         event: 'Zaslání návrhu nájemní smlouvy',
-        description: 'SPORT Krupka s.r.o. zaslala návrh nové nájemní smlouvy do datové schránky TJ Krupka z.s.',
-        classification: 'dolozeno' as const,
+        description: 'SPORT Krupka s.r.o. zaslala návrh nové nájemní smlouvy do datové schránky Tělovýchovná jednota Krupka z.s.',
       },
       {
         date: '19.1.2024',
         event: 'Druhá výměna zámků',
         description: 'Dva dny po zaslání návrhu smlouvy společnost SPORT Krupka s.r.o. opět vyměnila zámky na objektu.',
-        classification: 'dolozeno' as const,
       },
       {
         date: '26.1.2024',
         event: 'Přijetí notifikace o vyloučení členů',
         description: 'Město Krupka obdrželo do datové schránky oficiální oznámení spolku o vyloučení některých členů podle § 239 NOZ.',
-        classification: 'dolozeno' as const,
       },
       {
         date: 'Únor-Duben 2024',
         event: 'Pokračující spory o přístup',
         description: 'Spolek eviduje situace s omezeným přístupem k prostorům spravovaným společností SPORT Krupka s.r.o.',
-        classification: 'evidovano' as const,
       },
     ],
 
     dualRole: {
       title: 'Dvojrole: starosta + jednatel městské společnosti',
       description: 'Jan Kuzma zastává současně funkci starosty města Krupka a jednatele městské společnosti SPORT Krupka s.r.o. Spolek v této souvislosti poukazuje na otázku možného střetu zájmů při jednání s nezávislými spolky.',
-      classification: 'dolozeno' as const,
       observations: [
         {
           title: 'Funkce starosty města',
           description: 'Jako starosta města má Jan Kuzma odpovědnost za prosazování veřejného zájmu a dodržování právních předpisů.',
-          classification: 'dolozeno' as const,
         },
         {
           title: 'Funkce jednatele SPORT Krupka s.r.o.',
           description: 'Jako jednatel městské společnosti má statutární pravomoci včetně rozhodování o správě sportovních prostor.',
-          classification: 'dolozeno' as const,
         },
         {
           title: 'Otázka střetu zájmů',
           description: 'Spolek zastává právní názor, že kombinace obou funkcí při jednání s nezávislými spolky může vytvářet otázky ohledně střetu zájmů.',
-          classification: 'spor' as const,
         },
       ],
     },
@@ -78,28 +66,23 @@ export default function JanKuzmaPage() {
     spolekPosition: {
       title: 'Právní pozice spolku',
       description: 'Spolek zastává právní názor, že město Krupka a městské společnosti měly respektovat autonomii spolku podle § 20a NOZ. Spolek eviduje situace, které považuje za zásahy do své autonomie a přístupu k prostorům.',
-      classification: 'spor' as const,
       points: [
         {
           title: 'Autonomie spolku',
           description: 'Podle § 20a NOZ má spolek právo na autonomi. Spolek zastává názor, že město a městské společnosti měly toto právo respektovat při rozhodování o vyloučení členů.',
           legal: '§ 20a NOZ - Autonomie spolku',
-          classification: 'spor' as const,
         },
         {
           title: 'Přístup k prostorám po notifikaci',
           description: 'Spolek dne 26.1.2024 notifikoval město o vyloučení některých členů. Spolek eviduje situace, kdy přístup k prostorám spravovaným společností SPORT Krupka s.r.o. nebyl v souladu s očekáváním spolku ohledně respektování jeho rozhodnutí.',
-          classification: 'spor' as const,
         },
         {
           title: 'Načasování výměn zámků',
           description: 'Spolek eviduje, že k výměnám zámků došlo v kritických obdobích sporů (19.12.2023 a 19.1.2024). Spolek zastává názor, že tyto kroky omezily přístup legitimního předsedy k prostorům.',
-          classification: 'evidovano' as const,
         },
         {
           title: 'Koordinace mezi aktéry',
           description: 'Spolek eviduje situace, které vnímá jako koordinované jednání mezi různými aktéry v období sporů. Věc je předmětem právního sporu.',
-          classification: 'spor' as const,
         },
       ],
     },
@@ -109,19 +92,16 @@ export default function JanKuzmaPage() {
         law: '§ 20a NOZ',
         title: 'Autonomie spolku',
         description: 'Spolek je autonomní organizace. Státní orgány a orgány územních samosprávných celků mají povinnost respektovat autonomii spolku a zdržet se neoprávněného vměšování do jeho záležitostí.',
-        classification: 'dolozeno' as const,
       },
       {
         law: '§ 239 NOZ',
         title: 'Vyloučení člena',
         description: 'Spolek může vyloučit člena z důležitého důvodu. Rozhodnutí o vyloučení je vnitřní záležitostí spolku, kterou by měly třetí strany respektovat.',
-        classification: 'dolozeno' as const,
       },
       {
         law: 'Zákon o střetu zájmů',
         title: 'Problematika střetu zájmů',
         description: 'Spolek poukazuje na otázku možného střetu zájmů při kombinaci funkcí veřejného činitele a statutárního orgánu společnosti při jednání s nezávislými subjekty.',
-        classification: 'spor' as const,
       },
     ],
 
@@ -142,7 +122,7 @@ export default function JanKuzmaPage() {
       <div className="bg-blue-900 text-white py-5">
         <div className="container mx-auto px-3 md:px-8 max-w-5xl">
           <p className="text-sm leading-relaxed">
-            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako nejvyšší veřejný činitel města Krupka (starosta) a jednatel městské společnosti v souvislosti se spory spolku TJ Krupka z.s.
+            ⚖️ <strong>Důležité právní upozornění:</strong> Osoba je uvedena jako nejvyšší veřejný činitel města Krupka (starosta) a jednatel městské společnosti v souvislosti se spory spolku Tělovýchovná jednota Krupka z.s.
             Veškeré uvedené informace představují výhradně právní pozici spolku a nejsou pravomocným soudním rozhodnutím.
             Spolek plně respektuje presumpci neviny a prezentuje pouze svůj právní názor na sporné události a situace.
             Všechny zúčastněné osoby mají právo na vyjádření a opravu nepřesných informací.
@@ -210,11 +190,10 @@ export default function JanKuzmaPage() {
                 <p className="text-slate-700 leading-relaxed flex-1">
                   {actor.context.description}
                 </p>
-                <ClassificationBadge type={actor.context.classification} />
               </div>
               <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 mt-4">
                 <p className="text-sm text-blue-900">
-                  <strong>Poznámka:</strong> Tato stránka prezentuje výhradně právní pozici spolku TJ Krupka z.s.
+                  <strong>Poznámka:</strong> Tato stránka prezentuje výhradně právní pozici spolku Tělovýchovná jednota Krupka z.s.
                   ve sporech týkajících se autonomie spolku a přístupu k prostorám. Uvedené informace
                   nejsou pravomocným soudním rozhodnutím. Spolek respektuje presumpci neviny všech zúčastněných osob.
                 </p>
@@ -234,7 +213,6 @@ export default function JanKuzmaPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">{actor.dualRole.title}</h3>
-                  <ClassificationBadge type={actor.dualRole.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   {actor.dualRole.description}
@@ -247,7 +225,6 @@ export default function JanKuzmaPage() {
                 <div key={index} className="p-4 bg-white rounded-lg border-2 border-blue-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h4 className="font-bold text-slate-900">{obs.title}</h4>
-                    <ClassificationBadge type={obs.classification} />
                   </div>
                   <p className="text-sm text-slate-700">{obs.description}</p>
                 </div>
@@ -278,7 +255,6 @@ export default function JanKuzmaPage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-1">
                       <div className="font-bold text-slate-900">{event.event}</div>
-                      <ClassificationBadge type={event.classification} />
                     </div>
                     <p className="text-sm text-slate-700 mb-2">{event.description}</p>
                   </div>
@@ -302,7 +278,6 @@ export default function JanKuzmaPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="text-xl font-bold text-slate-900">{actor.spolekPosition.title}</h3>
-                  <ClassificationBadge type={actor.spolekPosition.classification} />
                 </div>
                 <p className="text-slate-700 leading-relaxed mb-4">
                   {actor.spolekPosition.description}
@@ -315,7 +290,6 @@ export default function JanKuzmaPage() {
                 <div key={index} className="p-4 bg-white rounded-lg border-2 border-orange-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h4 className="font-bold text-slate-900">{point.title}</h4>
-                    <ClassificationBadge type={point.classification} />
                   </div>
                   <p className="text-sm text-slate-700 mb-2">{point.description}</p>
                   {point.legal && (
@@ -351,7 +325,6 @@ export default function JanKuzmaPage() {
                 <div key={index} className="p-5 bg-white rounded-lg border-2 border-slate-200">
                   <div className="flex items-center gap-3 mb-2">
                     <h3 className="font-bold text-slate-900">{item.law} - {item.title}</h3>
-                    <ClassificationBadge type={item.classification} />
                   </div>
                   <p className="text-sm text-slate-700">{item.description}</p>
                 </div>

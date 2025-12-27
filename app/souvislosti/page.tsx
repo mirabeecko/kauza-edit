@@ -48,7 +48,7 @@ export default function SouvislostiPage() {
     {
       title: 'Neplacení energií → Spolek platil za oddíly',
       category: 'Kauzální řetězec',
-      description: 'Zatímco oddíly vybíraly příspěvky (1.214.400 Kč), TJ Krupka z.s. musela ze svého rozpočtu platit energie za jejich provoz (299.921 Kč).',
+      description: 'Zatímco oddíly vybíraly příspěvky (1.214.400 Kč), Tělovýchovná jednota Krupka z.s. musela ze svého rozpočtu platit energie za jejich provoz (299.921 Kč).',
       actors: ['Marek Vaniš', 'Gustav Vlach'],
       events: [
         'Oddíl stolního tenisu: 43.466 Kč (elektřina + plyn)',
@@ -112,7 +112,6 @@ export default function SouvislostiPage() {
         'Spolupráce s městem na převratu',
         'Soud rozhodl v jejich prospěch - ignoroval § 6 a § 8 NOZ',
       ],
-      evidence: ['§ 6 NOZ - nepoctivý čin', '§ 8 NOZ - zneužití práva', 'Rozsudek krajského soudu'],
       severity: 'critical' as const,
     },
   ];

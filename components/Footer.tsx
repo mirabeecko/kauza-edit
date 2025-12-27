@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Legal Disclaimer */}
         <div className="mb-8 p-4 bg-slate-800 rounded-lg border border-slate-700">
           <p className="text-sm text-slate-300 leading-relaxed">
-            ⚖️ <strong>Právní upozornění:</strong> Tento web prezentuje právní pozici spolku TJ Krupka z.s.
+            ⚖️ <strong>Právní upozornění:</strong> Tento web prezentuje právní pozici spolku Tělovýchovná jednota Krupka z.s.
             Uvedené informace nejsou pravomocným soudním rozhodnutím. Všechny zúčastněné osoby mají právo
             na odlišný právní názor. Platí presumpce neviny.
           </p>
@@ -233,9 +233,9 @@ export default function Footer() {
         <div className="pt-8 border-t border-slate-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-slate-400">
-              <p>© 2024 Kauza TJ Krupka z.s. • IČO 46070516</p>
+              <p>© 2024 Kauza Tělovýchovná jednota Krupka z.s. • IČO 46070516</p>
               <p className="text-xs mt-1">
-                Právní pozice spolku TJ Krupka z.s. • Není pravomocným soudním rozhodnutím
+                Právní pozice spolku Tělovýchovná jednota Krupka z.s. • Není pravomocným soudním rozhodnutím
               </p>
             </div>
             <div className="flex gap-4 text-sm">
