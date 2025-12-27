@@ -287,26 +287,6 @@ export default function CislaPage() {
         </p>
       </div>
 
-      {/* Infoblok */}
-      <div className="mb-12 p-4 md:p-6 bg-blue-50 rounded-xl border border-blue-200">
-        <h3 className="text-lg font-bold text-blue-900 mb-3">
-          📊 Jak číst tuto stránku
-        </h3>
-        <div className="text-sm text-blue-900 space-y-2">
-          <p>
-            <strong>Status značek:</strong>
-          </p>
-          <ul className="list-none ml-4 space-y-1">
-            <li>✓ <strong>Potvrzeno</strong> - ověřeno z dokumentů nebo oficiálních zdrojů</li>
-            <li>📝 <strong>Přiznáno</strong> - osoba sama přiznala při výslechu nebo písemně</li>
-            <li>🧮 <strong>Vypočteno</strong> - kalkulace na základě známých dat</li>
-          </ul>
-          <p className="mt-3">
-            Všechny částky jsou v Kč. Kliknutím na jméno aktéra přejdete na jeho profil.
-          </p>
-        </div>
-      </div>
-
       {/* Přehledové statistiky */}
       <div className="grid md:grid-cols-4 gap-4 mb-12">
         <SummaryStat
