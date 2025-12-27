@@ -376,58 +376,54 @@ export default function Home() {
         </div>
       </div>
 
-      {/* KLÍČOVÍ AKTÉŘI - Zástupci města */}
+      {/* KLÍČOVÍ AKTÉŘI */}
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-600 to-red-700 py-8 md:py-8 md:py-16">
         <div className="container mx-auto px-4 md:px-3 md:px-8 max-w-7xl">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-center mb-6 md:mb-12 text-white">
             🎯 Klíčoví aktéři kauzy
           </h2>
-          <div className={`grid gap-4 md:gap-3 md:gap-4 md:p-6 ${showCityContent() ? 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' : 'grid-cols-1 justify-items-center'}`}>
-            {showCityContent() && (
-              <>
-                <a href="/akteri/jan-kuzma" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
-                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Kuzma</h3>
-                  <div className="text-sm text-slate-100 mb-4">Starosta města + jednatel SPORT Krupka</div>
-                  <div className="space-y-2 text-sm">
-                    <div className="p-2 bg-red-500/40 rounded">Střet zájmů - dvojrole</div>
-                    <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky 2× (12/2023, 1/2024)</div>
-                    <div className="p-2 bg-red-500/40 rounded">Koordinoval pokus o převrat</div>
-                  </div>
-                </a>
-
-                <a href="/akteri/jan-bokoc" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
-                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jan Bokoč</h3>
-                  <div className="text-sm text-slate-100 mb-4">Místostarosta města Krupka</div>
-                  <div className="space-y-2 text-sm">
-                    <div className="p-2 bg-red-500/40 rounded">Účast na nelegálních schůzích</div>
-                    <div className="p-2 bg-red-500/40 rounded">Politická podpora převratu</div>
-                    <div className="p-2 bg-red-500/40 rounded">Zásah do autonomie spolku</div>
-                  </div>
-                </a>
-
-                <a href="/akteri/tomas-syrycansky" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
-                  <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏛️</div>
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Tomáš Syryčanský</h3>
-                  <div className="text-sm text-slate-100 mb-4">Sportovní manažer SPORT Krupka</div>
-                  <div className="space-y-2 text-sm">
-                    <div className="p-2 bg-red-500/40 rounded">Koordinoval převrat na místě</div>
-                    <div className="p-2 bg-red-500/40 rounded">Vyměnil zámky na Pinčesárně</div>
-                    <div className="p-2 bg-red-500/40 rounded">Měl být "zvolen" jako předseda</div>
-                  </div>
-                </a>
-              </>
-            )}
-
-            <a href="/akteri/miroslav-brozek" className={`bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400 ${!showCityContent() ? 'max-w-md' : ''}`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-3 md:gap-4 md:p-6">
+            <a href="/akteri/miroslav-brozek" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105 border-2 border-green-400">
               <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">✅</div>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Miroslav Brožek</h3>
               <div className="text-sm text-slate-100 mb-4">Legitimní předseda TJ Krupka</div>
               <div className="space-y-2 text-sm">
                 <div className="p-2 bg-green-500/40 rounded">Zvolen 24.8.2021 na 5 let</div>
                 <div className="p-2 bg-green-500/40 rounded">Jednal v souladu se zákonem</div>
-                <div className="p-2 bg-green-500/40 rounded">Potvrzeno soudem</div>
+                <div className="p-2 bg-green-500/40 rounded">Potvrzeno Rozhodčí komisí ČAST</div>
+              </div>
+            </a>
+
+            <a href="/akteri/marek-vanis" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏓</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Marek Vaniš</h3>
+              <div className="text-sm text-slate-100 mb-4">Údajný předseda oddílu stolního tenisu</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Nikdy nedoložil seznamy členů</div>
+                <div className="p-2 bg-red-500/40 rounded">Spolek eviduje nesoulad 653 tis. Kč</div>
+                <div className="p-2 bg-red-500/40 rounded">Vyloučen 28.11.2023</div>
+              </div>
+            </a>
+
+            <a href="/akteri/jaromir-pivonka" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">🏓</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Jaromír Pivoňka</h3>
+              <div className="text-sm text-slate-100 mb-4">Člen oddílu stolního tenisu</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Spolupracovník Vaniše</div>
+                <div className="p-2 bg-red-500/40 rounded">K datu neeviduje doložení předání pokladny</div>
+                <div className="p-2 bg-red-500/40 rounded">Vyloučen 28.11.2023</div>
+              </div>
+            </a>
+
+            <a href="/akteri/gustav-vlach" className="bg-white/10 backdrop-blur rounded-2xl p-4 md:p-4 md:p-8 hover:bg-white/20 transition transform hover:scale-105">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4 text-center">⛷️</div>
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3 text-center text-white">Gustav Vlach</h3>
+              <div className="text-sm text-slate-100 mb-4">Předseda lyžařského oddílu</div>
+              <div className="space-y-2 text-sm">
+                <div className="p-2 bg-red-500/40 rounded">Nikdy nedoložil seznamy členů</div>
+                <div className="p-2 bg-red-500/40 rounded">Spolek eviduje nesoulad 1,04 mil. Kč</div>
+                <div className="p-2 bg-red-500/40 rounded">Zánik členství prosinec 2023</div>
               </div>
             </a>
           </div>
