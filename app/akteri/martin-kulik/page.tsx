@@ -404,38 +404,40 @@ export default function MartinKulikPage() {
         </section>
 
         {/* Časová osa */}
-        <section className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-            📊 Časová osa klíčových událostí
-          </h2>
-          <div className="bg-white rounded-xl shadow-lg p-4 md:p-8">
-            <div className="space-y-4">
-              {actor.keyEvents.map((event, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-4 p-4 rounded-lg border-2 border-slate-200 hover:shadow-md transition"
-                >
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold text-sm">
-                    {index + 1}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-1">
-                      <div className="font-bold text-slate-900">{event.text}</div>
+        {actor.keyEvents.length > 0 && (
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+              📊 Časová osa klíčových událostí
+            </h2>
+            <div className="bg-white rounded-xl shadow-lg p-4 md:p-8">
+              <div className="space-y-4">
+                {actor.keyEvents.map((event: any, index: number) => (
+                  <div
+                    key={index}
+                    className="flex items-start gap-4 p-4 rounded-lg border-2 border-slate-200 hover:shadow-md transition"
+                  >
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold text-sm">
+                      {index + 1}
                     </div>
-                    {event.amount && (
-                      <div className="text-lg font-bold text-green-700 mt-1">
-                        {event.amount.toLocaleString('cs-CZ')} Kč
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-1">
+                        <div className="font-bold text-slate-900">{event.text}</div>
                       </div>
-                    )}
+                      {event.amount && (
+                        <div className="text-lg font-bold text-green-700 mt-1">
+                          {event.amount.toLocaleString('cs-CZ')} Kč
+                        </div>
+                      )}
+                    </div>
+                    <div className="text-sm text-slate-600 font-medium whitespace-nowrap">
+                      {event.date}
+                    </div>
                   </div>
-                  <div className="text-sm text-slate-600 font-medium whitespace-nowrap">
-                    {event.date}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* Související stránky */}
         <section className="mb-12">

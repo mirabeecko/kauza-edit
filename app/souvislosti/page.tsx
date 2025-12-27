@@ -336,16 +336,18 @@ export default function SouvislostiPage() {
                     </div>
                   </div>
 
-                  <div className="mt-4 pt-4 border-t border-slate-300">
-                    <h4 className="font-bold text-slate-900 mb-2 text-sm">📎 Důkazy:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {connection.evidence.map((ev, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-white/70 rounded-full text-xs text-slate-700">
-                          {ev}
-                        </span>
-                      ))}
+                  {connection.evidence && connection.evidence.length > 0 && (
+                    <div className="mt-4 pt-4 border-t border-slate-300">
+                      <h4 className="font-bold text-slate-900 mb-2 text-sm">📎 Důkazy:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {connection.evidence.map((ev, idx) => (
+                          <span key={idx} className="px-3 py-1 bg-white/70 rounded-full text-xs text-slate-700">
+                            {ev}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               );
             })}
